@@ -8,8 +8,39 @@
 import SwiftUI
 
 struct CardListIngredientsView: View {
+    var ingredients = [
+        Ingredient(name: "Egg"),
+        Ingredient(name: "Tomato"),
+        Ingredient(name: "Avocado"),
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            HStack {
+                Text("Ingredients :")
+                    .font(.title3)
+                Spacer()
+                Button {
+                    print("add ingredient")
+                } label: {
+                    Text("Clear")
+                }
+                .buttonStyle(.borderedProminent)
+                .tint(.red)
+                .clipShape(Capsule())
+            }
+            
+            VStack {
+                
+                ForEach(ingredients) { ingredient in
+                    HStack {
+                        Text("\t -  \(ingredient.name)")
+                        Spacer()
+                    }
+                }
+            }
+        }
     }
 }
 

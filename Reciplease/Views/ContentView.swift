@@ -8,26 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var ingredient = "Add ingredient"
+    @State var ingredient = ""
+    
     var body: some View {
         NavigationView {
             VStack {
-                HStack {
-                    TextField("Ingredient", text: $ingredient)
-                    
-                    Button {
-                        print("add ingredient")
-                    } label: {
-                        Text("Add")
-                    }
-                    .buttonStyle(.bordered)
-                    .tint(.green)
-                    .clipShape(Capsule())
-
+                CardAddAlimentView()
+                CardListIngredientsView()
+                Spacer()
+                Button {
+                    print("Search")
+                } label: {
+                    Text("Search for recipes")
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 35)
                 }
-                .padding()
-                    .navigationTitle("Reciplease")
+                .buttonStyle(.borderedProminent)
+                .clipShape(Capsule())
+                .padding(.bottom)
+
             }
+            .padding(.horizontal)
+            .navigationTitle("Reciplease")
         }
     }
 }
@@ -35,5 +37,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }

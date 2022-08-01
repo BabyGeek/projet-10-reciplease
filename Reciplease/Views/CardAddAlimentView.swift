@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct CardAddAlimentView: View {
+    @State var ingredient = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            RoundedRectangle(cornerRadius: 50)
+                .fill(.red)
+            VStack {
+                Text("What's in your fridge?")
+                    .font(.title)
+                    .frame(alignment: .center)
+                
+                HStack {
+                    TextField("Lemon, Cheese, Sausages...", text: $ingredient)
+                    
+                    Button {
+                        print("add ingredient")
+                    } label: {
+                        Text("Add")
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.green)
+                    .clipShape(Capsule())
+                }
+            }
+            .padding(.horizontal)
+        }
+        .frame(height: 150)
     }
 }
 
