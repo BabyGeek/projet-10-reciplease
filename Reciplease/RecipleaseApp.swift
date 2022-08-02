@@ -11,16 +11,8 @@ import SwiftUI
 struct RecipleaseApp: App {
     var body: some Scene {
         WindowGroup {
-            TabView {
-                ContentView()
-                    .preferredColorScheme(.dark)
-                    .modifier(CustomViewBackground())
-                    .navigationViewStyle(StackNavigationViewStyle())
-                    .tabItem {
-                        Label("Search", systemImage: "magnifyingglass")
-                    }
-                
-            }
+            MainView()
+                .preferredColorScheme(.dark)
         }
     }
 }

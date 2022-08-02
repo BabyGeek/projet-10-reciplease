@@ -11,24 +11,20 @@ struct ContentView: View {
     @State var ingredient = ""
     
     var body: some View {
-        NavigationView {
-            VStack(spacing: 20) {
-                CardAddAlimentView()
-
-                CardListIngredientsView()
-
-                Spacer()
-                SearchRecipesButtonView()
-            }
-            .navigationTitle("Reciplease")
-            .modifier(CustomViewBackground())
+        VStack(spacing: 20) {
+            CardAddAlimentView()
+            
+            CardListIngredientsView()
+            
+            Spacer()
+            SearchRecipesButtonView()
         }
-        .padding(.horizontal)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }

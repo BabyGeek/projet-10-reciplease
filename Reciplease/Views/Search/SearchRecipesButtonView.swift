@@ -8,22 +8,27 @@
 import SwiftUI
 
 struct SearchRecipesButtonView: View {
+    @State var selection: String? = nil
     var body: some View {
-        Button {
-            print("Search")
-        } label: {
-            Text("Search for recipes")
+        NavigationLink(destination: ResultView(), tag: "result", selection: $selection) {
+            EmptyView()
         }
-        .tint(Color("Primary"))
-        .buttonStyle(.borderedProminent)
+        
+        Button(action: {
+            self.selection = "result"
+        }, label: {
+            Text("Search for recipes")
+        })
         .clipShape(Capsule())
-        .shadow(color: Color("Primary"), radius: 50, x: 3, y: 5)
-        .padding(.bottom)
+        .buttonStyle(.borderedProminent)
+        .tint(Color("Primary"))
+        .shadow(color: Color("Primary"), radius: 25, x: 3, y: 5)
     }
 }
 
 struct SearchRecipesButtonView_Previews: PreviewProvider {
     static var previews: some View {
         SearchRecipesButtonView()
+            .preferredColorScheme(.dark)
     }
 }
