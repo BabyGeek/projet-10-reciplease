@@ -9,31 +9,37 @@ import SwiftUI
 
 struct CardAddAlimentView: View {
     @State var ingredient = ""
+    
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 50)
-                .fill(.red)
+                .fill(Color("CardBackground").opacity(0.38))
+                .shadow(color: Color("CardBackground"), radius: 50, x: 3, y: 5)
+                .frame(height: 150)
+
             VStack {
                 Text("What's in your fridge?")
+                    .foregroundColor(Color("Text"))
                     .font(.title)
                     .frame(alignment: .center)
                 
                 HStack {
                     TextField("Lemon, Cheese, Sausages...", text: $ingredient)
+                        .foregroundColor(Color("Text").opacity(0.8))
                     
                     Button {
                         print("add ingredient")
                     } label: {
                         Text("Add")
                     }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.green)
                     .clipShape(Capsule())
+                    .buttonStyle(.borderedProminent)
+                    .tint(Color("Primary"))
+                    .shadow(color: Color("Primary"), radius: 25, x: 3, y: 5)
                 }
+                .padding(.horizontal)
             }
-            .padding(.horizontal)
         }
-        .frame(height: 150)
     }
 }
 

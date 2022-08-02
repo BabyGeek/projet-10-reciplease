@@ -12,31 +12,23 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(spacing: 20) {
                 CardAddAlimentView()
-                CardListIngredientsView()
-                Spacer()
-                Button {
-                    print("Search")
-                } label: {
-                    Text("Search for recipes")
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 35)
-                }
-                .buttonStyle(.borderedProminent)
-                .clipShape(Capsule())
-                .padding(.bottom)
 
+                CardListIngredientsView()
+
+                Spacer()
+                SearchRecipesButtonView()
             }
-            .padding(.horizontal)
             .navigationTitle("Reciplease")
+            .modifier(CustomViewBackground())
         }
+        .padding(.horizontal)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.dark)
     }
 }

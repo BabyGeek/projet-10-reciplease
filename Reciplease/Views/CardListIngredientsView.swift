@@ -15,27 +15,28 @@ struct CardListIngredientsView: View {
     ]
     
     var body: some View {
-        
         VStack {
             HStack {
                 Text("Ingredients :")
                     .font(.title3)
+                    .foregroundColor(Color("Text"))
                 Spacer()
                 Button {
-                    print("add ingredient")
+                    print("clear ingredients")
                 } label: {
                     Text("Clear")
                 }
                 .buttonStyle(.borderedProminent)
-                .tint(.red)
+                .tint(Color("Red"))
                 .clipShape(Capsule())
+                .shadow(color: Color("Red"), radius: 25, x: 3, y: 5)
             }
             
             VStack {
-                
                 ForEach(ingredients) { ingredient in
                     HStack {
                         Text("\t -  \(ingredient.name)")
+                            .foregroundColor(Color("Text"))
                         Spacer()
                     }
                 }
