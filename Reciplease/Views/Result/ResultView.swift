@@ -9,14 +9,9 @@ import SwiftUI
 
 struct ResultView: View {
     var body: some View {
-        NavigationView {
-            VStack(spacing: 20) {
-                ResultListView()
-            }
-            .navigationTitle("Reciplease")
-            .modifier(CustomViewBackground())
-        }
-        .padding(.horizontal)
+            ResultListView()
+            .navigationTitle("Results")
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 

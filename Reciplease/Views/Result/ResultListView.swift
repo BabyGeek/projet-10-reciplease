@@ -15,10 +15,16 @@ struct ResultListView: View {
         Recipe.mock
     ]
     
+    @State var selection: Int? = -1
+    
     var body: some View {
-        List(recipes) { recipe in
-                RecipeView(recipe: recipe)
+        List(recipes.indices, id: \.self) { index in
+            let recipe = recipes[index]
+            NavigationLink(destination: RecipeView(recipe: recipe), tag: index, selection: $selection) {
+                RecipeListView(recipe: recipe)
             }
+        }
+        .listStyle(.plain)
     }
 }
 
