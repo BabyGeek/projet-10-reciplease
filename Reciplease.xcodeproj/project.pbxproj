@@ -82,13 +82,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2B75A77228972B6C00B0FE88 /* Views */ = {
+		2B4AC53C2899B8CE00CC817E /* Result */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		2B4AC53D2899B8D600CC817E /* Search */ = {
 			isa = PBXGroup;
 			children = (
 				2BE99B072897171A00162E6B /* ContentView.swift */,
 				2BD273B42898500A005F090F /* SearchRecipesButtonView.swift */,
 				2B75A7782897327600B0FE88 /* CardListIngredientsView.swift */,
 				2B75A7762897306E00B0FE88 /* CardAddAlimentView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		2B75A77228972B6C00B0FE88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B4AC53D2899B8D600CC817E /* Search */,
+				2B4AC53C2899B8CE00CC817E /* Result */,
 			);
 			path = Views;
 			sourceTree = "<group>";
