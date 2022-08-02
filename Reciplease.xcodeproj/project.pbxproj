@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B4AC53B2899B3CD00CC817E /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4AC53A2899B3CD00CC817E /* ViewExtensions.swift */; };
+		2B75A77528972B8700B0FE88 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75A77428972B8700B0FE88 /* Ingredient.swift */; };
+		2B75A7772897306E00B0FE88 /* CardAddAlimentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75A7762897306E00B0FE88 /* CardAddAlimentView.swift */; };
+		2B75A7792897327600B0FE88 /* CardListIngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75A7782897327600B0FE88 /* CardListIngredientsView.swift */; };
+		2BD273B52898500A005F090F /* SearchRecipesButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD273B42898500A005F090F /* SearchRecipesButtonView.swift */; };
+		2BD273BE289866D0005F090F /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75A77428972B8700B0FE88 /* Ingredient.swift */; };
 		2BE99B062897171A00162E6B /* RecipleaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE99B052897171A00162E6B /* RecipleaseApp.swift */; };
 		2BE99B082897171A00162E6B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE99B072897171A00162E6B /* ContentView.swift */; };
 		2BE99B0A2897171B00162E6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE99B092897171B00162E6B /* Assets.xcassets */; };
@@ -34,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B4AC53A2899B3CD00CC817E /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		2B75A77428972B8700B0FE88 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		2B75A7762897306E00B0FE88 /* CardAddAlimentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAddAlimentView.swift; sourceTree = "<group>"; };
+		2B75A7782897327600B0FE88 /* CardListIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListIngredientsView.swift; sourceTree = "<group>"; };
+		2BD273B42898500A005F090F /* SearchRecipesButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipesButtonView.swift; sourceTree = "<group>"; };
 		2BE99B022897171A00162E6B /* Reciplease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciplease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE99B052897171A00162E6B /* RecipleaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipleaseApp.swift; sourceTree = "<group>"; };
 		2BE99B072897171A00162E6B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +82,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B75A77228972B6C00B0FE88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2BE99B072897171A00162E6B /* ContentView.swift */,
+				2BD273B42898500A005F090F /* SearchRecipesButtonView.swift */,
+				2B75A7782897327600B0FE88 /* CardListIngredientsView.swift */,
+				2B75A7762897306E00B0FE88 /* CardAddAlimentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B75A77328972B7800B0FE88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B75A77428972B8700B0FE88 /* Ingredient.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2BD273B628985A06005F090F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2B4AC53A2899B3CD00CC817E /* ViewExtensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		2BE99AF92897171A00162E6B = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +132,10 @@
 		2BE99B042897171A00162E6B /* Reciplease */ = {
 			isa = PBXGroup;
 			children = (
+				2BD273B628985A06005F090F /* Utilities */,
+				2B75A77328972B7800B0FE88 /* Models */,
+				2B75A77228972B6C00B0FE88 /* Views */,
 				2BE99B052897171A00162E6B /* RecipleaseApp.swift */,
-				2BE99B072897171A00162E6B /* ContentView.swift */,
 				2BE99B092897171B00162E6B /* Assets.xcassets */,
 				2BE99B0B2897171B00162E6B /* Preview Content */,
 			);
@@ -257,8 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BD273B52898500A005F090F /* SearchRecipesButtonView.swift in Sources */,
+				2B4AC53B2899B3CD00CC817E /* ViewExtensions.swift in Sources */,
 				2BE99B082897171A00162E6B /* ContentView.swift in Sources */,
+				2B75A7792897327600B0FE88 /* CardListIngredientsView.swift in Sources */,
 				2BE99B062897171A00162E6B /* RecipleaseApp.swift in Sources */,
+				2B75A77528972B8700B0FE88 /* Ingredient.swift in Sources */,
+				2B75A7772897306E00B0FE88 /* CardAddAlimentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE99B172897171B00162E6B /* RecipleaseTests.swift in Sources */,
+				2BD273BE289866D0005F090F /* Ingredient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
