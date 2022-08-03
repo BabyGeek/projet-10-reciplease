@@ -13,9 +13,9 @@ struct RecipeImageView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("\(Image(systemName: "hand.thumbsup.fill")) \(recipe.likes)")
+                Text("\(Image(systemName: "flame")) \(recipe.calories)")
                 Spacer()
-                Text("\(recipe.time) \(Image(systemName: "timer"))")
+                Text("\(recipe.totalTime) \(Image(systemName: "timer"))")
             }
             .padding(.top)
             Spacer()
@@ -39,6 +39,17 @@ struct RecipeImageView: View {
                     ),
                                    startPoint: .bottom,
                                    endPoint: .top)
+                )
+                .mask(
+                    LinearGradient(gradient: Gradient(
+                        colors: [
+                            .black,
+                            .black,
+                            .black,
+                            .clear]
+                    ),
+                                   startPoint: .top,
+                                   endPoint: .bottom)
                 ))
         .frame(
             width: UIScreen.main.bounds.size.width,

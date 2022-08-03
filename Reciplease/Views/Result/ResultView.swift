@@ -9,9 +9,11 @@ import SwiftUI
 
 struct ResultView: View {
     var body: some View {
+        ScrollView {
             ResultListView()
-            .navigationTitle("Results")
-            .navigationBarTitleDisplayMode(.inline)
+        }
+        .navigationTitle("Results")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

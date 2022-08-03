@@ -8,16 +8,14 @@
 import SwiftUI
 
 struct RecipeInstructionButtonView: View {
-    @State var selection: String? = nil
+    @Environment(\.openURL) var openURL
     var recipe: Recipe = Recipe.mock
 
     var body: some View {
-        NavigationLink(destination: InstructionView(), tag: "instruction", selection: $selection) {
-            EmptyView()
-        }
-        
         Button(action: {
-            self.selection = "instruction"
+            if let url = URL(string: recipe.url) {
+                openURL(url)
+            }
         }, label: {
             Text("Show instructions")
         })

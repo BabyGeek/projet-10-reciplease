@@ -2,20 +2,20 @@
   "recipe": {
     "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_411161749e90913fc75711030fffef47",
     "label": "Chorizo, Avocado, and Egg Cemitas with Chipotle Mayonnaise Recipe",
-    "image": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDwaCXVzLWVhc3QtMSJGMEQCIG3gUvLljW6%2FvfPZe53y0nOl9l7OvW2OWdKSiLkGeZhtAiAsUs3TFImew1jjTC%2BYRo0SS4iB7%2FcJI6QpZWapsn2GlCrbBAiV%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2BmAg6oW%2FOggxwKPYKq8EZq40niSU2AskiAWPr5r3QR7j6nAtKyM8l3W5aSBHooakDZaewJolqv6oW9NKnXVH6VCfiQJa%2B86VTnXDMM0qvXpVsyj9Yq1NDHEV5tQybKeCKNSorhE1g%2BPR58cXPUpVN4SNwSNu4eHZ6Wg3hrl6a%2F4CB6x7YgPeFysEqxLQ6tPOeVZhSlmzcoSfmOSS7%2BQqPrWE38toGZ3szk4yfY6YH%2FgeiE85v9xYdHJio4BDPPnuw94DUiCrCGEatYBYBK665q%2F0wC%2BRt4mIwTSPuX22hzi7VrfwfjkCgXso9YOXJaY8lhX%2Bp1j%2F%2BZnJIYF%2FacptfpTxa0MkYatAALqIvXcKrHmuvrk06%2B8vXMokAgly0gjPTxRGfBBhCe%2BM%2BFzs%2Bds%2BAIb2mFK29jkjHYq3kw2JozrLBhKmvef45boQQrWxpcOReGqaomQp0Ou6%2FGFU1bqza9nu0%2FQAaDfyOBhAYE4JNh09JPg2%2BMiBKxwJ14TIbbYc%2Bi0ENveacUFX%2FXAlZF7iqIfcRuCPK1xpWzG%2FHje4jPIvOS8lA4yJy0J1X45v9EwJzS3ewYy2QDtHBmKSfE5bWi7qkqWxD33uFAun67wtNBVXav9EU8KJsePTu378ePpxvi0G1i7VI5ONjOqRsvriUaSlX%2BSsgu39ZXd2jiQXWpWFvQQJLtWiQs9QsxV3oVyoINXG46n1uu3KZAwAcAaFcD8RJYEuz1sEPWp9Izyif30lGbXyRUJ5bTCbp0zCmTC5pauXBjqqAZTBQ6IovouXcoFKDSO7ugdTkDWDbbUnBSpfluD%2Fh5te%2BAgpL8IjrjnJz%2F5N2pQKSxHc0JHEN4vfIjdKAAggnK2EeuvzhQJFFXphN84YVbdda3I3Gm13m5SF8ISJiTZByEDEKoyWIQRQ7TBpoUwaN4kHzJNHEASK2yT6uMS9Je4jfk4ZTeXrLkd6ioRqLeUAXrAhz77oWCrbUg0pNK4%2BdQMZeVB31Ut3RGbZ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T213934Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFPOS3NXHU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=44bf41bc0855edade0b7502897c75d4cda743b9cc34dfb60cd3e93bcb542e8e4",
+    "image": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjED0aCXVzLWVhc3QtMSJGMEQCIQDiXvzNgpEAOkroeDVhRvwlDgfF5QIvnURNfbDO8m2PJgIfBVmYri4whwrS4tVRhtmNVRG7FwF0ohbhS8Blg0y7tSrbBAiW%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM6VTBuFY%2F2EkEXJngKq8Ew2%2F%2FzSBBltboaYwouQ0sta7F2oTqGzVow%2FyYy79gQ5WXdbRqgBhN1Fl2VKFvU1f3fvS5mWqN6MCwZuzFTRxfY%2FnL0ATaM0kQ3%2FW8sxh2ZL02QJzerm7fKHd56v9F06Lz6F%2FEgg6fvMLZo5uvwBkmQLvSf3L0%2BCQFWwTCHJuTp4W9q6fFtllPyp%2BVLOKgP0A5P%2FUdsQS%2FMdJKJDk21wqSFwU57KiVh0e7GZhkKakAI5NjP96C%2FGesK%2F4OZ2ZFx5I3N2yY31NfGW2m%2Bi2o7Clrm8e0wWEUc6RNnsACEquyXvUr83lUUFDAwvUTwrtLKfbs0djdRO6c0MMCbdnodd8l7T8N6zNZOBR65y0Wvibb1a5S%2BkXC6ZzhWpU0zUChSkhxdHSIzWnP8Vm3SOaKNT%2Bc1oaAA%2FWcl4RnjVaR48W2fgNjnoMAlvti2oLUe%2FyWq8qlD7a3htAthX1W5N0uWYUztQh7QuRsGmepVq22ghH7nYdrnbP5YSQcaeIMwZv6%2FPzrV5TDgHXRWPvI1fap%2FdUN7kq4JyTLB2g1IfDqw5a%2B0%2FY3RVvfO7FcaUAtZJ7sEtcl5JqH82epFmyQ90HC0popryi74LbB7BpVGjV%2BK0MVnTTg9JM9FvaFXNeycGAA4WEacOi%2Br9ij9BHwpD5lCpz51r%2BY0SaYDwvBXKPLoTWRsAZl%2FyDukS2zSI6ftIS1SjyNRqH0FDvMdhnsh0SR6Vl1VWir0WnWhJRmeiT2St8iuDCAuauXBjqqAQLt5PxPt5mnD89R6zHu6JLswCuzc1AQPkH8W2jxdXm7nMInLFkbT7QfnC79APVWH21bNO59pyHo6dPGev3WEb052jDTWOddQXOV14bYJEf0JmA7ZJ%2FifTCKwumlFOvmlSAtNMTfywcwZvLrcTbmBKi1yqaVGCaX6bbZNJROeBlGm%2FAJzonsHEpM6qrmSMnp4v86NYlL9zpZv%2F9h2QdCjgQeK1yy5e0XTdVP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T212519Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFH6BVHYTU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=f6b5d831adeead1557fba76d557d0ed320542e0743d9fdb8cdeb526784a54b3f",
     "images": {
       "THUMBNAIL": {
-        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDwaCXVzLWVhc3QtMSJGMEQCIG3gUvLljW6%2FvfPZe53y0nOl9l7OvW2OWdKSiLkGeZhtAiAsUs3TFImew1jjTC%2BYRo0SS4iB7%2FcJI6QpZWapsn2GlCrbBAiV%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2BmAg6oW%2FOggxwKPYKq8EZq40niSU2AskiAWPr5r3QR7j6nAtKyM8l3W5aSBHooakDZaewJolqv6oW9NKnXVH6VCfiQJa%2B86VTnXDMM0qvXpVsyj9Yq1NDHEV5tQybKeCKNSorhE1g%2BPR58cXPUpVN4SNwSNu4eHZ6Wg3hrl6a%2F4CB6x7YgPeFysEqxLQ6tPOeVZhSlmzcoSfmOSS7%2BQqPrWE38toGZ3szk4yfY6YH%2FgeiE85v9xYdHJio4BDPPnuw94DUiCrCGEatYBYBK665q%2F0wC%2BRt4mIwTSPuX22hzi7VrfwfjkCgXso9YOXJaY8lhX%2Bp1j%2F%2BZnJIYF%2FacptfpTxa0MkYatAALqIvXcKrHmuvrk06%2B8vXMokAgly0gjPTxRGfBBhCe%2BM%2BFzs%2Bds%2BAIb2mFK29jkjHYq3kw2JozrLBhKmvef45boQQrWxpcOReGqaomQp0Ou6%2FGFU1bqza9nu0%2FQAaDfyOBhAYE4JNh09JPg2%2BMiBKxwJ14TIbbYc%2Bi0ENveacUFX%2FXAlZF7iqIfcRuCPK1xpWzG%2FHje4jPIvOS8lA4yJy0J1X45v9EwJzS3ewYy2QDtHBmKSfE5bWi7qkqWxD33uFAun67wtNBVXav9EU8KJsePTu378ePpxvi0G1i7VI5ONjOqRsvriUaSlX%2BSsgu39ZXd2jiQXWpWFvQQJLtWiQs9QsxV3oVyoINXG46n1uu3KZAwAcAaFcD8RJYEuz1sEPWp9Izyif30lGbXyRUJ5bTCbp0zCmTC5pauXBjqqAZTBQ6IovouXcoFKDSO7ugdTkDWDbbUnBSpfluD%2Fh5te%2BAgpL8IjrjnJz%2F5N2pQKSxHc0JHEN4vfIjdKAAggnK2EeuvzhQJFFXphN84YVbdda3I3Gm13m5SF8ISJiTZByEDEKoyWIQRQ7TBpoUwaN4kHzJNHEASK2yT6uMS9Je4jfk4ZTeXrLkd6ioRqLeUAXrAhz77oWCrbUg0pNK4%2BdQMZeVB31Ut3RGbZ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T213934Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFPOS3NXHU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=140621e2cce6e264415164386ca1644b38b98cb3b9506534cb51a18f995223e0",
+        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjED0aCXVzLWVhc3QtMSJGMEQCIQDiXvzNgpEAOkroeDVhRvwlDgfF5QIvnURNfbDO8m2PJgIfBVmYri4whwrS4tVRhtmNVRG7FwF0ohbhS8Blg0y7tSrbBAiW%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM6VTBuFY%2F2EkEXJngKq8Ew2%2F%2FzSBBltboaYwouQ0sta7F2oTqGzVow%2FyYy79gQ5WXdbRqgBhN1Fl2VKFvU1f3fvS5mWqN6MCwZuzFTRxfY%2FnL0ATaM0kQ3%2FW8sxh2ZL02QJzerm7fKHd56v9F06Lz6F%2FEgg6fvMLZo5uvwBkmQLvSf3L0%2BCQFWwTCHJuTp4W9q6fFtllPyp%2BVLOKgP0A5P%2FUdsQS%2FMdJKJDk21wqSFwU57KiVh0e7GZhkKakAI5NjP96C%2FGesK%2F4OZ2ZFx5I3N2yY31NfGW2m%2Bi2o7Clrm8e0wWEUc6RNnsACEquyXvUr83lUUFDAwvUTwrtLKfbs0djdRO6c0MMCbdnodd8l7T8N6zNZOBR65y0Wvibb1a5S%2BkXC6ZzhWpU0zUChSkhxdHSIzWnP8Vm3SOaKNT%2Bc1oaAA%2FWcl4RnjVaR48W2fgNjnoMAlvti2oLUe%2FyWq8qlD7a3htAthX1W5N0uWYUztQh7QuRsGmepVq22ghH7nYdrnbP5YSQcaeIMwZv6%2FPzrV5TDgHXRWPvI1fap%2FdUN7kq4JyTLB2g1IfDqw5a%2B0%2FY3RVvfO7FcaUAtZJ7sEtcl5JqH82epFmyQ90HC0popryi74LbB7BpVGjV%2BK0MVnTTg9JM9FvaFXNeycGAA4WEacOi%2Br9ij9BHwpD5lCpz51r%2BY0SaYDwvBXKPLoTWRsAZl%2FyDukS2zSI6ftIS1SjyNRqH0FDvMdhnsh0SR6Vl1VWir0WnWhJRmeiT2St8iuDCAuauXBjqqAQLt5PxPt5mnD89R6zHu6JLswCuzc1AQPkH8W2jxdXm7nMInLFkbT7QfnC79APVWH21bNO59pyHo6dPGev3WEb052jDTWOddQXOV14bYJEf0JmA7ZJ%2FifTCKwumlFOvmlSAtNMTfywcwZvLrcTbmBKi1yqaVGCaX6bbZNJROeBlGm%2FAJzonsHEpM6qrmSMnp4v86NYlL9zpZv%2F9h2QdCjgQeK1yy5e0XTdVP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T212519Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFH6BVHYTU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=d2d78c89cebf7c26c630575856b9496b6fa2292adfd00976d6478e707e0c650a",
         "width": 100,
         "height": 100
       },
       "SMALL": {
-        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDwaCXVzLWVhc3QtMSJGMEQCIG3gUvLljW6%2FvfPZe53y0nOl9l7OvW2OWdKSiLkGeZhtAiAsUs3TFImew1jjTC%2BYRo0SS4iB7%2FcJI6QpZWapsn2GlCrbBAiV%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2BmAg6oW%2FOggxwKPYKq8EZq40niSU2AskiAWPr5r3QR7j6nAtKyM8l3W5aSBHooakDZaewJolqv6oW9NKnXVH6VCfiQJa%2B86VTnXDMM0qvXpVsyj9Yq1NDHEV5tQybKeCKNSorhE1g%2BPR58cXPUpVN4SNwSNu4eHZ6Wg3hrl6a%2F4CB6x7YgPeFysEqxLQ6tPOeVZhSlmzcoSfmOSS7%2BQqPrWE38toGZ3szk4yfY6YH%2FgeiE85v9xYdHJio4BDPPnuw94DUiCrCGEatYBYBK665q%2F0wC%2BRt4mIwTSPuX22hzi7VrfwfjkCgXso9YOXJaY8lhX%2Bp1j%2F%2BZnJIYF%2FacptfpTxa0MkYatAALqIvXcKrHmuvrk06%2B8vXMokAgly0gjPTxRGfBBhCe%2BM%2BFzs%2Bds%2BAIb2mFK29jkjHYq3kw2JozrLBhKmvef45boQQrWxpcOReGqaomQp0Ou6%2FGFU1bqza9nu0%2FQAaDfyOBhAYE4JNh09JPg2%2BMiBKxwJ14TIbbYc%2Bi0ENveacUFX%2FXAlZF7iqIfcRuCPK1xpWzG%2FHje4jPIvOS8lA4yJy0J1X45v9EwJzS3ewYy2QDtHBmKSfE5bWi7qkqWxD33uFAun67wtNBVXav9EU8KJsePTu378ePpxvi0G1i7VI5ONjOqRsvriUaSlX%2BSsgu39ZXd2jiQXWpWFvQQJLtWiQs9QsxV3oVyoINXG46n1uu3KZAwAcAaFcD8RJYEuz1sEPWp9Izyif30lGbXyRUJ5bTCbp0zCmTC5pauXBjqqAZTBQ6IovouXcoFKDSO7ugdTkDWDbbUnBSpfluD%2Fh5te%2BAgpL8IjrjnJz%2F5N2pQKSxHc0JHEN4vfIjdKAAggnK2EeuvzhQJFFXphN84YVbdda3I3Gm13m5SF8ISJiTZByEDEKoyWIQRQ7TBpoUwaN4kHzJNHEASK2yT6uMS9Je4jfk4ZTeXrLkd6ioRqLeUAXrAhz77oWCrbUg0pNK4%2BdQMZeVB31Ut3RGbZ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T213934Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFPOS3NXHU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=be3c6f3be7ddb7c5edeb99337c9f284493d0be183e14bec8d328950cc1d3ffeb",
+        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjED0aCXVzLWVhc3QtMSJGMEQCIQDiXvzNgpEAOkroeDVhRvwlDgfF5QIvnURNfbDO8m2PJgIfBVmYri4whwrS4tVRhtmNVRG7FwF0ohbhS8Blg0y7tSrbBAiW%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM6VTBuFY%2F2EkEXJngKq8Ew2%2F%2FzSBBltboaYwouQ0sta7F2oTqGzVow%2FyYy79gQ5WXdbRqgBhN1Fl2VKFvU1f3fvS5mWqN6MCwZuzFTRxfY%2FnL0ATaM0kQ3%2FW8sxh2ZL02QJzerm7fKHd56v9F06Lz6F%2FEgg6fvMLZo5uvwBkmQLvSf3L0%2BCQFWwTCHJuTp4W9q6fFtllPyp%2BVLOKgP0A5P%2FUdsQS%2FMdJKJDk21wqSFwU57KiVh0e7GZhkKakAI5NjP96C%2FGesK%2F4OZ2ZFx5I3N2yY31NfGW2m%2Bi2o7Clrm8e0wWEUc6RNnsACEquyXvUr83lUUFDAwvUTwrtLKfbs0djdRO6c0MMCbdnodd8l7T8N6zNZOBR65y0Wvibb1a5S%2BkXC6ZzhWpU0zUChSkhxdHSIzWnP8Vm3SOaKNT%2Bc1oaAA%2FWcl4RnjVaR48W2fgNjnoMAlvti2oLUe%2FyWq8qlD7a3htAthX1W5N0uWYUztQh7QuRsGmepVq22ghH7nYdrnbP5YSQcaeIMwZv6%2FPzrV5TDgHXRWPvI1fap%2FdUN7kq4JyTLB2g1IfDqw5a%2B0%2FY3RVvfO7FcaUAtZJ7sEtcl5JqH82epFmyQ90HC0popryi74LbB7BpVGjV%2BK0MVnTTg9JM9FvaFXNeycGAA4WEacOi%2Br9ij9BHwpD5lCpz51r%2BY0SaYDwvBXKPLoTWRsAZl%2FyDukS2zSI6ftIS1SjyNRqH0FDvMdhnsh0SR6Vl1VWir0WnWhJRmeiT2St8iuDCAuauXBjqqAQLt5PxPt5mnD89R6zHu6JLswCuzc1AQPkH8W2jxdXm7nMInLFkbT7QfnC79APVWH21bNO59pyHo6dPGev3WEb052jDTWOddQXOV14bYJEf0JmA7ZJ%2FifTCKwumlFOvmlSAtNMTfywcwZvLrcTbmBKi1yqaVGCaX6bbZNJROeBlGm%2FAJzonsHEpM6qrmSMnp4v86NYlL9zpZv%2F9h2QdCjgQeK1yy5e0XTdVP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T212519Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3599&X-Amz-Credential=ASIASXCYXIIFH6BVHYTU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=91a08150c8feac7f7e92539a5b63efcad7bf73e9c6e995d9a59d0cc0fc1b7ef4",
         "width": 200,
         "height": 200
       },
       "REGULAR": {
-        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDwaCXVzLWVhc3QtMSJGMEQCIG3gUvLljW6%2FvfPZe53y0nOl9l7OvW2OWdKSiLkGeZhtAiAsUs3TFImew1jjTC%2BYRo0SS4iB7%2FcJI6QpZWapsn2GlCrbBAiV%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2BmAg6oW%2FOggxwKPYKq8EZq40niSU2AskiAWPr5r3QR7j6nAtKyM8l3W5aSBHooakDZaewJolqv6oW9NKnXVH6VCfiQJa%2B86VTnXDMM0qvXpVsyj9Yq1NDHEV5tQybKeCKNSorhE1g%2BPR58cXPUpVN4SNwSNu4eHZ6Wg3hrl6a%2F4CB6x7YgPeFysEqxLQ6tPOeVZhSlmzcoSfmOSS7%2BQqPrWE38toGZ3szk4yfY6YH%2FgeiE85v9xYdHJio4BDPPnuw94DUiCrCGEatYBYBK665q%2F0wC%2BRt4mIwTSPuX22hzi7VrfwfjkCgXso9YOXJaY8lhX%2Bp1j%2F%2BZnJIYF%2FacptfpTxa0MkYatAALqIvXcKrHmuvrk06%2B8vXMokAgly0gjPTxRGfBBhCe%2BM%2BFzs%2Bds%2BAIb2mFK29jkjHYq3kw2JozrLBhKmvef45boQQrWxpcOReGqaomQp0Ou6%2FGFU1bqza9nu0%2FQAaDfyOBhAYE4JNh09JPg2%2BMiBKxwJ14TIbbYc%2Bi0ENveacUFX%2FXAlZF7iqIfcRuCPK1xpWzG%2FHje4jPIvOS8lA4yJy0J1X45v9EwJzS3ewYy2QDtHBmKSfE5bWi7qkqWxD33uFAun67wtNBVXav9EU8KJsePTu378ePpxvi0G1i7VI5ONjOqRsvriUaSlX%2BSsgu39ZXd2jiQXWpWFvQQJLtWiQs9QsxV3oVyoINXG46n1uu3KZAwAcAaFcD8RJYEuz1sEPWp9Izyif30lGbXyRUJ5bTCbp0zCmTC5pauXBjqqAZTBQ6IovouXcoFKDSO7ugdTkDWDbbUnBSpfluD%2Fh5te%2BAgpL8IjrjnJz%2F5N2pQKSxHc0JHEN4vfIjdKAAggnK2EeuvzhQJFFXphN84YVbdda3I3Gm13m5SF8ISJiTZByEDEKoyWIQRQ7TBpoUwaN4kHzJNHEASK2yT6uMS9Je4jfk4ZTeXrLkd6ioRqLeUAXrAhz77oWCrbUg0pNK4%2BdQMZeVB31Ut3RGbZ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T213934Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFPOS3NXHU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=44bf41bc0855edade0b7502897c75d4cda743b9cc34dfb60cd3e93bcb542e8e4",
+        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjED0aCXVzLWVhc3QtMSJGMEQCIQDiXvzNgpEAOkroeDVhRvwlDgfF5QIvnURNfbDO8m2PJgIfBVmYri4whwrS4tVRhtmNVRG7FwF0ohbhS8Blg0y7tSrbBAiW%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM6VTBuFY%2F2EkEXJngKq8Ew2%2F%2FzSBBltboaYwouQ0sta7F2oTqGzVow%2FyYy79gQ5WXdbRqgBhN1Fl2VKFvU1f3fvS5mWqN6MCwZuzFTRxfY%2FnL0ATaM0kQ3%2FW8sxh2ZL02QJzerm7fKHd56v9F06Lz6F%2FEgg6fvMLZo5uvwBkmQLvSf3L0%2BCQFWwTCHJuTp4W9q6fFtllPyp%2BVLOKgP0A5P%2FUdsQS%2FMdJKJDk21wqSFwU57KiVh0e7GZhkKakAI5NjP96C%2FGesK%2F4OZ2ZFx5I3N2yY31NfGW2m%2Bi2o7Clrm8e0wWEUc6RNnsACEquyXvUr83lUUFDAwvUTwrtLKfbs0djdRO6c0MMCbdnodd8l7T8N6zNZOBR65y0Wvibb1a5S%2BkXC6ZzhWpU0zUChSkhxdHSIzWnP8Vm3SOaKNT%2Bc1oaAA%2FWcl4RnjVaR48W2fgNjnoMAlvti2oLUe%2FyWq8qlD7a3htAthX1W5N0uWYUztQh7QuRsGmepVq22ghH7nYdrnbP5YSQcaeIMwZv6%2FPzrV5TDgHXRWPvI1fap%2FdUN7kq4JyTLB2g1IfDqw5a%2B0%2FY3RVvfO7FcaUAtZJ7sEtcl5JqH82epFmyQ90HC0popryi74LbB7BpVGjV%2BK0MVnTTg9JM9FvaFXNeycGAA4WEacOi%2Br9ij9BHwpD5lCpz51r%2BY0SaYDwvBXKPLoTWRsAZl%2FyDukS2zSI6ftIS1SjyNRqH0FDvMdhnsh0SR6Vl1VWir0WnWhJRmeiT2St8iuDCAuauXBjqqAQLt5PxPt5mnD89R6zHu6JLswCuzc1AQPkH8W2jxdXm7nMInLFkbT7QfnC79APVWH21bNO59pyHo6dPGev3WEb052jDTWOddQXOV14bYJEf0JmA7ZJ%2FifTCKwumlFOvmlSAtNMTfywcwZvLrcTbmBKi1yqaVGCaX6bbZNJROeBlGm%2FAJzonsHEpM6qrmSMnp4v86NYlL9zpZv%2F9h2QdCjgQeK1yy5e0XTdVP&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T212519Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFH6BVHYTU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=f6b5d831adeead1557fba76d557d0ed320542e0743d9fdb8cdeb526784a54b3f",
         "width": 300,
         "height": 300
       }
@@ -161,8 +161,6 @@
       }
     ],
     "calories": 2871.0704237333985,
-    "totalCO2Emissions": 6909.901780475101,
-    "co2EmissionsClass": "D",
     "totalWeight": 1024.0266570835938,
     "totalTime": 15,
     "cuisineType": [
@@ -278,7 +276,7 @@
       "VITA_RAE": {
         "label": "Vitamin A",
         "quantity": 782.9861583041719,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       "VITC": {
         "label": "Vitamin C",
@@ -308,27 +306,27 @@
       "FOLDFE": {
         "label": "Folate equivalent (total)",
         "quantity": 385.3064709083594,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       "FOLFD": {
         "label": "Folate (food)",
         "quantity": 281.9464709083594,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       "FOLAC": {
         "label": "Folic acid",
         "quantity": 60.8,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       "VITB12": {
         "label": "Vitamin B12",
         "quantity": 8.068237157,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       "VITD": {
         "label": "Vitamin D",
         "quantity": 7.16310844,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       "TOCPHA": {
         "label": "Vitamin E",
@@ -338,7 +336,7 @@
       "VITK1": {
         "label": "Vitamin K",
         "quantity": 73.26893078125157,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       "Sugar.alcohol": {
         "label": "Sugar alcohol",
@@ -661,7 +659,7 @@
         "total": 782.9861583041719,
         "hasRDI": true,
         "daily": 86.99846203379687,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       {
         "label": "Vitamin C",
@@ -715,7 +713,7 @@
         "total": 385.3064709083594,
         "hasRDI": true,
         "daily": 96.32661772708985,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       {
         "label": "Folate (food)",
@@ -724,7 +722,7 @@
         "total": 281.9464709083594,
         "hasRDI": false,
         "daily": 0,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       {
         "label": "Folic acid",
@@ -733,7 +731,7 @@
         "total": 60.8,
         "hasRDI": false,
         "daily": 0,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       {
         "label": "Vitamin B12",
@@ -742,7 +740,7 @@
         "total": 8.068237157,
         "hasRDI": true,
         "daily": 336.1765482083334,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       {
         "label": "Vitamin D",
@@ -751,7 +749,7 @@
         "total": 7.16310844,
         "hasRDI": true,
         "daily": 47.754056266666666,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       {
         "label": "Vitamin E",
@@ -769,7 +767,7 @@
         "total": 73.26893078125157,
         "hasRDI": true,
         "daily": 61.057442317709636,
-        "unit": "Âµg"
+        "unit": "µg"
       },
       {
         "label": "Sugar alcohols",
@@ -793,7 +791,7 @@
   },
   "_links": {
     "self": {
-      "href": "https://api.edamam.com/api/recipes/v2/411161749e90913fc75711030fffef47/411161749e90913fc75711030fffef47?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6&beta=true",
+      "href": "https://api.edamam.com/api/recipes/v2/411161749e90913fc75711030fffef47/411161749e90913fc75711030fffef47?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
       "title": "Self"
     }
   }

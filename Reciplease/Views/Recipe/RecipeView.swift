@@ -11,7 +11,7 @@ struct RecipeView: View {
     var recipe: Recipe = Recipe.mock
     
     var body: some View {
-        VStack {
+        ScrollView {
             RecipeImageView(recipe: recipe)
             Spacer()
             RecipeIngredientsView(recipe: recipe)
