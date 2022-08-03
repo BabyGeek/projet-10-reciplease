@@ -21,7 +21,7 @@ struct RecipeListView: View {
             Spacer()
             VStack(alignment: .leading) {
                 Text(recipe.name)
-                Text(recipe.ingredients)
+                Text(recipe.label)
             }
         }
         .foregroundColor(Color("Text"))

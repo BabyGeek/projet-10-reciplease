@@ -11,7 +11,7 @@ struct RecipeView: View {
     @State var selection: String? = nil
     var recipe: Recipe = Recipe.mock
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             VStack {
                 HStack {
                     Text("\(Image(systemName: "hand.thumbsup.fill")) \(recipe.likes)")
@@ -20,38 +20,56 @@ struct RecipeView: View {
                 }
                 .padding(.top)
                 Spacer()
+                
+                HStack {
+                    Text(recipe.name)
+                        .font(.system(.title))
+                    Spacer()
+                }
             }
             .background(
                 AsyncImage(url: URL(string: recipe.imageURL))
                     .scaledToFit()
-                    .mask(LinearGradient(gradient: Gradient(colors: [.black, .black, .black, .clear]), startPoint: .bottom, endPoint: .top)))
-            .frame(width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.width)
-            
-            Text(recipe.name)
-                .font(.system(.title2))
+                    .mask(
+                        LinearGradient(gradient: Gradient(
+                            colors: [
+                                .black,
+                                .black,
+                                .black,
+                                .clear]
+                        ),
+                                       startPoint: .bottom,
+                                       endPoint: .top)
+                    ))
+            .frame(
+                width: UIScreen.main.bounds.size.width,
+                height: UIScreen.main.bounds.size.width
+            )
             
             VStack(alignment: .leading) {
-                Text("Ingredients")
-                Text(recipe.ingredients)
-                    .padding(.leading)
+                Section("Ingredients") {
+                    ForEach(recipe.ingredientLines, id: \.self) { line in
+                        Text(line)
+                            .padding(.leading)
+                    }
+                }
             }
-            .padding(.top)
             
             Spacer()
             
-                NavigationLink(destination: InstructionView(), tag: "instruction", selection: $selection) {
-                    EmptyView()
-                }
-                
-                Button(action: {
-                    self.selection = "instruction"
-                }, label: {
-                    Text("Show instructions")
-                })
-                .clipShape(Capsule())
-                .buttonStyle(.borderedProminent)
-                .tint(Color("Primary"))
-                .shadow(color: Color("Primary"), radius: 25, x: 3, y: 5)
+            NavigationLink(destination: InstructionView(), tag: "instruction", selection: $selection) {
+                EmptyView()
+            }
+            
+            Button(action: {
+                self.selection = "instruction"
+            }, label: {
+                Text("Show instructions")
+            })
+            .clipShape(Capsule())
+            .buttonStyle(.borderedProminent)
+            .tint(Color("Primary"))
+            .shadow(color: Color("Primary"), radius: 25, x: 3, y: 5)
         }
         .navigationTitle(recipe.name)
         .navigationBarTitleDisplayMode(.inline)
