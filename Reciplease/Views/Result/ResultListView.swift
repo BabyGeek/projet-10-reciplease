@@ -21,7 +21,7 @@ struct ResultListView: View {
         ForEach(recipes.indices, id: \.self) { index in
             let recipe = recipes[index]
             NavigationLink(destination: RecipeView(recipe: recipe), tag: index, selection: $selection) {
-                RecipeListView(recipe: recipe)
+                RecipeRowView(recipe: recipe)
                     .background(
                         AsyncImage(url: URL(string: recipe.imageURL))
                             .scaledToFit()

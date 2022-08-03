@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RecipeListView: View {
+struct RecipeRowView: View {
     var recipe: Recipe = Recipe.mock
     var body: some View {
         VStack(alignment: .leading) {
@@ -33,7 +33,7 @@ struct RecipeListView: View {
 
 struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeListView()
+        RecipeRowView()
             .preferredColorScheme(.dark)
     }
 }
