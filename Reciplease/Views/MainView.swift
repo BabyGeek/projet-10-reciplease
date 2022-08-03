@@ -17,6 +17,15 @@ struct MainView: View {
             .tabItem {
                 Label("Search", systemImage: "magnifyingglass")
             }
+            
+            NavigationView {
+                FavoriteView()
+                    .navigationTitle("Favorites")
+            }
+            .navigationViewStyle(.stack)
+            .tabItem {
+                Label("Favorites", systemImage: "heart")
+            }
 //            NavigationView {
 //                ContentView()
 //                    .navigationTitle("Reciplease")
