@@ -15,7 +15,7 @@ struct Recipe: Identifiable {
     let ingredients: String
     let imageURL: String
     
-    static var mock = Recipe(name: "Pizza", time: 3, likes: 2500, ingredients: "Mozzarella, Basil, Large tomato", imageURL: "")//imageURL: "https://tastykitchen.com/recipes/wp-content/uploads/sites/2/2011/08/IMGP2288-1-410x307.jpg")
+    static var mock = Recipe(name: "Pizza", time: 3, likes: 2500, ingredients: "Mozzarella, Basil, Large tomato", imageURL: "https://tastykitchen.com/recipes/wp-content/uploads/sites/2/2011/08/IMGP2288-1-410x307.jpg")
     
     
     init(name: String, time: Double, likes: Double, ingredients: String, imageURL: String) {

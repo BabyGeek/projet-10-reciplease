@@ -25,9 +25,6 @@ struct RecipeListView: View {
             }
         }
         .foregroundColor(Color("Text"))
-        .background(
-            AsyncImage(url: URL(string: recipe.imageURL))
-        )
     }
 }
 

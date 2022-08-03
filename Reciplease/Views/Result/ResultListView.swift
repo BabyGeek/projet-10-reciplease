@@ -22,9 +22,21 @@ struct ResultListView: View {
             let recipe = recipes[index]
             NavigationLink(destination: RecipeView(recipe: recipe), tag: index, selection: $selection) {
                 RecipeListView(recipe: recipe)
+                    .background(
+                        AsyncImage(url: URL(string: recipe.imageURL)) { image in
+                            image
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(height: 120)
+                                .mask(LinearGradient(gradient: Gradient(colors: [.black, .black, .black, .clear]), startPoint: .top, endPoint: .bottom))
+                        } placeholder: {
+                            ProgressView()
+                        }
+                    )
+                    .padding(.bottom)
             }
         }
-        .listStyle(.plain)
+        .listStyle(.inset)
     }
 }
 
