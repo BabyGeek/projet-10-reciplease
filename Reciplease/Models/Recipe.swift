@@ -10,19 +10,34 @@ import SwiftUI
 struct Recipe: Identifiable {
     let id = UUID()
     let name: String
-    let time: Double
-    let likes: Double
-    let ingredients: String
+    let totalTime: Double
+    let calories: Double
+    let label: String
+    let ingredientLines: [String]
     let imageURL: String
+    let url: String
     
-    static var mock = Recipe(name: "Pizza", time: 3, likes: 2500, ingredients: "Mozzarella, Basil, Large tomato", imageURL: "")//imageURL: "https://tastykitchen.com/recipes/wp-content/uploads/sites/2/2011/08/IMGP2288-1-410x307.jpg")
+    static var mock = Recipe(name: "Pizza", totalTime: 3, calories: 2871.0704237333985, label: "Chorizo, Avocado, and Egg Cemitas with Chipotle Mayonnaise Recipe", ingredientLines: [
+        "1/4 cup mayonnaise",
+        "1 teaspoon fresh lime juice from 1 lime",
+        "1 chipotle pepper in adobo sauce, chopped, plus 1 tablespoon adobo sauce",
+        "12 ounces Mexican chorizo sausage",
+        "2 eggs",
+        "2 large cemita rolls, bolillo rolls, or Kaiser rolls",
+        "2 ounces Oaxacan cheese, or mozzarella, torn into pieces",
+        "1/2 cup shredded iceberg lettuce",
+        "1 small tomato, sliced",
+        "1 avocado, sliced"
+    ], imageURL: "https://static.toiimg.com/thumb/56933159.cms?imgsize=686279&width=509&height=340", url: "http://www.seriouseats.com/recipes/2013/03/chorizo-avocado-egg-cemitas-chipotle-mayonnaise-recipe.html")
     
     
-    init(name: String, time: Double, likes: Double, ingredients: String, imageURL: String) {
+    init(name: String, totalTime: Double, calories: Double, label: String, ingredientLines: [String], imageURL: String, url: String) {
         self.name = name
-        self.time = time
-        self.likes = likes
-        self.ingredients = ingredients
+        self.totalTime = totalTime
+        self.calories = calories
+        self.label = label
+        self.ingredientLines = ingredientLines
         self.imageURL = imageURL
+        self.url = url
     }
 }
