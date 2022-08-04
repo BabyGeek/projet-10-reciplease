@@ -9,6 +9,8 @@ import SwiftUI
 
 struct SearchRecipesButtonView: View {
     @State var selection: String? = nil
+    @EnvironmentObject var viewModel: SearchViewModel
+    
     var body: some View {
         NavigationLink(destination: ResultView(), tag: "result", selection: $selection) {
             EmptyView()
@@ -16,6 +18,7 @@ struct SearchRecipesButtonView: View {
         
         Button(action: {
             self.selection = "result"
+            viewModel.fetchData()
         }, label: {
             Text("Search for recipes")
         })
@@ -30,5 +33,6 @@ struct SearchRecipesButtonView_Previews: PreviewProvider {
     static var previews: some View {
         SearchRecipesButtonView()
             .preferredColorScheme(.dark)
+            .environmentObject(SearchViewModel(service: SearchMockService()))
     }
 }

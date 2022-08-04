@@ -11,13 +11,20 @@ struct RecipeView: View {
     var recipe: Recipe = Recipe.mock
     
     var body: some View {
-        ScrollView {
+        VStack {
             RecipeImageView(recipe: recipe)
+                .frame(
+                    width: UIScreen.main.bounds.size.width,
+                    height: UIScreen.main.bounds.size.width
+                )
             Spacer()
-            RecipeIngredientsView(recipe: recipe)
+            ScrollView(.vertical, showsIndicators: true, content: {
+                RecipeIngredientsView(recipe: recipe)
+            })
+            Spacer()
             RecipeInstructionButtonView(recipe: recipe)
         }
-        .navigationTitle(recipe.name)
+        .navigationTitle(recipe.label)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem {
