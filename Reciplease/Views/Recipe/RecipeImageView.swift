@@ -21,40 +21,43 @@ struct RecipeImageView: View {
             Spacer()
             
             HStack {
-                Text(recipe.name)
-                    .font(.system(.title))
+                Text(recipe.label)
+                    .font(.system(.title3))
+                    .lineLimit(1)
                 Spacer()
             }
         }
         .background(
-            AsyncImage(url: URL(string: recipe.imageURL))
-                .scaledToFit()
-                .mask(
-                    LinearGradient(gradient: Gradient(
-                        colors: [
-                            .black,
-                            .black,
-                            .black,
-                            .clear]
-                    ),
-                                   startPoint: .bottom,
-                                   endPoint: .top)
-                )
-                .mask(
-                    LinearGradient(gradient: Gradient(
-                        colors: [
-                            .black,
-                            .black,
-                            .black,
-                            .clear]
-                    ),
-                                   startPoint: .top,
-                                   endPoint: .bottom)
-                ))
-        .frame(
-            width: UIScreen.main.bounds.size.width,
-            height: UIScreen.main.bounds.size.width
-        )
+            AsyncImage(url: URL(string: recipe.image), content: { image in
+                    image
+                    .scaledToFit()
+                    .mask(
+                        LinearGradient(gradient: Gradient(
+                            colors: [
+                                .black,
+                                .black,
+                                .black,
+                                .clear]
+                        ),
+                                       startPoint: .bottom,
+                                       endPoint: .top)
+                    )
+                    .mask(
+                        LinearGradient(gradient: Gradient(
+                            colors: [
+                                .black,
+                                .black,
+                                .black,
+                                .clear]
+                        ),
+                                       startPoint: .top,
+                                       endPoint: .bottom)
+                    )
+            }, placeholder: {
+                Image("NotFoundImage")
+                    .resizable()
+                    .scaledToFit()
+            }))
     }
 }
 

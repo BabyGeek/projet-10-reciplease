@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ResultView: View {
+    @EnvironmentObject var viewModel: SearchViewModel
+    
     var body: some View {
-        ScrollView {
-            ResultListView()
-        }
+        ScrollView(.vertical, showsIndicators: false, content: {
+            ResultListView(recipes: viewModel.results)
+        })
         .navigationTitle("Results")
         .navigationBarTitleDisplayMode(.inline)
     }

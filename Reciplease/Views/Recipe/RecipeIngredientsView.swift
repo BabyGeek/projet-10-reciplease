@@ -15,7 +15,6 @@ struct RecipeIngredientsView: View {
             Section("Ingredients") {
                 ForEach(recipe.ingredientLines, id: \.self) { line in
                     Text(line)
-                        .padding(.leading)
                 }
             }
         }

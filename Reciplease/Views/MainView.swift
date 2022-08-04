@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct MainView: View {
+    @StateObject var searchViewModel = SearchViewModel(service: SearchService())
+    
     var body: some View {
         TabView {
             NavigationView {
-                ContentView()         .navigationTitle("Reciplease")
+                ContentView()
+                    .navigationTitle("Reciplease")
             }
+            .environmentObject(searchViewModel)
             .navigationViewStyle(.stack)
             .tabItem {
                 Label("Search", systemImage: "magnifyingglass")
@@ -26,14 +30,6 @@ struct MainView: View {
             .tabItem {
                 Label("Favorites", systemImage: "heart")
             }
-//            NavigationView {
-//                ContentView()
-//                    .navigationTitle("Reciplease")
-//            }
-//            .preferredColorScheme(.dark)
-//            .tabItem {
-//                Label("Search", systemImage: "magnifyingglass")
-//            }
             
         }
     }

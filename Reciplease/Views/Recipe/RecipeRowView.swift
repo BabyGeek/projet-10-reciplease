@@ -18,16 +18,22 @@ struct RecipeRowView: View {
             }
             Spacer()
             VStack(alignment: .leading) {
-                Text(recipe.name)
-                    .font(.title3)
                 Text(recipe.label)
                     .font(.subheadline)
                     .lineLimit(1)
             }
         }
         .foregroundColor(Color("Text"))
-        .padding(.horizontal)
-        .frame(height: 180)
+        .frame(height: 200)
+        .background(
+            AsyncImage(url: URL(string: recipe.image), content: {
+                image in
+                image
+                    .resizable()
+                    .frame(height: 120)
+            }, placeholder: {
+                ProgressView()
+            }))
     }
 }
 

@@ -22,21 +22,6 @@ struct FavoriteListView: View {
             let recipe = favorites[index]
             NavigationLink(destination: RecipeView(recipe: recipe), tag: index, selection: $selection) {
                 RecipeRowView(recipe: recipe)
-                    .background(
-                        AsyncImage(url: URL(string: recipe.imageURL))
-                            .scaledToFit()
-                            .frame(height: 150)
-                            .mask(
-                                LinearGradient(gradient: Gradient(
-                                    colors: [
-                                        .clear,
-                                        .black,
-                                        .clear
-                                    ]
-                                ),
-                                               startPoint: .top,
-                                               endPoint: .bottom)
-                            ))
             }
             
             Divider()
