@@ -24,7 +24,7 @@ struct RecipeView: View {
                 Button {
                     //
                 } label: {
-                    Image(systemName: "star")
+                    Image(systemName: recipe.isFavorite ? "star.fill" : "star")
                 }
                 
             }

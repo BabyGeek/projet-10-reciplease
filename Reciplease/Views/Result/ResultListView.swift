@@ -14,9 +14,9 @@ struct ResultListView: View {
         Recipe.mock,
         Recipe.mock
     ]
-
+    
     @State var selection: Int? = -1
-
+    
     var body: some View {
         ForEach(recipes.indices, id: \.self) { index in
             let recipe = recipes[index]
@@ -37,8 +37,10 @@ struct ResultListView: View {
                                                startPoint: .top,
                                                endPoint: .bottom)
                             ))
-                    .padding(.bottom)
             }
+            
+            Divider()
+                .padding()
         }
     }
 }

@@ -9,10 +9,10 @@ import SwiftUI
 
 struct FavoriteListView: View {
     var favorites = [
-        Recipe.mock,
-        Recipe.mock,
-        Recipe.mock,
-        Recipe.mock
+        Recipe.mockFavorite,
+        Recipe.mockFavorite,
+        Recipe.mockFavorite,
+        Recipe.mockFavorite
     ]
 
     @State var selection: Int? = -1
@@ -37,8 +37,10 @@ struct FavoriteListView: View {
                                                startPoint: .top,
                                                endPoint: .bottom)
                             ))
-                    .padding(.bottom)
             }
+            
+            Divider()
+                .padding()
         }
     }
 }
