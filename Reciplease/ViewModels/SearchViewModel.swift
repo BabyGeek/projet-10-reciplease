@@ -8,6 +8,7 @@
 import Foundation
 
 class SearchViewModel: ObservableObject {
+    
     @Published var results: [Recipe] = []
     @Published var search: String? = "Eggs tomato avocado"
     

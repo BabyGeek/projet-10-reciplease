@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct CardAddAlimentView: View {
+struct CardAddIngredientView: View {
+    @EnvironmentObject var viewModel: SearchViewModel
     @State var ingredient = ""
     
     var body: some View {
@@ -45,6 +46,6 @@ struct CardAddAlimentView: View {
 
 struct CardAddAlimentView_Previews: PreviewProvider {
     static var previews: some View {
-        CardAddAlimentView()
+        CardAddIngredientView()
     }
 }

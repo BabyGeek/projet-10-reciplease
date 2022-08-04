@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardListIngredientsView: View {
+    @EnvironmentObject var viewModel: SearchViewModel
     var ingredients = [
         Ingredient(name: "Egg"),
         Ingredient(name: "Tomato"),

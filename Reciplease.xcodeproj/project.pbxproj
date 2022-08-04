@@ -31,7 +31,7 @@
 		2B744F92289BCF2A00CA3E72 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2B744F91289BCF2A00CA3E72 /* Alamofire */; };
 		2B744F95289BDAC300CA3E72 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B744F94289BDAC300CA3E72 /* SearchViewModel.swift */; };
 		2B75A77528972B8700B0FE88 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75A77428972B8700B0FE88 /* Ingredient.swift */; };
-		2B75A7772897306E00B0FE88 /* CardAddAlimentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75A7762897306E00B0FE88 /* CardAddAlimentView.swift */; };
+		2B75A7772897306E00B0FE88 /* CardAddIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75A7762897306E00B0FE88 /* CardAddIngredientView.swift */; };
 		2B75A7792897327600B0FE88 /* CardListIngredientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75A7782897327600B0FE88 /* CardListIngredientsView.swift */; };
 		2BD273B52898500A005F090F /* SearchRecipesButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD273B42898500A005F090F /* SearchRecipesButtonView.swift */; };
 		2BD273BE289866D0005F090F /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75A77428972B8700B0FE88 /* Ingredient.swift */; };
@@ -81,7 +81,7 @@
 		2B4E0BCF289C6974000C78A8 /* RecipeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeResponse.swift; sourceTree = "<group>"; };
 		2B744F94289BDAC300CA3E72 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		2B75A77428972B8700B0FE88 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
-		2B75A7762897306E00B0FE88 /* CardAddAlimentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAddAlimentView.swift; sourceTree = "<group>"; };
+		2B75A7762897306E00B0FE88 /* CardAddIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAddIngredientView.swift; sourceTree = "<group>"; };
 		2B75A7782897327600B0FE88 /* CardListIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListIngredientsView.swift; sourceTree = "<group>"; };
 		2BD273B42898500A005F090F /* SearchRecipesButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipesButtonView.swift; sourceTree = "<group>"; };
 		2BE99B022897171A00162E6B /* Reciplease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciplease.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,7 +148,7 @@
 				2BE99B072897171A00162E6B /* ContentView.swift */,
 				2BD273B42898500A005F090F /* SearchRecipesButtonView.swift */,
 				2B75A7782897327600B0FE88 /* CardListIngredientsView.swift */,
-				2B75A7762897306E00B0FE88 /* CardAddAlimentView.swift */,
+				2B75A7762897306E00B0FE88 /* CardAddIngredientView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -441,7 +441,7 @@
 				2B4E0BC7289C358E000C78A8 /* SearchResponse.swift in Sources */,
 				2B4AC53F2899B92300CC817E /* ResultView.swift in Sources */,
 				2B75A77528972B8700B0FE88 /* Ingredient.swift in Sources */,
-				2B75A7772897306E00B0FE88 /* CardAddAlimentView.swift in Sources */,
+				2B75A7772897306E00B0FE88 /* CardAddIngredientView.swift in Sources */,
 				2B4E0BC4289C33BF000C78A8 /* SearchService.swift in Sources */,
 				2B4AC5452899BA5B00CC817E /* Recipe.swift in Sources */,
 			);
