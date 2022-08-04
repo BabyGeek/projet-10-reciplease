@@ -1,800 +1,850 @@
 {
-  "recipe": {
-    "uri": "http://www.edamam.com/ontologies/edamam.owl#recipe_411161749e90913fc75711030fffef47",
-    "label": "Chorizo, Avocado, and Egg Cemitas with Chipotle Mayonnaise Recipe",
-    "image": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDwaCXVzLWVhc3QtMSJGMEQCIG3gUvLljW6%2FvfPZe53y0nOl9l7OvW2OWdKSiLkGeZhtAiAsUs3TFImew1jjTC%2BYRo0SS4iB7%2FcJI6QpZWapsn2GlCrbBAiV%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2BmAg6oW%2FOggxwKPYKq8EZq40niSU2AskiAWPr5r3QR7j6nAtKyM8l3W5aSBHooakDZaewJolqv6oW9NKnXVH6VCfiQJa%2B86VTnXDMM0qvXpVsyj9Yq1NDHEV5tQybKeCKNSorhE1g%2BPR58cXPUpVN4SNwSNu4eHZ6Wg3hrl6a%2F4CB6x7YgPeFysEqxLQ6tPOeVZhSlmzcoSfmOSS7%2BQqPrWE38toGZ3szk4yfY6YH%2FgeiE85v9xYdHJio4BDPPnuw94DUiCrCGEatYBYBK665q%2F0wC%2BRt4mIwTSPuX22hzi7VrfwfjkCgXso9YOXJaY8lhX%2Bp1j%2F%2BZnJIYF%2FacptfpTxa0MkYatAALqIvXcKrHmuvrk06%2B8vXMokAgly0gjPTxRGfBBhCe%2BM%2BFzs%2Bds%2BAIb2mFK29jkjHYq3kw2JozrLBhKmvef45boQQrWxpcOReGqaomQp0Ou6%2FGFU1bqza9nu0%2FQAaDfyOBhAYE4JNh09JPg2%2BMiBKxwJ14TIbbYc%2Bi0ENveacUFX%2FXAlZF7iqIfcRuCPK1xpWzG%2FHje4jPIvOS8lA4yJy0J1X45v9EwJzS3ewYy2QDtHBmKSfE5bWi7qkqWxD33uFAun67wtNBVXav9EU8KJsePTu378ePpxvi0G1i7VI5ONjOqRsvriUaSlX%2BSsgu39ZXd2jiQXWpWFvQQJLtWiQs9QsxV3oVyoINXG46n1uu3KZAwAcAaFcD8RJYEuz1sEPWp9Izyif30lGbXyRUJ5bTCbp0zCmTC5pauXBjqqAZTBQ6IovouXcoFKDSO7ugdTkDWDbbUnBSpfluD%2Fh5te%2BAgpL8IjrjnJz%2F5N2pQKSxHc0JHEN4vfIjdKAAggnK2EeuvzhQJFFXphN84YVbdda3I3Gm13m5SF8ISJiTZByEDEKoyWIQRQ7TBpoUwaN4kHzJNHEASK2yT6uMS9Je4jfk4ZTeXrLkd6ioRqLeUAXrAhz77oWCrbUg0pNK4%2BdQMZeVB31Ut3RGbZ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T213934Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFPOS3NXHU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=44bf41bc0855edade0b7502897c75d4cda743b9cc34dfb60cd3e93bcb542e8e4",
-    "images": {
-      "THUMBNAIL": {
-        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a-s.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDwaCXVzLWVhc3QtMSJGMEQCIG3gUvLljW6%2FvfPZe53y0nOl9l7OvW2OWdKSiLkGeZhtAiAsUs3TFImew1jjTC%2BYRo0SS4iB7%2FcJI6QpZWapsn2GlCrbBAiV%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2BmAg6oW%2FOggxwKPYKq8EZq40niSU2AskiAWPr5r3QR7j6nAtKyM8l3W5aSBHooakDZaewJolqv6oW9NKnXVH6VCfiQJa%2B86VTnXDMM0qvXpVsyj9Yq1NDHEV5tQybKeCKNSorhE1g%2BPR58cXPUpVN4SNwSNu4eHZ6Wg3hrl6a%2F4CB6x7YgPeFysEqxLQ6tPOeVZhSlmzcoSfmOSS7%2BQqPrWE38toGZ3szk4yfY6YH%2FgeiE85v9xYdHJio4BDPPnuw94DUiCrCGEatYBYBK665q%2F0wC%2BRt4mIwTSPuX22hzi7VrfwfjkCgXso9YOXJaY8lhX%2Bp1j%2F%2BZnJIYF%2FacptfpTxa0MkYatAALqIvXcKrHmuvrk06%2B8vXMokAgly0gjPTxRGfBBhCe%2BM%2BFzs%2Bds%2BAIb2mFK29jkjHYq3kw2JozrLBhKmvef45boQQrWxpcOReGqaomQp0Ou6%2FGFU1bqza9nu0%2FQAaDfyOBhAYE4JNh09JPg2%2BMiBKxwJ14TIbbYc%2Bi0ENveacUFX%2FXAlZF7iqIfcRuCPK1xpWzG%2FHje4jPIvOS8lA4yJy0J1X45v9EwJzS3ewYy2QDtHBmKSfE5bWi7qkqWxD33uFAun67wtNBVXav9EU8KJsePTu378ePpxvi0G1i7VI5ONjOqRsvriUaSlX%2BSsgu39ZXd2jiQXWpWFvQQJLtWiQs9QsxV3oVyoINXG46n1uu3KZAwAcAaFcD8RJYEuz1sEPWp9Izyif30lGbXyRUJ5bTCbp0zCmTC5pauXBjqqAZTBQ6IovouXcoFKDSO7ugdTkDWDbbUnBSpfluD%2Fh5te%2BAgpL8IjrjnJz%2F5N2pQKSxHc0JHEN4vfIjdKAAggnK2EeuvzhQJFFXphN84YVbdda3I3Gm13m5SF8ISJiTZByEDEKoyWIQRQ7TBpoUwaN4kHzJNHEASK2yT6uMS9Je4jfk4ZTeXrLkd6ioRqLeUAXrAhz77oWCrbUg0pNK4%2BdQMZeVB31Ut3RGbZ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T213934Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFPOS3NXHU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=140621e2cce6e264415164386ca1644b38b98cb3b9506534cb51a18f995223e0",
-        "width": 100,
-        "height": 100
-      },
-      "SMALL": {
-        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a-m.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDwaCXVzLWVhc3QtMSJGMEQCIG3gUvLljW6%2FvfPZe53y0nOl9l7OvW2OWdKSiLkGeZhtAiAsUs3TFImew1jjTC%2BYRo0SS4iB7%2FcJI6QpZWapsn2GlCrbBAiV%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2BmAg6oW%2FOggxwKPYKq8EZq40niSU2AskiAWPr5r3QR7j6nAtKyM8l3W5aSBHooakDZaewJolqv6oW9NKnXVH6VCfiQJa%2B86VTnXDMM0qvXpVsyj9Yq1NDHEV5tQybKeCKNSorhE1g%2BPR58cXPUpVN4SNwSNu4eHZ6Wg3hrl6a%2F4CB6x7YgPeFysEqxLQ6tPOeVZhSlmzcoSfmOSS7%2BQqPrWE38toGZ3szk4yfY6YH%2FgeiE85v9xYdHJio4BDPPnuw94DUiCrCGEatYBYBK665q%2F0wC%2BRt4mIwTSPuX22hzi7VrfwfjkCgXso9YOXJaY8lhX%2Bp1j%2F%2BZnJIYF%2FacptfpTxa0MkYatAALqIvXcKrHmuvrk06%2B8vXMokAgly0gjPTxRGfBBhCe%2BM%2BFzs%2Bds%2BAIb2mFK29jkjHYq3kw2JozrLBhKmvef45boQQrWxpcOReGqaomQp0Ou6%2FGFU1bqza9nu0%2FQAaDfyOBhAYE4JNh09JPg2%2BMiBKxwJ14TIbbYc%2Bi0ENveacUFX%2FXAlZF7iqIfcRuCPK1xpWzG%2FHje4jPIvOS8lA4yJy0J1X45v9EwJzS3ewYy2QDtHBmKSfE5bWi7qkqWxD33uFAun67wtNBVXav9EU8KJsePTu378ePpxvi0G1i7VI5ONjOqRsvriUaSlX%2BSsgu39ZXd2jiQXWpWFvQQJLtWiQs9QsxV3oVyoINXG46n1uu3KZAwAcAaFcD8RJYEuz1sEPWp9Izyif30lGbXyRUJ5bTCbp0zCmTC5pauXBjqqAZTBQ6IovouXcoFKDSO7ugdTkDWDbbUnBSpfluD%2Fh5te%2BAgpL8IjrjnJz%2F5N2pQKSxHc0JHEN4vfIjdKAAggnK2EeuvzhQJFFXphN84YVbdda3I3Gm13m5SF8ISJiTZByEDEKoyWIQRQ7TBpoUwaN4kHzJNHEASK2yT6uMS9Je4jfk4ZTeXrLkd6ioRqLeUAXrAhz77oWCrbUg0pNK4%2BdQMZeVB31Ut3RGbZ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T213934Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFPOS3NXHU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=be3c6f3be7ddb7c5edeb99337c9f284493d0be183e14bec8d328950cc1d3ffeb",
-        "width": 200,
-        "height": 200
-      },
-      "REGULAR": {
-        "url": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEDwaCXVzLWVhc3QtMSJGMEQCIG3gUvLljW6%2FvfPZe53y0nOl9l7OvW2OWdKSiLkGeZhtAiAsUs3TFImew1jjTC%2BYRo0SS4iB7%2FcJI6QpZWapsn2GlCrbBAiV%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2BmAg6oW%2FOggxwKPYKq8EZq40niSU2AskiAWPr5r3QR7j6nAtKyM8l3W5aSBHooakDZaewJolqv6oW9NKnXVH6VCfiQJa%2B86VTnXDMM0qvXpVsyj9Yq1NDHEV5tQybKeCKNSorhE1g%2BPR58cXPUpVN4SNwSNu4eHZ6Wg3hrl6a%2F4CB6x7YgPeFysEqxLQ6tPOeVZhSlmzcoSfmOSS7%2BQqPrWE38toGZ3szk4yfY6YH%2FgeiE85v9xYdHJio4BDPPnuw94DUiCrCGEatYBYBK665q%2F0wC%2BRt4mIwTSPuX22hzi7VrfwfjkCgXso9YOXJaY8lhX%2Bp1j%2F%2BZnJIYF%2FacptfpTxa0MkYatAALqIvXcKrHmuvrk06%2B8vXMokAgly0gjPTxRGfBBhCe%2BM%2BFzs%2Bds%2BAIb2mFK29jkjHYq3kw2JozrLBhKmvef45boQQrWxpcOReGqaomQp0Ou6%2FGFU1bqza9nu0%2FQAaDfyOBhAYE4JNh09JPg2%2BMiBKxwJ14TIbbYc%2Bi0ENveacUFX%2FXAlZF7iqIfcRuCPK1xpWzG%2FHje4jPIvOS8lA4yJy0J1X45v9EwJzS3ewYy2QDtHBmKSfE5bWi7qkqWxD33uFAun67wtNBVXav9EU8KJsePTu378ePpxvi0G1i7VI5ONjOqRsvriUaSlX%2BSsgu39ZXd2jiQXWpWFvQQJLtWiQs9QsxV3oVyoINXG46n1uu3KZAwAcAaFcD8RJYEuz1sEPWp9Izyif30lGbXyRUJ5bTCbp0zCmTC5pauXBjqqAZTBQ6IovouXcoFKDSO7ugdTkDWDbbUnBSpfluD%2Fh5te%2BAgpL8IjrjnJz%2F5N2pQKSxHc0JHEN4vfIjdKAAggnK2EeuvzhQJFFXphN84YVbdda3I3Gm13m5SF8ISJiTZByEDEKoyWIQRQ7TBpoUwaN4kHzJNHEASK2yT6uMS9Je4jfk4ZTeXrLkd6ioRqLeUAXrAhz77oWCrbUg0pNK4%2BdQMZeVB31Ut3RGbZ&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220803T213934Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFPOS3NXHU%2F20220803%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=44bf41bc0855edade0b7502897c75d4cda743b9cc34dfb60cd3e93bcb542e8e4",
-        "width": 300,
-        "height": 300
-      }
-    },
-    "source": "Serious Eats",
-    "url": "http://www.seriouseats.com/recipes/2013/03/chorizo-avocado-egg-cemitas-chipotle-mayonnaise-recipe.html",
-    "shareAs": "http://www.edamam.com/recipe/chorizo-avocado-and-egg-cemitas-with-chipotle-mayonnaise-recipe-411161749e90913fc75711030fffef47/-",
-    "yield": 12,
-    "dietLabels": [
-      "Low-Carb"
-    ],
-    "healthLabels": [
-      "Sugar-Conscious",
-      "Keto-Friendly",
-      "Peanut-Free",
-      "Tree-Nut-Free",
-      "Soy-Free",
-      "Fish-Free",
-      "Shellfish-Free",
-      "Crustacean-Free",
-      "Celery-Free",
-      "Sesame-Free",
-      "Lupine-Free",
-      "Mollusk-Free",
-      "Alcohol-Free",
-      "Sulfite-Free"
-    ],
-    "cautions": [
-      "Sulfites"
-    ],
-    "ingredientLines": [
-      "1/4 cup mayonnaise",
-      "1 teaspoon fresh lime juice from 1 lime",
-      "1 chipotle pepper in adobo sauce, chopped, plus 1 tablespoon adobo sauce",
-      "12 ounces Mexican chorizo sausage",
-      "2 eggs",
-      "2 large cemita rolls, bolillo rolls, or Kaiser rolls",
-      "2 ounces Oaxacan cheese, or mozzarella, torn into pieces",
-      "1/2 cup shredded iceberg lettuce",
-      "1 small tomato, sliced",
-      "1 avocado, sliced"
-    ],
-    "ingredients": [
-      {
-        "text": "1/4 cup mayonnaise",
-        "quantity": 0.25,
-        "measure": "cup",
-        "food": "mayonnaise",
-        "weight": 57.75,
-        "foodCategory": "condiments and sauces",
-        "foodId": "food_bu8t61zaplle7dbrzk81dbygq0qj",
-        "image": "https://www.edamam.com/food-img/577/577308a0422357885c94cc9b5f1f1862.jpg"
-      },
-      {
-        "text": "1 teaspoon fresh lime juice from 1 lime",
-        "quantity": 1,
-        "measure": "teaspoon",
-        "food": "lime juice",
-        "weight": 5.1333333335937015,
-        "foodCategory": "fruit",
-        "foodId": "food_b0iywbmaujvd4eblrooo9bsvn7e6",
-        "image": "https://www.edamam.com/food-img/8f0/8f0c10eb3dbf476a05e61018e76ea220.jpg"
-      },
-      {
-        "text": "1 chipotle pepper in adobo sauce, chopped, plus 1 tablespoon adobo sauce",
-        "quantity": 1,
-        "measure": "<unit>",
-        "food": "chipotle pepper in adobo",
-        "weight": 73,
-        "foodCategory": "canned vegetables",
-        "foodId": "food_bumzpysb5k05cibmscqp2a0fwgpa",
-        "image": "https://www.edamam.com/food-img/c34/c343c40fbfe50bd72bbb3890c83a4315.jpeg"
-      },
-      {
-        "text": "12 ounces Mexican chorizo sausage",
-        "quantity": 12,
-        "measure": "ounce",
-        "food": "chorizo",
-        "weight": 340.1942775,
-        "foodCategory": "Cured meats",
-        "foodId": "food_a011ctbbqlxv1ebqtemvla9v6mpa",
-        "image": "https://www.edamam.com/food-img/c01/c0139ae7ad8a0334a23365b6284a5819.jpg"
-      },
-      {
-        "text": "2 eggs",
-        "quantity": 2,
-        "measure": "<unit>",
-        "food": "eggs",
-        "weight": 86,
-        "foodCategory": "Eggs",
-        "foodId": "food_bhpradua77pk16aipcvzeayg732r",
-        "image": "https://www.edamam.com/food-img/a7e/a7ec7c337cb47c6550b3b118e357f077.jpg"
-      },
-      {
-        "text": "2 large cemita rolls, bolillo rolls, or Kaiser rolls",
-        "quantity": 2,
-        "measure": "roll",
-        "food": "bolillo rolls",
-        "weight": 76,
-        "foodCategory": "bread, rolls and tortillas",
-        "foodId": "food_bjgi1gya7g98bva7qbz2ebwmd5we",
-        "image": "https://www.edamam.com/food-img/889/889777c512071dc12fab0721bb871905.jpg"
-      },
-      {
-        "text": "2 ounces Oaxacan cheese, or mozzarella, torn into pieces",
-        "quantity": 2,
-        "measure": "ounce",
-        "food": "cheese",
-        "weight": 56.69904625,
-        "foodCategory": "Cheese",
-        "foodId": "food_bhppgmha1u27voagb8eptbp9g376",
-        "image": "https://www.edamam.com/food-img/bcd/bcd94dde1fcde1475b5bf0540f821c5d.jpg"
-      },
-      {
-        "text": "1/2 cup shredded iceberg lettuce",
-        "quantity": 0.5,
-        "measure": "cup",
-        "food": "iceberg lettuce",
-        "weight": 36,
-        "foodCategory": "vegetables",
-        "foodId": "food_advhqk1a09o2noblosrg6a4z10xv",
-        "image": "https://www.edamam.com/food-img/3c0/3c00c5ba27678b2f8e1c58b342bd98c7.jpg"
-      },
-      {
-        "text": "1 small tomato, sliced",
-        "quantity": 1,
-        "measure": "<unit>",
-        "food": "tomato",
-        "weight": 92.25,
-        "foodCategory": "vegetables",
-        "foodId": "food_a6k79rrahp8fe2b26zussa3wtkqh",
-        "image": "https://www.edamam.com/food-img/23e/23e727a14f1035bdc2733bb0477efbd2.jpg"
-      },
-      {
-        "text": "1 avocado, sliced",
-        "quantity": 1,
-        "measure": "<unit>",
-        "food": "avocado",
-        "weight": 201,
-        "foodCategory": "fruit",
-        "foodId": "food_b0yuze4b1g3afpanijno5abtiu28",
-        "image": "https://www.edamam.com/food-img/984/984a707ea8e9c6bf5f6498970a9e6d9d.jpg"
-      }
-    ],
-    "calories": 2871.0704237333985,
-    "totalCO2Emissions": 6909.901780475101,
-    "co2EmissionsClass": "D",
-    "totalWeight": 1024.0266570835938,
-    "totalTime": 15,
-    "cuisineType": [
-      "mediterranean"
-    ],
-    "mealType": [
-      "lunch/dinner"
-    ],
-    "dishType": [
-      "sandwiches"
-    ],
-    "totalNutrients": {
-      "ENERC_KCAL": {
-        "label": "Energy",
-        "quantity": 2871.0704237333985,
-        "unit": "kcal"
-      },
-      "FAT": {
-        "label": "Fat",
-        "quantity": 235.0601607743335,
-        "unit": "g"
-      },
-      "FASAT": {
-        "label": "Saturated",
-        "quantity": 74.2754190488667,
-        "unit": "g"
-      },
-      "FATRN": {
-        "label": "Trans",
-        "quantity": 0.7011617552875001,
-        "unit": "g"
-      },
-      "FAMS": {
-        "label": "Monounsaturated",
-        "quantity": 102.88787084461671,
-        "unit": "g"
-      },
-      "FAPU": {
-        "label": "Polyunsaturated",
-        "quantity": 45.33571750092923,
-        "unit": "g"
-      },
-      "CHOCDF": {
-        "label": "Carbs",
-        "quantity": 71.81116254331359,
-        "unit": "g"
-      },
-      "CHOCDF.net": {
-        "label": "Carbohydrates (net)",
-        "quantity": 0,
-        "unit": "g"
-      },
-      "FIBTG": {
-        "label": "Fiber",
-        "quantity": 18.407533333334378,
-        "unit": "g"
-      },
-      "SUGAR": {
-        "label": "Sugars",
-        "quantity": 7.6848856628377336,
-        "unit": "g"
-      },
-      "SUGAR.added": {
-        "label": "Sugars, added",
-        "quantity": 0,
-        "unit": "g"
-      },
-      "PROCNT": {
-        "label": "Protein",
-        "quantity": 118.78923159600112,
-        "unit": "g"
-      },
-      "CHOLE": {
-        "label": "Cholesterol",
-        "quantity": 699.646491375,
-        "unit": "mg"
-      },
-      "NA": {
-        "label": "Sodium",
-        "quantity": 6336.7938516416725,
-        "unit": "mg"
-      },
-      "CA": {
-        "label": "Calcium",
-        "quantity": 572.9077710542032,
-        "unit": "mg"
-      },
-      "MG": {
-        "label": "Magnesium",
-        "quantity": 183.65187910418751,
-        "unit": "mg"
-      },
-      "K": {
-        "label": "Potassium",
-        "quantity": 2989.142999600305,
-        "unit": "mg"
-      },
-      "FE": {
-        "label": "Iron",
-        "quantity": 10.936202486250238,
-        "unit": "mg"
-      },
-      "ZN": {
-        "label": "Zinc",
-        "quantity": 16.964233815791875,
-        "unit": "mg"
-      },
-      "P": {
-        "label": "Phosphorus",
-        "quantity": 1159.5865716792034,
-        "unit": "mg"
-      },
-      "VITA_RAE": {
-        "label": "Vitamin A",
-        "quantity": 782.9861583041719,
-        "unit": "Âµg"
-      },
-      "VITC": {
-        "label": "Vitamin C",
-        "quantity": 84.92625000007811,
-        "unit": "mg"
-      },
-      "THIA": {
-        "label": "Thiamin (B1)",
-        "quantity": 2.7898585240708984,
-        "unit": "mg"
-      },
-      "RIBF": {
-        "label": "Riboflavin (B2)",
-        "quantity": 2.2127741932250387,
-        "unit": "mg"
-      },
-      "NIA": {
-        "label": "Niacin (B3)",
-        "quantity": 25.52641533989621,
-        "unit": "mg"
-      },
-      "VITB6A": {
-        "label": "Vitamin B6",
-        "quantity": 2.725782870079266,
-        "unit": "mg"
-      },
-      "FOLDFE": {
-        "label": "Folate equivalent (total)",
-        "quantity": 385.3064709083594,
-        "unit": "Âµg"
-      },
-      "FOLFD": {
-        "label": "Folate (food)",
-        "quantity": 281.9464709083594,
-        "unit": "Âµg"
-      },
-      "FOLAC": {
-        "label": "Folic acid",
-        "quantity": 60.8,
-        "unit": "Âµg"
-      },
-      "VITB12": {
-        "label": "Vitamin B12",
-        "quantity": 8.068237157,
-        "unit": "Âµg"
-      },
-      "VITD": {
-        "label": "Vitamin D",
-        "quantity": 7.16310844,
-        "unit": "Âµg"
-      },
-      "TOCPHA": {
-        "label": "Vitamin E",
-        "quantity": 7.560323304583906,
-        "unit": "mg"
-      },
-      "VITK1": {
-        "label": "Vitamin K",
-        "quantity": 73.26893078125157,
-        "unit": "Âµg"
-      },
-      "Sugar.alcohol": {
-        "label": "Sugar alcohol",
-        "quantity": 0,
-        "unit": "g"
-      },
-      "WATER": {
-        "label": "Water",
-        "quantity": 562.3271768760698,
-        "unit": "g"
-      }
-    },
-    "totalDaily": {
-      "ENERC_KCAL": {
-        "label": "Energy",
-        "quantity": 143.5535211866699,
-        "unit": "%"
-      },
-      "FAT": {
-        "label": "Fat",
-        "quantity": 361.63101657589766,
-        "unit": "%"
-      },
-      "FASAT": {
-        "label": "Saturated",
-        "quantity": 371.3770952443335,
-        "unit": "%"
-      },
-      "CHOCDF": {
-        "label": "Carbs",
-        "quantity": 23.93705418110453,
-        "unit": "%"
-      },
-      "FIBTG": {
-        "label": "Fiber",
-        "quantity": 73.63013333333751,
-        "unit": "%"
-      },
-      "PROCNT": {
-        "label": "Protein",
-        "quantity": 237.57846319200223,
-        "unit": "%"
-      },
-      "CHOLE": {
-        "label": "Cholesterol",
-        "quantity": 233.215497125,
-        "unit": "%"
-      },
-      "NA": {
-        "label": "Sodium",
-        "quantity": 264.03307715173634,
-        "unit": "%"
-      },
-      "CA": {
-        "label": "Calcium",
-        "quantity": 57.29077710542032,
-        "unit": "%"
-      },
-      "MG": {
-        "label": "Magnesium",
-        "quantity": 43.72663788194941,
-        "unit": "%"
-      },
-      "K": {
-        "label": "Potassium",
-        "quantity": 63.5987872255384,
-        "unit": "%"
-      },
-      "FE": {
-        "label": "Iron",
-        "quantity": 60.75668047916799,
-        "unit": "%"
-      },
-      "ZN": {
-        "label": "Zinc",
-        "quantity": 154.22030741628976,
-        "unit": "%"
-      },
-      "P": {
-        "label": "Phosphorus",
-        "quantity": 165.6552245256005,
-        "unit": "%"
-      },
-      "VITA_RAE": {
-        "label": "Vitamin A",
-        "quantity": 86.99846203379687,
-        "unit": "%"
-      },
-      "VITC": {
-        "label": "Vitamin C",
-        "quantity": 94.36250000008678,
-        "unit": "%"
-      },
-      "THIA": {
-        "label": "Thiamin (B1)",
-        "quantity": 232.48821033924156,
-        "unit": "%"
-      },
-      "RIBF": {
-        "label": "Riboflavin (B2)",
-        "quantity": 170.21339947884914,
-        "unit": "%"
-      },
-      "NIA": {
-        "label": "Niacin (B3)",
-        "quantity": 159.54009587435132,
-        "unit": "%"
-      },
-      "VITB6A": {
-        "label": "Vitamin B6",
-        "quantity": 209.67560539071278,
-        "unit": "%"
-      },
-      "FOLDFE": {
-        "label": "Folate equivalent (total)",
-        "quantity": 96.32661772708985,
-        "unit": "%"
-      },
-      "VITB12": {
-        "label": "Vitamin B12",
-        "quantity": 336.1765482083334,
-        "unit": "%"
-      },
-      "VITD": {
-        "label": "Vitamin D",
-        "quantity": 47.754056266666666,
-        "unit": "%"
-      },
-      "TOCPHA": {
-        "label": "Vitamin E",
-        "quantity": 50.4021553638927,
-        "unit": "%"
-      },
-      "VITK1": {
-        "label": "Vitamin K",
-        "quantity": 61.057442317709636,
-        "unit": "%"
-      }
-    },
-    "digest": [
-      {
-        "label": "Fat",
-        "tag": "FAT",
-        "schemaOrgTag": "fatContent",
-        "total": 235.0601607743335,
-        "hasRDI": true,
-        "daily": 361.63101657589766,
-        "unit": "g",
-        "sub": [
-          {
-            "label": "Saturated",
-            "tag": "FASAT",
-            "schemaOrgTag": "saturatedFatContent",
-            "total": 74.2754190488667,
-            "hasRDI": true,
-            "daily": 371.3770952443335,
-            "unit": "g"
-          },
-          {
-            "label": "Trans",
-            "tag": "FATRN",
-            "schemaOrgTag": "transFatContent",
-            "total": 0.7011617552875001,
-            "hasRDI": false,
-            "daily": 0,
-            "unit": "g"
-          },
-          {
-            "label": "Monounsaturated",
-            "tag": "FAMS",
-            "schemaOrgTag": null,
-            "total": 102.88787084461671,
-            "hasRDI": false,
-            "daily": 0,
-            "unit": "g"
-          },
-          {
-            "label": "Polyunsaturated",
-            "tag": "FAPU",
-            "schemaOrgTag": null,
-            "total": 45.33571750092923,
-            "hasRDI": false,
-            "daily": 0,
-            "unit": "g"
-          }
-        ]
-      },
-      {
-        "label": "Carbs",
-        "tag": "CHOCDF",
-        "schemaOrgTag": "carbohydrateContent",
-        "total": 71.81116254331359,
-        "hasRDI": true,
-        "daily": 23.93705418110453,
-        "unit": "g",
-        "sub": [
-          {
-            "label": "Carbs (net)",
-            "tag": "CHOCDF.net",
-            "schemaOrgTag": null,
-            "total": 0,
-            "hasRDI": false,
-            "daily": 0,
-            "unit": "g"
-          },
-          {
-            "label": "Fiber",
-            "tag": "FIBTG",
-            "schemaOrgTag": "fiberContent",
-            "total": 18.407533333334378,
-            "hasRDI": true,
-            "daily": 73.63013333333751,
-            "unit": "g"
-          },
-          {
-            "label": "Sugars",
-            "tag": "SUGAR",
-            "schemaOrgTag": "sugarContent",
-            "total": 7.6848856628377336,
-            "hasRDI": false,
-            "daily": 0,
-            "unit": "g"
-          },
-          {
-            "label": "Sugars, added",
-            "tag": "SUGAR.added",
-            "schemaOrgTag": null,
-            "total": 0,
-            "hasRDI": false,
-            "daily": 0,
-            "unit": "g"
-          }
-        ]
-      },
-      {
-        "label": "Protein",
-        "tag": "PROCNT",
-        "schemaOrgTag": "proteinContent",
-        "total": 118.78923159600112,
-        "hasRDI": true,
-        "daily": 237.57846319200223,
-        "unit": "g"
-      },
-      {
-        "label": "Cholesterol",
-        "tag": "CHOLE",
-        "schemaOrgTag": "cholesterolContent",
-        "total": 699.646491375,
-        "hasRDI": true,
-        "daily": 233.215497125,
-        "unit": "mg"
-      },
-      {
-        "label": "Sodium",
-        "tag": "NA",
-        "schemaOrgTag": "sodiumContent",
-        "total": 6336.7938516416725,
-        "hasRDI": true,
-        "daily": 264.03307715173634,
-        "unit": "mg"
-      },
-      {
-        "label": "Calcium",
-        "tag": "CA",
-        "schemaOrgTag": null,
-        "total": 572.9077710542032,
-        "hasRDI": true,
-        "daily": 57.29077710542032,
-        "unit": "mg"
-      },
-      {
-        "label": "Magnesium",
-        "tag": "MG",
-        "schemaOrgTag": null,
-        "total": 183.65187910418751,
-        "hasRDI": true,
-        "daily": 43.72663788194941,
-        "unit": "mg"
-      },
-      {
-        "label": "Potassium",
-        "tag": "K",
-        "schemaOrgTag": null,
-        "total": 2989.142999600305,
-        "hasRDI": true,
-        "daily": 63.5987872255384,
-        "unit": "mg"
-      },
-      {
-        "label": "Iron",
-        "tag": "FE",
-        "schemaOrgTag": null,
-        "total": 10.936202486250238,
-        "hasRDI": true,
-        "daily": 60.75668047916799,
-        "unit": "mg"
-      },
-      {
-        "label": "Zinc",
-        "tag": "ZN",
-        "schemaOrgTag": null,
-        "total": 16.964233815791875,
-        "hasRDI": true,
-        "daily": 154.22030741628976,
-        "unit": "mg"
-      },
-      {
-        "label": "Phosphorus",
-        "tag": "P",
-        "schemaOrgTag": null,
-        "total": 1159.5865716792034,
-        "hasRDI": true,
-        "daily": 165.6552245256005,
-        "unit": "mg"
-      },
-      {
-        "label": "Vitamin A",
-        "tag": "VITA_RAE",
-        "schemaOrgTag": null,
-        "total": 782.9861583041719,
-        "hasRDI": true,
-        "daily": 86.99846203379687,
-        "unit": "Âµg"
-      },
-      {
-        "label": "Vitamin C",
-        "tag": "VITC",
-        "schemaOrgTag": null,
-        "total": 84.92625000007811,
-        "hasRDI": true,
-        "daily": 94.36250000008678,
-        "unit": "mg"
-      },
-      {
-        "label": "Thiamin (B1)",
-        "tag": "THIA",
-        "schemaOrgTag": null,
-        "total": 2.7898585240708984,
-        "hasRDI": true,
-        "daily": 232.48821033924156,
-        "unit": "mg"
-      },
-      {
-        "label": "Riboflavin (B2)",
-        "tag": "RIBF",
-        "schemaOrgTag": null,
-        "total": 2.2127741932250387,
-        "hasRDI": true,
-        "daily": 170.21339947884914,
-        "unit": "mg"
-      },
-      {
-        "label": "Niacin (B3)",
-        "tag": "NIA",
-        "schemaOrgTag": null,
-        "total": 25.52641533989621,
-        "hasRDI": true,
-        "daily": 159.54009587435132,
-        "unit": "mg"
-      },
-      {
-        "label": "Vitamin B6",
-        "tag": "VITB6A",
-        "schemaOrgTag": null,
-        "total": 2.725782870079266,
-        "hasRDI": true,
-        "daily": 209.67560539071278,
-        "unit": "mg"
-      },
-      {
-        "label": "Folate equivalent (total)",
-        "tag": "FOLDFE",
-        "schemaOrgTag": null,
-        "total": 385.3064709083594,
-        "hasRDI": true,
-        "daily": 96.32661772708985,
-        "unit": "Âµg"
-      },
-      {
-        "label": "Folate (food)",
-        "tag": "FOLFD",
-        "schemaOrgTag": null,
-        "total": 281.9464709083594,
-        "hasRDI": false,
-        "daily": 0,
-        "unit": "Âµg"
-      },
-      {
-        "label": "Folic acid",
-        "tag": "FOLAC",
-        "schemaOrgTag": null,
-        "total": 60.8,
-        "hasRDI": false,
-        "daily": 0,
-        "unit": "Âµg"
-      },
-      {
-        "label": "Vitamin B12",
-        "tag": "VITB12",
-        "schemaOrgTag": null,
-        "total": 8.068237157,
-        "hasRDI": true,
-        "daily": 336.1765482083334,
-        "unit": "Âµg"
-      },
-      {
-        "label": "Vitamin D",
-        "tag": "VITD",
-        "schemaOrgTag": null,
-        "total": 7.16310844,
-        "hasRDI": true,
-        "daily": 47.754056266666666,
-        "unit": "Âµg"
-      },
-      {
-        "label": "Vitamin E",
-        "tag": "TOCPHA",
-        "schemaOrgTag": null,
-        "total": 7.560323304583906,
-        "hasRDI": true,
-        "daily": 50.4021553638927,
-        "unit": "mg"
-      },
-      {
-        "label": "Vitamin K",
-        "tag": "VITK1",
-        "schemaOrgTag": null,
-        "total": 73.26893078125157,
-        "hasRDI": true,
-        "daily": 61.057442317709636,
-        "unit": "Âµg"
-      },
-      {
-        "label": "Sugar alcohols",
-        "tag": "Sugar.alcohol",
-        "schemaOrgTag": null,
-        "total": 0,
-        "hasRDI": false,
-        "daily": 0,
-        "unit": "g"
-      },
-      {
-        "label": "Water",
-        "tag": "WATER",
-        "schemaOrgTag": null,
-        "total": 562.3271768760698,
-        "hasRDI": false,
-        "daily": 0,
-        "unit": "g"
-      }
-    ]
-  },
+  "from": 1,
+  "to": 20,
+  "count": 1916,
   "_links": {
-    "self": {
-      "href": "https://api.edamam.com/api/recipes/v2/411161749e90913fc75711030fffef47/411161749e90913fc75711030fffef47?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6&beta=true",
-      "title": "Self"
+    "next": {
+      "href": "https://api.edamam.com/api/recipes/v2?q=Egg%20tomato%20avocado&app_key=d188677a672a589fa4898f6a4e470fa6&field=label&field=image&field=source&field=url&field=cautions&field=ingredientLines&field=calories&field=glycemicIndex&field=totalWeight&field=totalTime&field=cuisineType&field=mealType&field=dishType&field=tags&_cont=CHcVQBtNNQphDmgVQntAEX4BYlJtBwQDRWJIA2EaZlBzAwsVX3dHBTMRMVJ2UApSQWVFVWIbN1YgUAsOEDdJUjNGalFxVhFqX3cWQT1OcV9xBB8VADQWVhFCPwoxXVZEITQeVDcBaR4-SQ%3D%3D&type=public&app_id=fea4df48",
+      "title": "Next page"
     }
-  }
+  },
+  "hits": [
+    {
+      "recipe": {
+        "label": "Chorizo, Avocado, and Egg Cemitas with Chipotle Mayonnaise Recipe",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/bcd/bcd52f5195d4ee6af1c707882201067a.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fa17aa4dd5e42b87c8d3d13d6c27d2fbb9cac6ae7fcb8fd78c39928610be6cf2",
+        "source": "Serious Eats",
+        "url": "http://www.seriouseats.com/recipes/2013/03/chorizo-avocado-egg-cemitas-chipotle-mayonnaise-recipe.html",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1/4 cup mayonnaise",
+          "1 teaspoon fresh lime juice from 1 lime",
+          "1 chipotle pepper in adobo sauce, chopped, plus 1 tablespoon adobo sauce",
+          "12 ounces Mexican chorizo sausage",
+          "2 eggs",
+          "2 large cemita rolls, bolillo rolls, or Kaiser rolls",
+          "2 ounces Oaxacan cheese, or mozzarella, torn into pieces",
+          "1/2 cup shredded iceberg lettuce",
+          "1 small tomato, sliced",
+          "1 avocado, sliced"
+        ],
+        "calories": 2871.0704237333985,
+        "totalWeight": 1024.0266570835938,
+        "totalTime": 15,
+        "cuisineType": [
+          "mediterranean"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "sandwiches"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/411161749e90913fc75711030fffef47?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Poached eggs with smashed avocado & tomatoes",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/8da/8da826f4b11e0a05d27cdd82419dfd39.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=2c5c436e1a950cd9a25fde8831a437e436712a4729db99424f4f857adfa5aae0",
+        "source": "BBC Good Food",
+        "url": "https://www.bbcgoodfood.com/recipes/poached-eggs-smashed-avocado-tomatoes",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "2 tomatoes, halved",
+          "½ tsp rapeseed oil",
+          "2 eggs",
+          "1 small ripe avocado",
+          "2 slices seeded wholemeal soda bread (see goes well with)",
+          "2 handfuls rocket"
+        ],
+        "calories": 584.46,
+        "totalWeight": 548,
+        "totalTime": 20,
+        "cuisineType": [
+          "american"
+        ],
+        "mealType": [
+          "breakfast"
+        ],
+        "dishType": [
+          "starter"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/7842ec064c5c53531e0a7568e35d4656?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Stuffed Avocado With Poached Egg",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/ede/ede8df89de1667fc97c1f234ab1263c7.JPG?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=dfc51be0eb10061d8c149e9f3fd792ab9307b8cef19ec1208a97c3182d686c06",
+        "source": "Food52",
+        "url": "https://food52.com/recipes/17885-stuffed-avocado-with-poached-egg",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1 ripe avocado halved",
+          "1/2 cup grape tomatoes halved",
+          "1 lobe of the shallot chopped",
+          "1/2 cup fresh breadcrumbs",
+          "Olive oil for pan",
+          "Salt and pepper to taste",
+          "2 large eggs poached or fried",
+          "1/2 lime (for the avocado)"
+        ],
+        "calories": 814.6225848888889,
+        "totalWeight": 545.8028520763851,
+        "totalTime": 129,
+        "cuisineType": [
+          "american"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "main course"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/759c0534a4bd194ee837045dd9f2485f?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Tofu Egg Scramble with Avocado",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/850/8505ea1518e1e1c75934e6c81671214b.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=ec56a7560054cb0fb625abad4d6042893f855aa7987ac2aabfd20b0852570c0a",
+        "source": "Martha Stewart",
+        "url": "https://www.marthastewart.com/1154465/tofu-egg-scramble-avocado",
+        "cautions": [
+          "Gluten",
+          "Wheat",
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "2 large eggs, lightly beaten Eggs Large White 2 for $3.00 thru 11/25",
+          "Coarse salt and ground pepper",
+          "2 teaspoons olive oil",
+          "7 ounces soft tofu (from a 14-ounce package), drained on paper towels",
+          "Pinch turmeric (optional)",
+          "1 small avocado, halved, pitted, peeled, and cubed",
+          "1/2 cup cherry or grape tomatoes, quartered",
+          "Whole-wheat bread, toasted (optional)"
+        ],
+        "calories": 605.2840342334558,
+        "totalWeight": 550.3680560281025,
+        "totalTime": 0,
+        "cuisineType": [
+          "asian"
+        ],
+        "mealType": [
+          "breakfast"
+        ],
+        "dishType": [
+          "main course",
+          "egg"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/c8e98d0f2136ac61ff007728830084d3?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Baked Eggs In Avocado With Bacon, On Toast",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/ccf/ccf0f6b39727f621584ba62cc7e473a2.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=cd3d9b4cc16b5b76da4d32d2406bf56b8a5ee2c728150b97a365bcb73d6e3fb9",
+        "source": "White On Rice Couple",
+        "url": "http://whiteonricecouple.com/recipes/baked-eggs-avocado/",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1 medium or large avocado",
+          "2 small eggs",
+          "2 sliced of bacon, cooked then crumbled",
+          "2 slices of toast",
+          "sea salt, to taste",
+          "fresh cracked black pepper, to taste",
+          "hot sauce, optional",
+          "fresh chopped tomatoes, optional"
+        ],
+        "calories": 906.0423724999999,
+        "totalWeight": 435.09758348632545,
+        "totalTime": 0,
+        "cuisineType": [
+          "american"
+        ],
+        "mealType": [
+          "breakfast"
+        ],
+        "dishType": [
+          "main course"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/371c1f5dd0704197c76eebb335bfe33c?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Colombian Avocado Salsa",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/f85/f85cfe390dafb00b9c1d769266bfa709.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=3e3ea710d5362b537bdfb6ac9c8b59986fc02e980ddfe48a4e248b13b90491df",
+        "source": "Epicurious",
+        "url": "https://www.epicurious.com/recipes/food/views/colombian-avocado-salsa-239967",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1/3 cup chopped fresh ajÃ­ dulce chiles (seeded if desired)",
+          "1 1/2 teaspoons finely chopped fresh habanero chile with seeds",
+          "6 tablespoons distilled white vinegar",
+          "2 hard-boiled large eggs, coarsely chopped",
+          "2 (6- to 8-ounce) firm-ripe avocados, coarsely mashed (1 1/2 cups)",
+          "1 cup chopped tomato",
+          "1 cup chopped white onion",
+          "3/4 cup chopped cilantro"
+        ],
+        "calories": 744.4686953200952,
+        "totalWeight": 961.9808237502377,
+        "totalTime": 0,
+        "cuisineType": [
+          "mexican",
+          "south american"
+        ],
+        "mealType": [
+          "snack"
+        ],
+        "dishType": [
+          "condiments and sauces"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/d384b78e9b9116158cf0c4da0004c4b3?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Cali-Style Fried Egg Sandwich recipes",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/651/651addecbd31d5ac214b8090b139e11c?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=0a5d2dd810611f6636aba34c2658484e81e83625e128b0a86967704d3b5dd474",
+        "source": "Chowhound",
+        "url": "http://www.chowhound.com/recipes/california-style-fried-egg-breakfast-sandwich-31642",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1 ripe (1/2 cup) avocado, peeled, seeded",
+          "2 tablespoons red onion, chopped",
+          "1/4 teaspoon salt",
+          "1/8 teaspoon pepper",
+          "4 tablespoons Land O Lakes butter, softened",
+          "4 large Egglandâ€™s Best eggs",
+          "8 slices Italian bread",
+          "8 thin slices tomato",
+          "4 slices Land O Lakes Deli Provolone cheese"
+        ],
+        "calories": 1812.774763888889,
+        "totalWeight": 835.0513888888889,
+        "totalTime": 30,
+        "cuisineType": [
+          "american"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "sandwiches"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/0d3666b2be16fa06fc4726ce8ebceed5?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Eggs Benedict BLT With Avocado-Tomato Relish recipes",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/1b9/1b9e02395ffbcd7dc02eb635c168c283?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=8f23ef3051e77edf95a75f595ad39ce20c498e89d380479eaf84ab484d21ae68",
+        "source": "Food Republic",
+        "url": "http://www.foodrepublic.com/recipes/eggs-benedict-blt-with-avocado-tomato-relish-recipe/",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1 cup halved grape tomatoes",
+          "1 avocado, diced",
+          "1 tablespoon chopped fresh basil",
+          "1 garlic clove, minced",
+          "2 tablespoons extra virgin olive oil",
+          "salt",
+          "freshly ground pepper",
+          "1 tablespoon red wine vinegar, divided",
+          "6 large eggs",
+          "1/4 cup mayonnaise",
+          "6 3/4-inch thick bakery bread slices, toasted",
+          "3 cups firmly packed arugula",
+          "12 thick bacon slices, cooked"
+        ],
+        "calories": 3369.3261490000004,
+        "totalWeight": 1367.3899,
+        "totalTime": 25,
+        "cuisineType": [
+          "american"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "main course",
+          "egg"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/742f7c7debd5c1623560ddbf2f029306?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Healthy & Delicious: Avocado Chicken Salad Recipe",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/51c/51cf4040d495f3dbf8313a2a1915ba2b.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=4c4efcd045d313bd4e5729592cd3457b4a88247fae2f5541f28482a89ac16d6c",
+        "source": "Serious Eats",
+        "url": "http://www.seriouseats.com/recipes/2009/05/avocado-chicken-salad-recipe.html",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1 tablespoon extra virgin olive oil",
+          "2 boneless, skinless chicken thighs, filleted",
+          "Kosher salt and fresh black pepper",
+          "1 Hass avocado, chopped",
+          "1 large beefsteak or slicing tomato, seeded and chopped",
+          "1/2 bunch scallions, chopped",
+          "2 tablespoons cilantro, chopped",
+          "1 lime"
+        ],
+        "calories": 975.172969999992,
+        "totalWeight": 855.6268186633646,
+        "totalTime": 0,
+        "cuisineType": [
+          "american"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "salad"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/173f3930678ac15552a9efe3ca7826a8?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Sriracha, Egg & Avocado Overnight Oats",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/54c/54c8afc584bdc4268c07f4ab72bf48ef.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=40d0ba8aeea3cdc2112097d96d02794789927088dd247b2a533422820067e16b",
+        "source": "EatingWell",
+        "url": "http://www.eatingwell.com/recipe/270489/sriracha-egg-avocado-overnight-oats/",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "Â½ cup rolled oats (see Tip)",
+          "Â¾ cup water",
+          "1 tablespoon onion",
+          "Â¼ avocado, sliced",
+          "2 cherry tomatoes, chopped",
+          "1 large egg, fried",
+          "1 teaspoon Sriracha"
+        ],
+        "calories": 310.21700000000004,
+        "totalWeight": 362.7,
+        "totalTime": 480,
+        "cuisineType": [
+          "american"
+        ],
+        "mealType": [
+          "breakfast"
+        ],
+        "dishType": [
+          "cereals"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/8dba069d5ab89b81f5855e4fe6e671fe?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Coxinha with spiced avocado",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/79f/79fb30dbb838f2417a45c004499c8d03.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=5715ee7b1a2cd3f53d727710338e42f618a9fd80cc1132fdaa9ba1fffbd4ed84",
+        "source": "Jamie Oliver",
+        "url": "http://www.jamieoliver.com/recipes/vegetable-recipes/coxinha-with-spiced-avocado/",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "500 ml organic chicken stock",
+          "olive oil",
+          "200 g leftover cooked chicken",
+          "350 g plain flour",
+          "125 g mozzarella",
+          "2 ripe tomatoes",
+          "a small bunch of fresh flat-leaf parsley , leaves picked",
+          "4 spring onions",
+          "2 limes",
+          "4 ripe avocados",
+          "a few drops of chilli sauce",
+          "vegetable oil , for frying",
+          "150 ml fine breadcrumbs",
+          "Â½ teaspoon sweet smoked paprika",
+          "1 large egg",
+          "100 ml milk"
+        ],
+        "calories": 6879.722665984118,
+        "totalWeight": 3022.0474930213586,
+        "totalTime": 0,
+        "cuisineType": [
+          "south american"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "starter"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/61abcd1b449ad3a8e54be374dc1995a9?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Fresh Corn Cakes with Avocado and Goat Cheese Salsa recipes",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/281/281d6fcc58538a55b8d5aa03335f362d?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=588520733f5cb66b16c93c46811ac72ed88612315e01e276bc02db2e8907e54b",
+        "source": "Love & Olive Oil",
+        "url": "http://www.loveandoliveoil.com/2011/09/fresh-corn-cakes-with-avocado-and-goat-cheese-salsa.html",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1 large tomato, chopped",
+          "2 tablespoons cilantro, chopped",
+          "1/3 cup white onion, chopped (about 1/2 a small onion)",
+          "1 garlic clove, minced",
+          "1 tablespoon lime juice (from about 1/2 a lime)",
+          "1 avocado, pitted and diced",
+          "3 ounces goat cheese, crumbled",
+          "2 cups fresh corn kernels",
+          "1 cup flour",
+          "1/2 cup cornmeal",
+          "1 teaspoon baking powder",
+          "1/2 teaspoon baking soda",
+          "1 teaspoon kosher salt",
+          "1 tablespoon sugar",
+          "2 eggs, lightly beaten",
+          "2 tablespoons milk"
+        ],
+        "calories": 1908.2042231491096,
+        "totalWeight": 1130.7099297199143,
+        "totalTime": 45,
+        "cuisineType": [
+          "mexican"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "condiments and sauces"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/2f239bae0c90ed210655fdff3191a266?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Pan-Fried Chorizo Burgers With Avocado, Fried Eggs And Spicy Mayo",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/3fa/3fafd9fa72dcdcb5f6d3e349e5b5f807.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=23eb17369e72931e9031be9c74287f4d7cd2c2aaddb27f4aac02730020212a69",
+        "source": "Saveur",
+        "url": "http://www.saveur.com/article/Recipes/Chorizo-Burgers-with-Avocado-Fried-Eggs",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "Â½ lb. fresh chorizo, casings removed",
+          "Â½ lb. ground beef",
+          "1 tsp. ground cumin",
+          "Â½ tsp. ground coriander",
+          "2 tbsp. finely chopped cilantro",
+          "2 cloves garlic, finely chopped",
+          "Kosher salt and freshly ground black pepper, to taste",
+          "Â½ cup mayonnaise",
+          "1Â½ tbsp. hot sauce, preferably Cholula",
+          "1 tsp. fresh lime juice",
+          "2 tbsp. olive oil",
+          "4 slices pepper jack cheese",
+          "4 hamburger buns, lightly toasted, for serving",
+          "Lettuce leaves, and sliced tomatoes, for serving",
+          "1 ripe Hass avocado, pitted, peeled, and thinly sliced, for serving",
+          "4 fried eggs, for serving (optional)"
+        ],
+        "calories": 4202.345540029324,
+        "totalWeight": 1418.819430442126,
+        "totalTime": 0,
+        "cuisineType": [
+          "american"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "sandwiches"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/ac799012002f157adb35aae14ee0fceb?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Spicy Potato & Avocado Breakfast Tacos recipes",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/9f1/9f1ff75927fbae33fb48e193f0fa100f?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=f47ff00da6199aef295cb6fb58fcd1008a987b2d1baa6bf452f1758e3e73e182",
+        "source": "Big Girls Small Kitchen",
+        "url": "http://www.biggirlssmallkitchen.com/2013/02/spicy-potato-avocado-breakfast-tacos.html",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1/2 onion",
+          "1/2 teaspoon sugar",
+          "1/2 teaspoon salt",
+          "One 28-ounce can whole peeled tomatoes",
+          "2 teaspoons vegetable oil",
+          "juice from 1 lime (save a little juice for the avocado in the filling)",
+          "1 bunch cilantro, minced",
+          "3 medium red potatoes, cut into a 1/2-inch dice",
+          "coarse salt",
+          "1/4 teaspoon smoked paprika",
+          "1/2 teaspoon chili powder",
+          "pinch red pepper flakes",
+          "1 tablespoon olive oil",
+          "3 slices of bacon, crumbled (I bake my bacon on a foil-lined baking sheet for 15-20 minutes in a 375Â°F oven)",
+          "1 avocado, cubed and tossed with a tiny squeeze of lime",
+          "2 teaspoons butter",
+          "3 eggs",
+          "freshly ground pepper",
+          "2 tablespoons grated cheese",
+          "4 tortillasâ€“flour or corn"
+        ],
+        "calories": 2807.2374690497704,
+        "totalWeight": 2429.0232864303807,
+        "totalTime": 55,
+        "cuisineType": [
+          "mexican"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "sandwiches"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/4b4d260acca89bbdbc6605d9e2651950?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Tomato Avocado Egg Sandwich",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/115/115f7346ab06aa48d8b1f04dfbaa007d.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=fb6ed10e74c2641a6d8e3e938be1d619bef8956f6c896a9449f4fc854db5b59c",
+        "source": "Self",
+        "url": "https://www.self.com/recipe/tomato-avocado-egg-sandwich",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "* 1 large egg",
+          "* 1/2 medium avocado",
+          "* 1tablespoon nutritional yeast flakes",
+          "* Salt",
+          "* Pepper",
+          "* 1 large campari tomato, sliced",
+          "* 1 whole wheat English muffin, split and toasted"
+        ],
+        "calories": 436.05691499923785,
+        "totalWeight": 357.85549830825715,
+        "totalTime": 0,
+        "cuisineType": [
+          "american"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "sandwiches"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/18113671647d5b4eea4d4aaf6acb8fb0?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Ham and Avocado Omelet",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/f18/f186c72ba9000078d8928ab73623eb2a.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=b64f93971d966ed65a2b62699640d7ccc5ed5464a7ccffb59068ebad760fd11f",
+        "source": "Food52",
+        "url": "https://food52.com/recipes/3895-ham-and-avocado-omelet",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "3 teaspoons extra virgin olive oil",
+          "Â¼ cups minced white onion",
+          "Â¼ cups green bell pepper, diced",
+          "Â½ cups diced ham",
+          "1 medium tomato, diced",
+          "Â¼ teaspoons black pepper",
+          "3 large eggs, beaten",
+          "Â½ cups shredded cheddar or a mexican blend cheese, divided",
+          "Â½ ripe avocado from mexico pitted, peeled and sliced"
+        ],
+        "calories": 946.64975,
+        "totalWeight": 634.375,
+        "totalTime": 97,
+        "cuisineType": [
+          "american"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "main course",
+          "omelet",
+          "egg"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/a392ffc48d64869c339907d2a8faf3b2?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Avocado & black bean eggs",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/379/379ddb7c6327ab18101582c55494ab8e.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=be322609856cc57b8cc93790bc4a08b6ee5f30d1139d593d36cf8249f38eca23",
+        "source": "BBC Good Food",
+        "url": "https://www.bbcgoodfood.com/recipes/avocado-black-bean-eggs",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "2 tsp rapeseed oil",
+          "1 red chilli, deseeded and thinly sliced",
+          "1 large garlic clove, sliced",
+          "2 large eggs",
+          "400g can black beans",
+          "Â½ x 400g can cherry tomatoes",
+          "Â¼ tsp cumin seeds",
+          "1 small avocado, halved and sliced",
+          "handful fresh, chopped coriander",
+          "1 lime, cut into wedges"
+        ],
+        "calories": 937.0787500005039,
+        "totalWeight": 987.275000000169,
+        "totalTime": 10,
+        "cuisineType": [
+          "south american"
+        ],
+        "mealType": [
+          "breakfast"
+        ],
+        "dishType": [
+          "starter"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/c08d63db493f3bc39517d47b9b9a1278?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Eggs Benedict BLT With Avocado-Tomato Relish Recipe",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/d34/d349966e77c21b146bde16fb95d86423.png?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=99956f5cfdb2b43e1ac33179e824a9331b8d291dadd6908016006abec5d28d68",
+        "source": "Food Republic",
+        "url": "http://www.foodrepublic.com/2013/02/23/eggs-benedict-blt-avocado-tomato-relish-recipe",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1 cup halved grape tomatoes",
+          "1 avocado, diced",
+          "1 tablespoon chopped fresh basil",
+          "1 garlic clove, minced",
+          "2 tablespoons extra virgin olive oil",
+          "salt and freshly ground pepper, to taste",
+          "1 tablespoon red wine vinegar, divided",
+          "6 large eggs",
+          "1/4 cup mayonnaise",
+          "6 3/4-inch thick bakery bread slices, toasted",
+          "3 cups firmly packed arugula",
+          "12 thick bacon slices, cooked"
+        ],
+        "calories": 3369.3261490000004,
+        "totalWeight": 1367.3899,
+        "totalTime": 0,
+        "cuisineType": [
+          "american"
+        ],
+        "mealType": [
+          "lunch/dinner"
+        ],
+        "dishType": [
+          "main course",
+          "egg"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/c400d090316ea2f788b72ff22577a933?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Mexican Fried Egg Breakfast Torta Recipe",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/723/7231fe6f801b65cedf5a47d0df4a9ce6.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=9457aee142d099b77411bbf001eb0f522dcb5d16753cc883944a19a77003ba59",
+        "source": "Chowhound",
+        "url": "https://www.chowhound.com/recipes/mexican-veggie-torta-with-fried-eggs-31043",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1 cup good-quality refried beans",
+          "1/2 to 3/4 cup chile gravy or good-quality enchilada sauce",
+          "4 large or extra-large eggs",
+          "4 Mexican torta rolls or bolillo rolls, split and toasted",
+          "1 cup shredded Monterey Jack cheese",
+          "1 or 2 ripe red tomatoes, sliced",
+          "Handful fresh cilantro leaves, torn",
+          "2 cups shredded iceberg lettuce",
+          "1 large avocado, pitted, peeled, and sliced"
+        ],
+        "calories": 1958.6626666666668,
+        "totalWeight": 1469.0166666666667,
+        "totalTime": 45,
+        "cuisineType": [
+          "american",
+          "mexican"
+        ],
+        "mealType": [
+          "breakfast"
+        ],
+        "dishType": [
+          "main course"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/9332cd58a3d68411fa254f3acd57385b?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    },
+    {
+      "recipe": {
+        "label": "Healthy & Delicious: Avocado and Corn Salsa Recipe",
+        "image": "https://edamam-product-images.s3.amazonaws.com/web-img/a5a/a5ac04a4e96e35efeffb1187cc5aee03.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEEoaCXVzLWVhc3QtMSJGMEQCIGCbs6cA1ov9ymPtXEYcNtzYKdrPVxgfzOw19jX1Gp70AiAUHGlcaQYzZM6cdP7W1tXyh%2BQmTuWFsRO2uveF8StZjCrbBAij%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDE4NzAxNzE1MDk4NiIM%2FgNwmqvHloh98Ni8Kq8EJokrih79gGE8iSFC07MotwrierFi4f5kb822EZxXSyw83tfa%2F8kvpumIgMGfDxJRuxgnbqdGkfhqUrOQvTfVJAcoHwJdYzRyjgQQwJvL0kGZ1VsBoYlGHiqTq2vm1PXm22Cxml5A6uqaRUzKoiAYeu6FIfCfDnXiWznc%2B7Tw08NHp9asb0k3F%2Fua%2FAMm4u0jFB1d6f29CH%2Bb2oAahngzVWNxWL9oIFXXJVnN%2FbubTqcFAeFvOw3CgTWYDkGgIb%2BE4DaV%2F3D11EtCwqtje%2BqcKwpo9WIGj8QzQcEoc60HDr3e44oc3Kfu5rgogKVbZWJFgUsAi03KrxzCK3mizVni%2B1MuxmekNcSrrI1R7t2vTaCBRY%2FgrFZVi5kbu5lJaIZilIj%2F8DKbk4b1b8HPGecpv48m88kCK3UGTu%2Fd0vL6AsdzLoTYzY2jiaqf7sMYCRoyoeFqUB2zfbPwgveUlviT5jlmgazsGzblItFPcz3FR9B41pTsdLuGqmo5GTkENhWnDjdwddqcioEiTRbwEps1fhDGu93Yz2eI%2BhGLR5d69lvFr%2FXLEi7o1yjhXlDeA%2FpP9ESxKGwxrRsE9tBm4o78L2Yqmn2AJVR5RHG1GCKMo6HjImQAjNrn09kQHzLGbw4LYzzhFFnXtjwiWSPiBR4Awf57V%2FIsms6VGXNq%2BDx0%2BVxqwY%2BSgBHnr0PMLkVkprXgtqoUPgQq3WAai%2FY5P6jOLy85FmmVq%2BiZ8qPfTP8dHjDZqq6XBjqqAUU2Yqq03Yscg5VLV8nB2491%2Bg9%2Fsi6q826ImY5MzLoDi1j1ltVyQgaidSQHoYnwgIfRKEOf264z5m9YC2XK1oK6HZpXdKyfzZSvozPahIzrmzqNTTjhqTaIH13MPrQ7FWuT2tBy2jwVzU6uYMFmAxWBccc08bjgyCf4fxorJ6FkRjS1KZP0atNqPqPt71dpiXW2pSnRxx2M50z7ljdiPNJopnSd2oFwFsi%2F&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20220804T104109Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFMS5VPZSI%2F20220804%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=94704e0ef9bed5ae7bea71f20d6fc2142d539018925d1935fb0632eba0430845",
+        "source": "Serious Eats",
+        "url": "http://www.seriouseats.com/recipes/2009/08/avocado-and-corn-salsa-recipe.html",
+        "cautions": [
+          "Sulfites"
+        ],
+        "ingredientLines": [
+          "1 ripe avocado, cut into 1/4-inch dice",
+          "2 to 3 tablespoons fresh lime juice",
+          "1 ripe red tomato, seeded and cut into 1/4-inch dice",
+          "1 or 2 ears sweet corn, cooked",
+          "1 scallion, both white and green parts, trimmed and finely chopped",
+          "1 to 2 jalapeÃ±o peppers seeded and minced (2 will be HOT)",
+          "1/4 cup chopped fresh cilantro",
+          "Kosher salt and freshly ground black pepper"
+        ],
+        "calories": 497.50251811094347,
+        "totalWeight": 554.1761718142873,
+        "totalTime": 0,
+        "cuisineType": [
+          "mexican"
+        ],
+        "mealType": [
+          "breakfast"
+        ],
+        "dishType": [
+          "condiments and sauces"
+        ]
+      },
+      "_links": {
+        "self": {
+          "href": "https://api.edamam.com/api/recipes/v2/5cdd317d2b4d48abfe24f490a28ba230?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6",
+          "title": "Self"
+        }
+      }
+    }
+  ]
 }
