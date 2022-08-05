@@ -9,11 +9,6 @@ import SwiftUI
 
 struct CardListIngredientsView: View {
     @EnvironmentObject var viewModel: SearchViewModel
-    var ingredients = [
-        Ingredient(name: "Egg"),
-        Ingredient(name: "Tomato"),
-        Ingredient(name: "Avocado"),
-    ]
     
     var body: some View {
         VStack {
@@ -23,7 +18,9 @@ struct CardListIngredientsView: View {
                     .foregroundColor(Color("Text"))
                 Spacer()
                 Button {
-                    print("clear ingredients")
+                    withAnimation {
+                        viewModel.cleanIngredients()
+                    }
                 } label: {
                     Text("Clear")
                 }
@@ -34,7 +31,7 @@ struct CardListIngredientsView: View {
             }
             
             VStack {
-                ForEach(ingredients) { ingredient in
+                ForEach(viewModel.ingredients) { ingredient in
                     HStack {
                         Text("\t -  \(ingredient.name)")
                             .foregroundColor(Color("Text"))

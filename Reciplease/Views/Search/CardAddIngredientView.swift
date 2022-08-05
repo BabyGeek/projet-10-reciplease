@@ -10,6 +10,7 @@ import SwiftUI
 struct CardAddIngredientView: View {
     @EnvironmentObject var viewModel: SearchViewModel
     @State var ingredient = ""
+    @FocusState var focusing
     
     var body: some View {
         ZStack {
@@ -27,9 +28,14 @@ struct CardAddIngredientView: View {
                 HStack {
                     TextField("Lemon, Cheese, Sausages...", text: $ingredient)
                         .foregroundColor(Color("Text").opacity(0.8))
+                        .focused($focusing)
+                        .submitLabel(.done)
                     
                     Button {
-                        print("add ingredient")
+                        withAnimation {
+                        viewModel.addIngredient(ingredient)
+                        ingredient = ""
+                        }
                     } label: {
                         Text("Add")
                     }
@@ -37,6 +43,9 @@ struct CardAddIngredientView: View {
                     .buttonStyle(.borderedProminent)
                     .tint(Color("Primary"))
                     .shadow(color: Color("Primary"), radius: 25, x: 3, y: 5)
+                }
+                .onSubmit {
+                    focusing = false
                 }
                 .padding(.horizontal)
             }
