@@ -11,12 +11,9 @@ struct RecipeIngredientsView: View {
     var recipe: Recipe = Recipe.mock
 
     var body: some View {
-        VStack(alignment: .leading) {
-            Section("Ingredients") {
-                ForEach(recipe.ingredientLines, id: \.self) { line in
-                    Text(line)
-                }
-            }
+        ForEach(recipe.ingredientLines, id: \.self) { line in
+            Text(line)
+                .frame(alignment: .leading)
         }
     }
 }

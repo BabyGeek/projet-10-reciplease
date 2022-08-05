@@ -30,7 +30,8 @@ struct RecipeImageView: View {
         .background(
             AsyncImage(url: URL(string: recipe.image), content: { image in
                     image
-                    .scaledToFit()
+                    .resizable()
+                    .scaledToFill()
                     .mask(
                         LinearGradient(gradient: Gradient(
                             colors: [
@@ -56,7 +57,7 @@ struct RecipeImageView: View {
             }, placeholder: {
                 Image("NotFoundImage")
                     .resizable()
-                    .scaledToFit()
+                    .scaledToFill()
             }))
     }
 }

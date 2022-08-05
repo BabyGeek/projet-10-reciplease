@@ -10,17 +10,18 @@ import SwiftUI
 struct RecipeRowView: View {
     var recipe: Recipe = Recipe.mock
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack {
             HStack {
                 Text("\(recipe.calories) \(Image(systemName: "flame"))")
                 Spacer()
                 Text("\(recipe.totalTime) \(Image(systemName: "timer"))")
             }
             Spacer()
-            VStack(alignment: .leading) {
+            HStack {
                 Text(recipe.label)
                     .font(.subheadline)
                     .lineLimit(1)
+                Spacer()
             }
         }
         .foregroundColor(Color("Text"))
