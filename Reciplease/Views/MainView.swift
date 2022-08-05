@@ -13,7 +13,7 @@ struct MainView: View {
     var body: some View {
         TabView {
             NavigationView {
-                ContentView()
+                SearchView()
                     .navigationTitle("Reciplease")
             }
             .environmentObject(searchViewModel)
