@@ -9,25 +9,24 @@ import Alamofire
 import Foundation
 
 protocol SearchServicing {
-    var search: String { get set }
+    var parameters: Parameters? { get set }
     func getSearch(_ completion: @escaping (Result<SearchResponse, AFError>) -> Void)
 }
 
 class SearchService: NetworkManager, SearchServicing {
-    var search: String = ""
+    var parameters: Parameters?
     
     func getSearch(_ completion: @escaping (Result<SearchResponse, AFError>) -> Void) {
         let url = "https://api.edamam.com/api/recipes/v2?type=public&app_id=fea4df48&app_key=d188677a672a589fa4898f6a4e470fa6"
         
-        get(url: url, parameters: ["q": search]) { response in
+        get(url: url, parameters: parameters) { response in
             completion(response.result)
         }
     }
 }
 
 class SearchMockService: SearchServicing {
-    var search: String = ""
-    
+    var parameters: Parameters?
     var getCallCounter = 0
     
     func getSearch(_ completion: @escaping (Result<SearchResponse, AFError>) -> Void) {
