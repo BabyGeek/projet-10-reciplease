@@ -8,9 +8,8 @@
 import Foundation
 
 class SearchViewModel: ObservableObject {
-    
+    @Published var ingredients: [Ingredient] = []
     @Published var results: [Recipe] = []
-    @Published var search: String? = "Eggs tomato avocado"
     
     var error: Error? = nil
     
@@ -22,9 +21,7 @@ class SearchViewModel: ObservableObject {
     }
     
     public func fetchData() {
-        if let search = search {
-            service.search = search
-        }
+        service.parameters = ["q": ingredients.map { $0.name }.joined(separator: " ")]
 
         service.getSearch { [weak self] result in
             switch result {
@@ -34,5 +31,21 @@ class SearchViewModel: ObservableObject {
                 self?.error = error
             }
         }
+    }
+    
+    public func addIngredient(_ ingredient: String) {
+        if ingredient.isEmpty {
+            // Error empty
+            return
+        } else if ingredients.first(where: { $0.name == ingredient }) != nil {
+            // Error already in list
+            return
+        }
+
+        ingredients.append(Ingredient(name: ingredient))
+    }
+    
+    public func cleanIngredients() {
+        ingredients = []
     }
 }
