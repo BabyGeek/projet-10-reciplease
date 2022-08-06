@@ -36,7 +36,7 @@ struct ResultListView: View {
                                            endPoint: .top)
                         )
                 }, placeholder: {
-                    ProgressView()
+                    placeholderImage()
                 }))
             .frame(height: 170)
         }

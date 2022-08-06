@@ -63,7 +63,7 @@ class RecipeViewModel: ObservableObject {
     }
 
     public func isFavorite(_ recipe: Recipe) -> Bool {
-        if let _ = favorites.first(where: { $0.label == recipe.label}) {
+        if let _ = favorites.first(where: { $0.url == recipe.url }) {
             return true
         }
         

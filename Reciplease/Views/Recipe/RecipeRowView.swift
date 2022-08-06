@@ -12,20 +12,9 @@ struct RecipeRowView: View {
     var body: some View {
         VStack {
             HStack {
+                    Text("\(recipe.getCalories()) \(Image(systemName: "flame"))")
                 Spacer()
-                VStack(alignment: .trailing) {
-                    Text("\(recipe.calories) \(Image(systemName: "flame"))")
-                        .buttonStyle(.bordered)
-                        .tint(Color("Text"))
-                    Text("\(recipe.totalTime) \(Image(systemName: "timer"))")
-                        .buttonStyle(.bordered)
-                        .tint(Color("Text"))
-                }
-                .padding(.horizontal)
-                .background(
-                RoundedRectangle(cornerRadius: 50)
-                    .fill(Color("CardBackground").opacity(0.7))
-                )
+                    Text("\(recipe.getTime()) \(Image(systemName: "timer"))")
             }
             
             Spacer()

@@ -9,7 +9,7 @@ import Foundation
 import RealmSwift
 
 struct Recipe: Codable, Equatable {
-    let totalTime: Double
+    let totalTime: Int
     let calories: Double
     let label: String
     let ingredientLines: [String]
@@ -38,7 +38,7 @@ struct Recipe: Codable, Equatable {
         case url
     }
     
-    init(totalTime: Double, calories: Double, label: String, ingredientLines: [String], image: String, url: String) {
+    init(totalTime: Int, calories: Double, label: String, ingredientLines: [String], image: String, url: String) {
         self.totalTime = totalTime
         self.calories = calories
         self.label = label
@@ -49,7 +49,7 @@ struct Recipe: Codable, Equatable {
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        totalTime = try values.decode(Double.self, forKey: .totalTime)
+        totalTime = try values.decode(Int.self, forKey: .totalTime)
         calories = try values.decode(Double.self, forKey: .calories)
         label = try values.decode(String.self, forKey: .label)
         ingredientLines = try values.decode([String].self, forKey: .ingredientLines)
@@ -67,17 +67,36 @@ struct Recipe: Codable, Equatable {
         entity.url = self.url
         return entity
     }
+    
+    func getTime() -> String {
+        if totalTime >= 60 {
+            return "\(totalTime / 60)h\(totalTime % 60)"
+        }
+        
+        return "\(totalTime)"
+    }
+    
+    func getCalories() -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.locale = Locale.current
+        numberFormatter.usesGroupingSeparator = true
+        
+        if let calories = numberFormatter.string(from: calories as NSNumber) {
+            return calories
+        }
+        
+        return ""
+    }
 }
 
 class RecipeEntity: Object, Identifiable {
     @Persisted(primaryKey: true) var id = UUID()
-    @Persisted var totalTime: Double
+    @Persisted var totalTime: Int
     @Persisted var calories: Double
     @Persisted var label: String
     @Persisted var ingredientLines = List<String>()
     @Persisted var image: String
     @Persisted var url: String
-    @Persisted var isFavorite: Bool
     
     override class func primaryKey() -> String? {
         "id"

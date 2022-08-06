@@ -37,6 +37,7 @@
 		2BB2A6CC289E5C4A00144967 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2BB2A6CB289E5C4A00144967 /* RealmSwift */; };
 		2BB2A6CF289EB2F600144967 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2A6CE289EB2F600144967 /* AppError.swift */; };
 		2BB2A6D0289EB2F600144967 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB2A6CE289EB2F600144967 /* AppError.swift */; };
+		2BD1FCF7289F078B00E9AD3B /* PlaceholderImageExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD1FCF6289F078B00E9AD3B /* PlaceholderImageExtensionView.swift */; };
 		2BD273B52898500A005F090F /* SearchRecipesButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD273B42898500A005F090F /* SearchRecipesButtonView.swift */; };
 		2BD273BE289866D0005F090F /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B75A77428972B8700B0FE88 /* Ingredient.swift */; };
 		2BE99B062897171A00162E6B /* RecipleaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE99B052897171A00162E6B /* RecipleaseApp.swift */; };
@@ -88,6 +89,7 @@
 		2B75A7762897306E00B0FE88 /* CardAddIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAddIngredientView.swift; sourceTree = "<group>"; };
 		2B75A7782897327600B0FE88 /* CardListIngredientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListIngredientsView.swift; sourceTree = "<group>"; };
 		2BB2A6CE289EB2F600144967 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		2BD1FCF6289F078B00E9AD3B /* PlaceholderImageExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderImageExtensionView.swift; sourceTree = "<group>"; };
 		2BD273B42898500A005F090F /* SearchRecipesButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRecipesButtonView.swift; sourceTree = "<group>"; };
 		2BE99B022897171A00162E6B /* Reciplease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reciplease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE99B052897171A00162E6B /* RecipleaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipleaseApp.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				2BB2A6CE289EB2F600144967 /* AppError.swift */,
+				2BD1FCF6289F078B00E9AD3B /* PlaceholderImageExtensionView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -445,6 +448,7 @@
 				2B4AC5432899BA1300CC817E /* RecipeRowView.swift in Sources */,
 				2B0975BF289B1D47009E6EBE /* RecipeInstructionButtonView.swift in Sources */,
 				2B0975BD289B1D2F009E6EBE /* RecipeIngredientsView.swift in Sources */,
+				2BD1FCF7289F078B00E9AD3B /* PlaceholderImageExtensionView.swift in Sources */,
 				2B0975C3289B2FBC009E6EBE /* FavoriteView.swift in Sources */,
 				2BB2A6CF289EB2F600144967 /* AppError.swift in Sources */,
 				2B75A7792897327600B0FE88 /* CardListIngredientsView.swift in Sources */,

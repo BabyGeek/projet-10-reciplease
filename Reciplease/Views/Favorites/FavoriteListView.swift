@@ -36,10 +36,11 @@ struct FavoriteListView: View {
                                            endPoint: .top)
                         )
                 }, placeholder: {
-                    ProgressView()
+                    placeholderImage()
                 }))
             .frame(height: 170)
         }
+        .onDelete(perform: $favorites.remove)
     }
 }
 

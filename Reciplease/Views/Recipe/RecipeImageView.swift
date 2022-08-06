@@ -13,9 +13,9 @@ struct RecipeImageView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("\(Image(systemName: "flame")) \(recipe.calories)")
+                Text("\(Image(systemName: "flame")) \(recipe.getCalories())")
                 Spacer()
-                Text("\(recipe.totalTime) \(Image(systemName: "timer"))")
+                Text("\(recipe.getTime()) \(Image(systemName: "timer"))")
             }
             .padding(.top)
             Spacer()
@@ -55,7 +55,7 @@ struct RecipeImageView: View {
                                        endPoint: .bottom)
                     )
             }, placeholder: {
-                ProgressView()
+                placeholderImage()
             }))
     }
 }
