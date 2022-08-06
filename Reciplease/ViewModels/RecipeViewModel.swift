@@ -11,7 +11,6 @@ import RealmSwift
 @MainActor
 class RecipeViewModel: ObservableObject {
     @Published var results: [Recipe] = []
-    @Published var favorites: [Recipe] = []
     @Published var isLoading: Bool = false
     @Published var error: AppError?
     @Published var totalResults: Int?
@@ -19,6 +18,11 @@ class RecipeViewModel: ObservableObject {
     var ingredients: Results<IngredientEntity> {
         let realm = try! Realm()
         return realm.objects(IngredientEntity.self)
+    }
+    
+    var favorites: Results<RecipeEntity> {
+        let realm = try! Realm()
+        return realm.objects(RecipeEntity.self)
     }
     
     
@@ -57,19 +61,9 @@ class RecipeViewModel: ObservableObject {
             realm.delete(allIngredients)
         }
     }
-    
-    public func updateFavorite(_ recipe: Recipe) {
-        if isFavorite(recipe) {
-            if let index = favorites.firstIndex(of: recipe) {
-                favorites.remove(at: index)
-            }
-        } else {
-            favorites.append(recipe)
-        }
-    }
-    
+
     public func isFavorite(_ recipe: Recipe) -> Bool {
-        if let _ = favorites.firstIndex(of: recipe) {
+        if let _ = favorites.first(where: { $0.label == recipe.label}) {
             return true
         }
         
