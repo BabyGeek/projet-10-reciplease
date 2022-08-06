@@ -5,9 +5,12 @@
 //  Created by Paul Oggero on 02/08/2022.
 //
 
+import RealmSwift
 import SwiftUI
 
 struct RecipeView: View {
+    @ObservedResults(RecipeEntity.self) var favorites
+    @EnvironmentObject var viewModel: RecipeViewModel
     var recipe: Recipe = Recipe.mock
     
     var body: some View {
@@ -27,9 +30,12 @@ struct RecipeView: View {
         .toolbar {
             ToolbarItem {
                 Button {
-                    //
+                    if viewModel.isFavorite(recipe), let favorite = favorites.first(where: { $0.label == recipe.label }) {
+                        $favorites.remove(favorite)
+                    } else {                            $favorites.append(recipe.getEntity())
+                    }
                 } label: {
-                    Image(systemName: recipe.isFavorite ? "star.fill" : "star")
+                    Image(systemName: viewModel.isFavorite(recipe) ? "star.fill" : "star")
                 }
                 
             }

@@ -8,15 +8,26 @@
 import SwiftUI
 
 struct ResultView: View {
-    @EnvironmentObject var viewModel: SearchViewModel
+    @EnvironmentObject var viewModel: RecipeViewModel
     
     var body: some View {
-        if viewModel.isLoading || viewModel.results.isEmpty {
-            ProgressView()
+        if viewModel.isLoading || (viewModel.results.isEmpty && viewModel.totalResults == nil) {
+            VStack {
+                ProgressView()
+                Text("Loading")
+            }
         } else {
-            ScrollView(.vertical, showsIndicators: false, content: {
-                ResultListView(recipes: viewModel.results)
-            })
+            if viewModel.totalResults == 0 {
+                VStack(alignment: .center) {
+                    Spacer()
+                    Text("No result found for your ingredients.")
+                    Spacer()
+                }
+            } else {
+                List {
+                    ResultListView(recipes: viewModel.results)
+                }
+            }
         }
     }
 }
@@ -24,6 +35,7 @@ struct ResultView: View {
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
         ResultView()
+            .environmentObject(RecipeViewModel(service: SearchMockService()))
             .preferredColorScheme(.dark)
     }
 }

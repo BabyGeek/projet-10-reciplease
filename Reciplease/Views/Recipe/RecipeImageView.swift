@@ -55,9 +55,7 @@ struct RecipeImageView: View {
                                        endPoint: .bottom)
                     )
             }, placeholder: {
-                Image("NotFoundImage")
-                    .resizable()
-                    .scaledToFill()
+                ProgressView()
             }))
     }
 }

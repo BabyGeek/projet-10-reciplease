@@ -5,10 +5,12 @@
 //  Created by Paul Oggero on 03/08/2022.
 //
 
+import RealmSwift
 import SwiftUI
 
 struct MainView: View {
-    @StateObject var searchViewModel = SearchViewModel(service: SearchService())
+    @ObservedResults(RecipeEntity.self) var favorites
+    @StateObject var recipeViewModel = RecipeViewModel(service: SearchService())
     
     var body: some View {
         TabView {
@@ -16,7 +18,6 @@ struct MainView: View {
                 SearchView()
                     .navigationTitle("Reciplease")
             }
-            .environmentObject(searchViewModel)
             .navigationViewStyle(.stack)
             .tabItem {
                 Label("Search", systemImage: "magnifyingglass")
@@ -30,8 +31,16 @@ struct MainView: View {
             .tabItem {
                 Label("Favorites", systemImage: "heart")
             }
+            .badge(favorites.count)
             
         }
+        .alert(item: $recipeViewModel.error) { error in
+            return Alert(
+                title: Text("Error"),
+                message: Text(error.getDescription())
+            )
+        }
+        .environmentObject(recipeViewModel)
     }
 }
 

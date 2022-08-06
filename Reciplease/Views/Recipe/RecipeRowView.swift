@@ -12,10 +12,22 @@ struct RecipeRowView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("\(recipe.calories) \(Image(systemName: "flame"))")
                 Spacer()
-                Text("\(recipe.totalTime) \(Image(systemName: "timer"))")
+                VStack(alignment: .trailing) {
+                    Text("\(recipe.calories) \(Image(systemName: "flame"))")
+                        .buttonStyle(.bordered)
+                        .tint(Color("Text"))
+                    Text("\(recipe.totalTime) \(Image(systemName: "timer"))")
+                        .buttonStyle(.bordered)
+                        .tint(Color("Text"))
+                }
+                .padding(.horizontal)
+                .background(
+                RoundedRectangle(cornerRadius: 50)
+                    .fill(Color("CardBackground").opacity(0.7))
+                )
             }
+            
             Spacer()
             HStack {
                 Text(recipe.label)
@@ -25,16 +37,6 @@ struct RecipeRowView: View {
             }
         }
         .foregroundColor(Color("Text"))
-        .frame(height: 200)
-        .background(
-            AsyncImage(url: URL(string: recipe.image), content: {
-                image in
-                image
-                    .resizable()
-                    .frame(height: 120)
-            }, placeholder: {
-                ProgressView()
-            }))
     }
 }
 
