@@ -10,9 +10,7 @@ import Alamofire
 
 class NetworkManager {
     func get<T: Decodable>(url: URLConvertible, parameters: Parameters?,_ completion: @escaping (DataResponse<T, AFError>) -> Void) {
-        AF.request(url, parameters: parameters) { urlRequest in
-            urlRequest.timeoutInterval = 5
-        }
+        AF.request(url, parameters: parameters)
         .responseDecodable(of: T.self) { response in
             completion(response)
         }
