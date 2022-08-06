@@ -5,10 +5,11 @@
 //  Created by Paul Oggero on 31/07/2022.
 //
 
+import RealmSwift
 import SwiftUI
 
 struct CardAddIngredientView: View {
-    @EnvironmentObject var viewModel: SearchViewModel
+    @ObservedResults(IngredientEntity.self) var ingredients
     @State var ingredient = ""
     @FocusState var focusing
     
@@ -32,10 +33,11 @@ struct CardAddIngredientView: View {
                         .submitLabel(.done)
                     
                     Button {
-                        withAnimation {
-                        viewModel.addIngredient(ingredient)
-                        ingredient = ""
-                        }
+                            let ingredientEntity = IngredientEntity()
+                            ingredientEntity.name = self.ingredient
+                            $ingredients.append(ingredientEntity)
+                            
+                            self.ingredient = ""
                     } label: {
                         Text("Add")
                     }

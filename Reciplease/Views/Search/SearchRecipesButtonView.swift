@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchRecipesButtonView: View {
     @State var selection: String? = nil
-    @EnvironmentObject var viewModel: SearchViewModel
+    @EnvironmentObject var viewModel: RecipeViewModel
     
     var body: some View {
         NavigationLink(
@@ -38,6 +38,6 @@ struct SearchRecipesButtonView_Previews: PreviewProvider {
     static var previews: some View {
         SearchRecipesButtonView()
             .preferredColorScheme(.dark)
-            .environmentObject(SearchViewModel(service: SearchMockService()))
+            .environmentObject(RecipeViewModel(service: SearchMockService()))
     }
 }

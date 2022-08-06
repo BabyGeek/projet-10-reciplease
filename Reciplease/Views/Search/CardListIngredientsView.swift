@@ -5,10 +5,12 @@
 //  Created by Paul Oggero on 31/07/2022.
 //
 
+import RealmSwift
 import SwiftUI
 
 struct CardListIngredientsView: View {
-    @EnvironmentObject var viewModel: SearchViewModel
+    @EnvironmentObject var viewModel: RecipeViewModel
+    @ObservedResults(IngredientEntity.self) var ingredients
     
     var body: some View {
         VStack {
@@ -18,9 +20,7 @@ struct CardListIngredientsView: View {
                     .foregroundColor(Color("Text"))
                 Spacer()
                 Button {
-                    withAnimation {
-                        viewModel.cleanIngredients()
-                    }
+                    viewModel.cleanIngredients()
                 } label: {
                     Text("Clear")
                 }
@@ -31,12 +31,14 @@ struct CardListIngredientsView: View {
             }
             
             VStack {
-                ForEach(viewModel.ingredients) { ingredient in
-                    HStack {
-                        Text("\t -  \(ingredient.name)")
-                            .foregroundColor(Color("Text"))
-                        Spacer()
+                List {
+                    ForEach(ingredients, id: \.id) { ingredient in
+                        VStack(alignment: .leading) {
+                            Text("- \(ingredient.name)")
+                                .foregroundColor(Color("Text"))
+                        }
                     }
+                    .onDelete(perform: $ingredients.remove)
                 }
             }
         }
@@ -46,6 +48,6 @@ struct CardListIngredientsView: View {
 struct CardListIngredientsView_Previews: PreviewProvider {
     static var previews: some View {
         CardListIngredientsView()
-            .environmentObject(SearchViewModel(service: SearchMockService()))
+            .environmentObject(RecipeViewModel(service: SearchMockService()))
     }
 }
