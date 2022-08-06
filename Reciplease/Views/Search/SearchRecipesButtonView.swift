@@ -12,9 +12,14 @@ struct SearchRecipesButtonView: View {
     @EnvironmentObject var viewModel: SearchViewModel
     
     var body: some View {
-        NavigationLink(destination: ResultView(), tag: "result", selection: $selection) {
-            EmptyView()
-        }
+        NavigationLink(
+            destination: ResultView()
+                .navigationTitle("Results")
+                .navigationBarTitleDisplayMode(.inline),
+            tag: "result",
+            selection: $selection) {
+                EmptyView()
+            }
         
         Button(action: {
             self.selection = "result"

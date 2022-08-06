@@ -11,11 +11,13 @@ struct ResultView: View {
     @EnvironmentObject var viewModel: SearchViewModel
     
     var body: some View {
-        ScrollView(.vertical, showsIndicators: false, content: {
-            ResultListView(recipes: viewModel.results)
-        })
-        .navigationTitle("Results")
-        .navigationBarTitleDisplayMode(.inline)
+        if viewModel.isLoading || viewModel.results.isEmpty {
+            ProgressView()
+        } else {
+            ScrollView(.vertical, showsIndicators: false, content: {
+                ResultListView(recipes: viewModel.results)
+            })
+        }
     }
 }
 

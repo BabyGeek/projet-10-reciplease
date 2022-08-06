@@ -17,11 +17,9 @@ struct RecipeView: View {
                     width: UIScreen.main.bounds.size.width,
                     height: UIScreen.main.bounds.size.width
                 )
-            Spacer()
-            ScrollView(.vertical, showsIndicators: true, content: {
-                RecipeIngredientsView(recipe: recipe)
-            })
-            Spacer()
+            
+            RecipeIngredientsView(recipe: recipe)
+            
             RecipeInstructionButtonView(recipe: recipe)
         }
         .navigationTitle(recipe.label)

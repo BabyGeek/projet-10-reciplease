@@ -12,6 +12,7 @@ class SearchViewModel: ObservableObject {
     @Published var results: [Recipe] = []
     
     var error: Error? = nil
+    var isLoading: Bool = false
     
     private var service: SearchServicing
     
@@ -21,16 +22,20 @@ class SearchViewModel: ObservableObject {
     }
     
     public func fetchData() {
+        self.isLoading = true
         service.parameters = ["q": ingredients.map { $0.name }.joined(separator: " ")]
 
         service.getSearch { [weak self] result in
-            switch result {
-            case .success(let searchResponse):
-                self?.results = searchResponse.recipes
-            case .failure(let error):
-                self?.error = error
+            DispatchQueue.main.async {
+                switch result {
+                case .success(let searchResponse):
+                    self?.results = searchResponse.recipes
+                case .failure(let error):
+                    self?.error = error
+                }
             }
         }
+        self.isLoading = false
     }
     
     public func addIngredient(_ ingredient: String) {

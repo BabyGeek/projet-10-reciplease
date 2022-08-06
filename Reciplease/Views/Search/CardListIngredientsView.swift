@@ -46,5 +46,6 @@ struct CardListIngredientsView: View {
 struct CardListIngredientsView_Previews: PreviewProvider {
     static var previews: some View {
         CardListIngredientsView()
+            .environmentObject(SearchViewModel(service: SearchMockService()))
     }
 }

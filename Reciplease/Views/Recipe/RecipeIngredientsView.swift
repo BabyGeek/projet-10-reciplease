@@ -11,15 +11,16 @@ struct RecipeIngredientsView: View {
     var recipe: Recipe = Recipe.mock
 
     var body: some View {
-        ForEach(recipe.ingredientLines, id: \.self) { line in
+        List(recipe.ingredientLines, id: \.self) { line in
             Text(line)
-                .frame(alignment: .leading)
         }
+        .foregroundColor(Color("Text"))
     }
 }
 
 struct RecipeIngredientsView_Previews: PreviewProvider {
     static var previews: some View {
         RecipeIngredientsView()
+            .preferredColorScheme(.dark)
     }
 }

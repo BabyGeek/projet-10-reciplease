@@ -14,7 +14,7 @@ struct SearchView: View {
     var body: some View {
         VStack {
             CardAddIngredientView()
-            
+
             if !viewModel.ingredients.isEmpty {
                 VStack {
                     CardListIngredientsView()
@@ -33,5 +33,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         SearchView()
             .preferredColorScheme(.dark)
+            .environmentObject(SearchViewModel(service: SearchMockService()))
     }
 }
