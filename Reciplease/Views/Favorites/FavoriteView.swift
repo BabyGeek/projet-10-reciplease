@@ -12,15 +12,13 @@ struct FavoriteView: View {
     @ObservedResults(RecipeEntity.self) var favorites
     var body: some View {
         if favorites.isEmpty {
-            Text("Please add your first favorite recipe by clicking on the \(Image(systemName: "star")) symbol.")
+            Text("Please add your first favorite recipe by clicking on the \(Image(systemName: "heart")) symbol.")
                 .font(.body)
-                .lineLimit(0)
         }
         
-        List {
+        ScrollView {
             FavoriteListView()
         }
-        .listStyle(.insetGrouped)
         
     }
 }

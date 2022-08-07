@@ -10,33 +10,6 @@ import SwiftUI
 struct RecipeRowView: View {
     var recipe: Recipe = Recipe.mock
     var body: some View {
-        VStack {
-            HStack {
-                Text("\(Image(systemName: "flame")) \(recipe.getCalories())")
-                    .font(.body)
-
-                Spacer()
-                Text("\(recipe.getTime()) \(Image(systemName: "timer"))")
-                    .font(.body)
-
-            }
-
-            Spacer()
-            
-            HStack {
-                Text(recipe.label)
-                    .font(.system(.title3))
-                    .lineLimit(1)
-                Spacer()
-            }
-        }
-        .foregroundColor(Color("Text"))
-    }
-}
-
-struct RecipeRowView2: View {
-    var recipe: Recipe = Recipe.mock
-    var body: some View {
         Capsule()
             .fill(Color("CardBackground"))
             .frame(height: 100)
@@ -48,7 +21,7 @@ struct RecipeRowView2: View {
     }
 }
 
-extension RecipeRowView2 {
+extension RecipeRowView {
     var main: some View {
         HStack {
             image
@@ -59,7 +32,7 @@ extension RecipeRowView2 {
 }
 
 
-extension RecipeRowView2 {
+extension RecipeRowView {
     var image: some View {
         AsyncImage(url: URL(string: recipe.image), content: {
             image in
@@ -78,7 +51,7 @@ extension RecipeRowView2 {
     }
 }
 
-extension RecipeRowView2 {
+extension RecipeRowView {
     var informations: some View {
         VStack(alignment: .leading) {
             Text("\(recipe.label)")
@@ -105,7 +78,7 @@ extension RecipeRowView2 {
 
 struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeRowView2()
+        RecipeRowView()
             .preferredColorScheme(.dark)
     }
 }

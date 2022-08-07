@@ -37,7 +37,7 @@ struct RecipeView: View {
                         $favorites.append(recipe.getEntity())
                     }
                 } label: {
-                    Image(systemName: viewModel.isFavorite(recipe) ? "star.fill" : "star")
+                    Image(systemName: viewModel.isFavorite(recipe) ? "heart.fill" : "heart")
                         .accessibilityLabel("Save this recipe as a favorite.")
                 }
                 

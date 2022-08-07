@@ -16,7 +16,7 @@ struct ResultListView: View {
         ForEach(recipes.indices, id: \.self) { index in
             let recipe = recipes[index]
             NavigationLink(destination: RecipeView(recipe: recipe), tag: index, selection: $selection) {
-                RecipeRowView2(recipe: recipe)
+                RecipeRowView(recipe: recipe)
             }
         }
     }

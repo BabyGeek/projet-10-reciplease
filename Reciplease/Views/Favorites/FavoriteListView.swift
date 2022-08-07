@@ -16,7 +16,7 @@ struct FavoriteListView: View {
         ForEach(favorites.indices, id: \.self) { index in
             let recipe = favorites[index].toRecipe()
             NavigationLink(destination: RecipeView(recipe: recipe), tag: index, selection: $selection) {
-                RecipeRowView2(recipe: recipe)
+                RecipeRowView(recipe: recipe)
             }
         }
         .onDelete(perform: $favorites.remove)
