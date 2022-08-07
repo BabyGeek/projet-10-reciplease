@@ -13,12 +13,15 @@ struct FavoriteView: View {
     var body: some View {
         if favorites.isEmpty {
             Text("Please add your first favorite recipe by clicking on the \(Image(systemName: "star")) symbol.")
+                .font(.body)
+                .lineLimit(0)
         }
         
         List {
             FavoriteListView()
         }
-        .listStyle(.plain)
+        .listStyle(.insetGrouped)
+        
     }
 }
 

@@ -18,19 +18,21 @@ struct CardAddIngredientView: View {
             RoundedRectangle(cornerRadius: 50)
                 .fill(Color("CardBackground").opacity(0.38))
                 .shadow(color: Color("CardBackground"), radius: 50, x: 3, y: 5)
-                .frame(height: 150)
+                .frame(minHeight: 150)
 
             VStack {
                 Text("What's in your fridge?")
-                    .foregroundColor(Color("Text"))
                     .font(.title)
                     .frame(alignment: .center)
+                    .lineLimit(1)
+                    .accessibilityLabel("What's in your fridge?")
                 
                 HStack {
                     TextField("Lemon, Cheese, Sausages...", text: $ingredient)
-                        .foregroundColor(Color("Text").opacity(0.8))
+                        .font(.body)
                         .focused($focusing)
                         .submitLabel(.done)
+                        .accessibilityLabel("Ingredients to add")
                     
                     Button {
                             let ingredientEntity = IngredientEntity()
@@ -40,11 +42,12 @@ struct CardAddIngredientView: View {
                             self.ingredient = ""
                     } label: {
                         Text("Add")
+                            .font(.body)
+                            .accessibilityLabel("Add an ingredient to your list.")
                     }
                     .clipShape(Capsule())
                     .buttonStyle(.borderedProminent)
                     .tint(Color("Primary"))
-                    .shadow(color: Color("Primary"), radius: 25, x: 3, y: 5)
                 }
                 .onSubmit {
                     focusing = false
@@ -58,5 +61,6 @@ struct CardAddIngredientView: View {
 struct CardAddAlimentView_Previews: PreviewProvider {
     static var previews: some View {
         CardAddIngredientView()
+            .environment(\.sizeCategory, .accessibilityExtraExtraExtraLarge)
     }
 }

@@ -24,9 +24,12 @@ struct ResultView: View {
                     Spacer()
                 }
             } else {
-                List {
+                ScrollView {
                     ResultListView(recipes: viewModel.results)
+                        .accessibilityHidden(true)
                 }
+                .listRowSeparatorTint(.black, edges: .all)
+                .accessibilityLabel("List of recipes results.")
             }
         }
     }

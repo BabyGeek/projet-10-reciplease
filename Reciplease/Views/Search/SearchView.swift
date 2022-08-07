@@ -13,22 +13,23 @@ struct SearchView: View {
     @ObservedResults(IngredientEntity.self) var ingredients
     
     var body: some View {
-        VStack {
-            CardAddIngredientView()
-                .onTapGesture {
-                    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-                }
+        ScrollView {
+            VStack {
+                CardAddIngredientView()
+                    .onTapGesture {
+                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                    }
 
-            if !ingredients.isEmpty {
-                VStack {
-                    CardListIngredientsView()
-                    Spacer()
-                    SearchRecipesButtonView()
-                        .padding(.bottom)
+                if !ingredients.isEmpty {
+                    VStack {
+                        CardListIngredientsView()
+                        Spacer()
+                        SearchRecipesButtonView()
+                    }
                 }
             }
+            .animation(.easeInOut, value: viewModel.ingredients.isEmpty)
         }
-        .animation(.easeInOut, value: viewModel.ingredients.isEmpty)
     }
 }
 

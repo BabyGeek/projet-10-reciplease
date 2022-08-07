@@ -16,29 +16,8 @@ struct FavoriteListView: View {
         ForEach(favorites.indices, id: \.self) { index in
             let recipe = favorites[index].toRecipe()
             NavigationLink(destination: RecipeView(recipe: recipe), tag: index, selection: $selection) {
-                RecipeRowView(recipe: recipe)
+                RecipeRowView2(recipe: recipe)
             }
-            .listRowBackground(
-                AsyncImage(url: URL(string: recipe.image), content: {
-                    image in
-                    image
-                        .resizable()
-                        .mask(
-                            LinearGradient(gradient: Gradient(
-                                colors: [
-                                    .clear,
-                                    .black,
-                                    .black,
-                                    .black,
-                                    .clear]
-                            ),
-                                           startPoint: .bottom,
-                                           endPoint: .top)
-                        )
-                }, placeholder: {
-                    placeholderImage()
-                }))
-            .frame(height: 170)
         }
         .onDelete(perform: $favorites.remove)
     }

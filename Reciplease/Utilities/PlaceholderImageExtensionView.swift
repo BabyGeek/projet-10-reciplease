@@ -14,7 +14,6 @@ extension View {
             .renderingMode(.template)
             .resizable()
             .aspectRatio(contentMode: .fit)
-            .frame(width: 150, height: 150)
             .foregroundColor(.gray)
     }
 }

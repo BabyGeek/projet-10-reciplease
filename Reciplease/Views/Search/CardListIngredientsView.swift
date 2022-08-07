@@ -13,16 +13,19 @@ struct CardListIngredientsView: View {
     @ObservedResults(IngredientEntity.self) var ingredients
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
-                Text("Ingredients :")
+                Text("Ingredients")
                     .font(.title3)
                     .foregroundColor(Color("Text"))
+                    .lineLimit(1)
+                    .accessibilityLabel("Ingredients")
                 Spacer()
                 Button {
                     viewModel.cleanIngredients()
                 } label: {
                     Text("Clear")
+                        .font(.body)
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(Color("Red"))
@@ -30,16 +33,10 @@ struct CardListIngredientsView: View {
                 .shadow(color: Color("Red"), radius: 25, x: 3, y: 5)
             }
             
-            VStack {
-                List {
-                    ForEach(ingredients, id: \.id) { ingredient in
-                        VStack(alignment: .leading) {
-                            Text("- \(ingredient.name)")
-                                .foregroundColor(Color("Text"))
-                        }
-                    }
-                    .onDelete(perform: $ingredients.remove)
-                }
+            ForEach(ingredients, id: \.id) { ingredient in
+                Text("- \(ingredient.name)")
+                    .foregroundColor(Color("Text"))
+                    .font(.body)
             }
         }
     }

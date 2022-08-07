@@ -34,18 +34,18 @@ struct MainView: View {
             .badge(favorites.count)
             
         }
+        .environmentObject(recipeViewModel)
         .alert(item: $recipeViewModel.error) { error in
             return Alert(
                 title: Text("Error"),
                 message: Text(error.getDescription())
             )
         }
-        .environmentObject(recipeViewModel)
     }
 }
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(recipeViewModel: RecipeViewModel(service: SearchMockService()))
     }
 }
