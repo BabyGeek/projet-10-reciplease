@@ -13,8 +13,11 @@ struct RecipeIngredientsView: View {
     var body: some View {
         List(recipe.ingredientLines, id: \.self) { line in
             Text(line)
+                .font(.body)
+                .lineLimit(0)
         }
         .foregroundColor(Color("Text"))
+        .listRowSeparatorTint(.black, edges: .all)
     }
 }
 

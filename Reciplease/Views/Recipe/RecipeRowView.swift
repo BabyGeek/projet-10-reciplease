@@ -12,15 +12,20 @@ struct RecipeRowView: View {
     var body: some View {
         VStack {
             HStack {
-                    Text("\(recipe.getCalories()) \(Image(systemName: "flame"))")
+                Text("\(Image(systemName: "flame")) \(recipe.getCalories())")
+                    .font(.body)
+
                 Spacer()
-                    Text("\(recipe.getTime()) \(Image(systemName: "timer"))")
+                Text("\(recipe.getTime()) \(Image(systemName: "timer"))")
+                    .font(.body)
+
             }
-            
+
             Spacer()
+            
             HStack {
                 Text(recipe.label)
-                    .font(.subheadline)
+                    .font(.system(.title3))
                     .lineLimit(1)
                 Spacer()
             }
@@ -29,9 +34,78 @@ struct RecipeRowView: View {
     }
 }
 
+struct RecipeRowView2: View {
+    var recipe: Recipe = Recipe.mock
+    var body: some View {
+        Capsule()
+            .fill(Color("CardBackground"))
+            .frame(height: 100)
+            .overlay(
+                main
+                .padding()
+                .foregroundColor(Color("Text"))
+            )
+    }
+}
+
+extension RecipeRowView2 {
+    var main: some View {
+        HStack {
+            image
+
+            informations
+        }
+    }
+}
+
+
+extension RecipeRowView2 {
+    var image: some View {
+        AsyncImage(url: URL(string: recipe.image), content: {
+            image in
+            image
+                .resizable()
+                .scaledToFit()
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color("Primary"), lineWidth: 1.2))
+            
+        }, placeholder: {
+            placeholderImage()
+                .scaledToFit()
+                .clipShape(Circle())
+                .overlay(ProgressView())
+        })
+    }
+}
+
+extension RecipeRowView2 {
+    var informations: some View {
+        VStack(alignment: .leading) {
+            Text("\(recipe.label)")
+                .font(.title2)
+                .lineLimit(1)
+            
+            Spacer()
+
+            HStack {
+                Text("\(Image(systemName: "flame")) \(recipe.getCalories())")
+                    .font(.body)
+                Spacer()
+                Text("\(recipe.getTime()) \(Image(systemName: "timer"))")
+                    .font(.body)
+                
+                Image(systemName: "chevron.right")
+                    .padding(.horizontal)
+            }
+            Spacer()
+            RecipeBadgeView(recipe: recipe)
+        }
+    }
+}
+
 struct RecipeListView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeRowView()
+        RecipeRowView2()
             .preferredColorScheme(.dark)
     }
 }

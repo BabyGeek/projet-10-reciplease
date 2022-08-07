@@ -21,6 +21,7 @@ struct RecipeView: View {
                     height: UIScreen.main.bounds.size.width
                 )
             
+            RecipeBadgeView(recipe: recipe)
             RecipeIngredientsView(recipe: recipe)
             
             RecipeInstructionButtonView(recipe: recipe)
@@ -32,10 +33,12 @@ struct RecipeView: View {
                 Button {
                     if viewModel.isFavorite(recipe), let favorite = favorites.first(where: { $0.label == recipe.label }) {
                         $favorites.remove(favorite)
-                    } else {                            $favorites.append(recipe.getEntity())
+                    } else {
+                        $favorites.append(recipe.getEntity())
                     }
                 } label: {
                     Image(systemName: viewModel.isFavorite(recipe) ? "star.fill" : "star")
+                        .accessibilityLabel("Save this recipe as a favorite.")
                 }
                 
             }

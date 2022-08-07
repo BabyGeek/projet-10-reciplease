@@ -14,10 +14,18 @@ struct RecipeImageView: View {
         VStack {
             HStack {
                 Text("\(Image(systemName: "flame")) \(recipe.getCalories())")
+                    .accessibilityLabel("\(recipe.getCalories()) calories.")
+                    .font(.body)
+                    .lineLimit(1)
+
                 Spacer()
                 Text("\(recipe.getTime()) \(Image(systemName: "timer"))")
+                    .accessibilityLabel("\(recipe.getTime()) minutes to prepare it.")
+                    .font(.body)
+                    .lineLimit(1)
+
             }
-            .padding(.top)
+
             Spacer()
             
             HStack {
@@ -56,6 +64,7 @@ struct RecipeImageView: View {
                     )
             }, placeholder: {
                 placeholderImage()
+                    .overlay(ProgressView())
             }))
     }
 }

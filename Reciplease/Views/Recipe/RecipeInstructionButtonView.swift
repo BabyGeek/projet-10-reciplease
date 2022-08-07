@@ -19,6 +19,9 @@ struct RecipeInstructionButtonView: View {
             showSafari = true
         }, label: {
             Text("Show instructions")
+                .font(.body)
+                .lineLimit(0)
+
         })
         .clipShape(Capsule())
         .buttonStyle(.borderedProminent)
