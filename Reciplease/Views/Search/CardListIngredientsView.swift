@@ -22,7 +22,12 @@ struct CardListIngredientsView: View {
                     .accessibilityHint("Ingredients added in your list.")
                 Spacer()
                 Button {
-                    viewModel.cleanIngredients()
+                    let realm = try! Realm()
+                    
+                    try! realm.write {
+                        let allIngredients = realm.objects(IngredientEntity.self)
+                        realm.delete(allIngredients)
+                    }
                 } label: {
                     Text("Clear")
                         .font(.body)

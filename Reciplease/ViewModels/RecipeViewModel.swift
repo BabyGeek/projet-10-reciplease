@@ -14,37 +14,21 @@ class RecipeViewModel: ObservableObject {
     @Published var error: AppError?
     @Published var totalResults: Int?
 
-    var ingredients: Results<IngredientEntity> {
-        let realm = try! Realm()
-        return realm.objects(IngredientEntity.self)
-    }
-    
-    var favorites: Results<RecipeEntity> {
-        let realm = try! Realm()
-        return realm.objects(RecipeEntity.self)
-    }
-
-    var canSearch: Bool {
-        if ingredients.isEmpty {
-            error = AppError(error: CRUDError.emptyIngredient)
-            return false
-        }
-        return true
-    }
-
     private var service: SearchServicing
 
     init(service: SearchServicing) {
         self.service = service
     }
 
-    public func fetchData() {
+    public func fetchData(_ ingredients: [Ingredient]? = nil) {
         isLoading = true
         self.totalResults = nil
         self.results = []
         
-        service.parameters = ["q": ingredients.map { $0.name }.joined(separator: " ")]
-        
+        if let ingredients = ingredients {
+            service.parameters = ["q": ingredients.map { $0.name }.joined(separator: " ")]
+        }
+
         service.get { [weak self] result in
             switch result {
             case .success(let searchResponse):
@@ -58,38 +42,12 @@ class RecipeViewModel: ObservableObject {
         isLoading = false
     }
     
-    /// Delete all ingredients from Realm Database
-    public func cleanIngredients() {
-        let realm = try! Realm()
-        
-        try! realm.write {
-            let allIngredients = realm.objects(IngredientEntity.self)
-            realm.delete(allIngredients)
-        }
-    }
-    
-    /// Determine if a recipe is in favorites, based on edamam uri
-    /// - Parameter recipe: recipe to check
-    /// - Returns: True is it is a favorite recipe, else false
-    public func isFavorite(_ recipe: Recipe) -> Bool {
-        if let _ = favorites.first(where: { $0.uri == recipe.uri }) {
-            return true
-        }
-        
-        return false
-    }
-    
     /// Handle ingredient adding
     /// - Parameter ingredient: the ingredient name to add
     /// - Returns: True if the user can add the ingredient, else false
     public func isValidIngredient(_ ingredient: String) -> Bool {
         if ingredient.isEmpty {
             error = AppError(error: CRUDError.emptyIngredient)
-            return false
-        }
-        
-        if let _ = ingredients.first(where: { $0.name == ingredient }) {
-            error = AppError(error: CRUDError.alreadyInUse)
             return false
         }
         
