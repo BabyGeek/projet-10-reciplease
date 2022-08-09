@@ -8,6 +8,7 @@
 import Foundation
 
 struct Recipe: Codable, Equatable {
+    let uri: String
     let totalTime: Int
     let calories: Double
     let label: String
@@ -18,7 +19,7 @@ struct Recipe: Codable, Equatable {
     let mealType: [String]?
     let dishType: [String]?
     
-    static var mock = Recipe(totalTime: 3, calories: 2871.0704237333985, label: "Chorizo, Avocado, and Egg Cemitas with Chipotle Mayonnaise Recipe", ingredientLines: [
+    static var mock = Recipe(uri: "http://www.edamam.com/ontologies/edamam.owl#recipe_7a844b79a5df3f11e822cc229bfb3981", totalTime: 3, calories: 2871.0704237333985, label: "Chorizo, Avocado, and Egg Cemitas with Chipotle Mayonnaise Recipe", ingredientLines: [
         "1/4 cup mayonnaise",
         "1 teaspoon fresh lime juice from 1 lime",
         "1 chipotle pepper in adobo sauce, chopped, plus 1 tablespoon adobo sauce",
@@ -40,6 +41,7 @@ struct Recipe: Codable, Equatable {
       ])
     
     enum CodingKeys: String, CodingKey {
+        case uri
         case label
         case totalTime
         case calories
@@ -51,7 +53,8 @@ struct Recipe: Codable, Equatable {
         case dishType
     }
     
-    init(totalTime: Int, calories: Double, label: String, ingredientLines: [String], image: String, url: String, cuisineType: [String]?, mealType: [String]?, dishType: [String]?) {
+    init(uri: String, totalTime: Int, calories: Double, label: String, ingredientLines: [String], image: String, url: String, cuisineType: [String]?, mealType: [String]?, dishType: [String]?) {
+        self.uri = uri
         self.totalTime = totalTime
         self.calories = calories
         self.label = label
@@ -65,6 +68,7 @@ struct Recipe: Codable, Equatable {
     
     func getEntity() -> RecipeEntity {
         let entity = RecipeEntity()
+        entity.uri = self.uri
         entity.totalTime = self.totalTime
         entity.calories = self.calories
         entity.label = self.label

@@ -11,6 +11,7 @@ import RealmSwift
 
 class RecipeEntity: Object, Identifiable {
     @Persisted(primaryKey: true) var id = UUID()
+    @Persisted var uri: String
     @Persisted var totalTime: Int
     @Persisted var calories: Double
     @Persisted var label: String
@@ -26,6 +27,6 @@ class RecipeEntity: Object, Identifiable {
     }
     
     public func toRecipe() -> Recipe {
-        return Recipe(totalTime: totalTime, calories: calories, label: label, ingredientLines: Array(ingredientLines), image: image, url: url, cuisineType: Array(cuisineType), mealType: Array(mealType), dishType: Array(dishType))
+        return Recipe(uri: uri, totalTime: totalTime, calories: calories, label: label, ingredientLines: Array(ingredientLines), image: image, url: url, cuisineType: Array(cuisineType), mealType: Array(mealType), dishType: Array(dishType))
     }
 }
