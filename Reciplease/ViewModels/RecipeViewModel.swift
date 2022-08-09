@@ -42,15 +42,6 @@ class RecipeViewModel: ObservableObject {
         isLoading = false
     }
     
-    /// Determine if a recipe is in favorites, based on edamam uri
-    /// - Parameter recipe: recipe to check
-    /// - Parameter favorites: Array to check
-    /// - Returns: True is it is a favorite recipe, else false
-    public func isFavorite(_ recipe: Recipe, favorites: [Any]) -> Bool {
-        
-        return false
-    }
-    
     /// Handle ingredient adding
     /// - Parameter ingredient: the ingredient name to add
     /// - Returns: True if the user can add the ingredient, else false

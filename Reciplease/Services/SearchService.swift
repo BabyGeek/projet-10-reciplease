@@ -8,13 +8,6 @@
 import Alamofire
 import Combine
 
-/// SearchServicing protocol
-protocol SearchServicing {
-    var parameters: Parameters? { get set }
-    var task: Cancellable? { get set }
-    func get(_ completion: @escaping (Result<SearchResponse, AFError>) -> Void)
-}
-
 /// Search service, used to handle Search task
 class SearchService: SearchServicing {
     internal var task: Cancellable? = nil
@@ -39,26 +32,6 @@ class SearchService: SearchServicing {
             }, receiveValue: { (response) in
                 completion(response.result)
             })
-    }
-}
-
-/// Search mock service, used to handle Search mock for development, debug or test
-class SearchMockService: SearchServicing {
-    internal var task: Cancellable? = nil
-    
-    var parameters: Parameters?
-    var getCallCounter = 0
-    
-    func get(_ completion: @escaping (Result<SearchResponse, AFError>) -> Void) {
-        getCallCounter += 1
-        
-        let response = SearchResponse(recipes: [
-            Recipe.mock,
-            Recipe.mock,
-            Recipe.mock,
-        ])
-        
-        completion(.success(response))
     }
 }
 

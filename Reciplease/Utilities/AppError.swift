@@ -35,11 +35,7 @@ struct AppError: Identifiable {
     }
     
     func getDescription() -> String {
-        if let description = error.errorDescription {
-            return description
-        }
-        
-        return "Unknown error happened."
+        error.localizedDescription
     }
 }
 
