@@ -4,6 +4,7 @@
 //
 //  Created by Paul Oggero on 09/08/2022.
 //
+// Entity for Realm Ingredient object
 
 import Foundation
 import RealmSwift

@@ -9,6 +9,8 @@ import SwiftUI
 
 extension View {
     @ViewBuilder
+    /// Custom placeholder image
+    /// - Returns: Return photo Image view
     func placeholderImage() -> some View {
         Image(systemName: "photo")
             .renderingMode(.template)
