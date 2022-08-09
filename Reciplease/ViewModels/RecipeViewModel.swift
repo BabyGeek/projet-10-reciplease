@@ -58,6 +58,7 @@ class RecipeViewModel: ObservableObject {
         isLoading = false
     }
     
+    /// Delete all ingredients from Realm Database
     public func cleanIngredients() {
         let realm = try! Realm()
         
@@ -67,14 +68,20 @@ class RecipeViewModel: ObservableObject {
         }
     }
     
+    /// Determine if a recipe is in favorites, based on edamam uri
+    /// - Parameter recipe: recipe to check
+    /// - Returns: True is it is a favorite recipe, else false
     public func isFavorite(_ recipe: Recipe) -> Bool {
-        if let _ = favorites.first(where: { $0.url == recipe.url }) {
+        if let _ = favorites.first(where: { $0.uri == recipe.uri }) {
             return true
         }
         
         return false
     }
     
+    /// Handle ingredient adding
+    /// - Parameter ingredient: the ingredient name to add
+    /// - Returns: True if the user can add the ingredient, else false
     public func isValidIngredient(_ ingredient: String) -> Bool {
         if ingredient.isEmpty {
             error = AppError(error: CRUDError.emptyIngredient)
