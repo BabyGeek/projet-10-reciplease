@@ -26,8 +26,9 @@ struct RecipeView: View {
             ScrollView {
                 VStack(alignment: .leading) {
                     RecipeIngredientsView(recipe: recipe)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+
                 }
-                .frame(width: .infinity)
             }
 
             RecipeInstructionButtonView(recipe: recipe)
