@@ -24,14 +24,14 @@ class SearchService: SearchServicing {
         
         self.task = AF.request(url, method: .get, parameters: parameters)
             .publishDecodable(type: SearchResponse.self)
-            .sink(receiveCompletion: { (completion) in
-                switch completion {
+            .sink(receiveCompletion: { (failure) in
+                switch failure {
                 case .finished:
                     ()
                 case .failure(let error):
                     if let error = error.asAFError {
                         let result: Result<SearchResponse, AFError> = .failure(error)
-                        //completion(result)
+                        completion(result)
                     }
                 }
             }, receiveValue: { (response) in
