@@ -18,22 +18,17 @@ class RecipleaseTests: XCTestCase {
     
     func testGivenNewWhenCheckingShouldBeNilOrEmpty() throws {
         XCTAssertTrue(viewModel.results.isEmpty)
-        XCTAssertTrue(viewModel.ingredients.isEmpty)
-        XCTAssertTrue(viewModel.favorites.isEmpty)
-
+        
         XCTAssertFalse(viewModel.isLoading)
-        XCTAssertFalse(viewModel.canSearch)
 
         XCTAssertNil(viewModel.error)
         XCTAssertNil(viewModel.totalResults)
     }
     
-    func testGivenNewWhenGetSearchThenResultsShouldCountThree() throws {
+    func testGivenIngredientsWhenGetSearchThenResultsShouldCountThree() throws {
         viewModel.fetchData()
         
         XCTAssertEqual(viewModel.results.count, 3)
     }
-    
-    //func testGivenIngredient
 
 }

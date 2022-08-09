@@ -36,11 +36,18 @@ struct CardAddIngredientView: View {
                             .accessibilityHint("Type your ingredients names in the text field.")
                         
                         Button {
+                            if  ingredients.first(where: { $0.name == ingredient }) != nil {
+                                viewModel.error = AppError(error: CRUDError.alreadyInUse)
+                                self.ingredient = ""
+                                return
+                            }
+                            
                             if viewModel.isValidIngredient(ingredient) {
                                 let ingredientEntity = IngredientEntity()
                                 ingredientEntity.name = self.ingredient
                                 $ingredients.append(ingredientEntity)
                             }
+                            
                             self.ingredient = ""
                         } label: {
                             Text("Add")

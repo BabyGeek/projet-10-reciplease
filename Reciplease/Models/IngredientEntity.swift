@@ -16,4 +16,8 @@ class IngredientEntity: Object, Identifiable {
     override class func primaryKey() -> String? {
         "id"
     }
+    
+    public func toModel() -> Ingredient {
+        return Ingredient(name: name)
+    }
 }

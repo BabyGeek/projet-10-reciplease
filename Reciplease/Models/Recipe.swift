@@ -66,21 +66,6 @@ struct Recipe: Codable, Equatable {
         self.dishType = dishType
     }
     
-    func getEntity() -> RecipeEntity {
-        let entity = RecipeEntity()
-        entity.uri = self.uri
-        entity.totalTime = self.totalTime
-        entity.calories = self.calories
-        entity.label = self.label
-        entity.ingredientLines.append(objectsIn: self.ingredientLines)
-        entity.image = self.image
-        entity.url = self.url
-        entity.cuisineType.append(objectsIn: self.cuisineType ?? [])
-        entity.mealType.append(objectsIn: self.mealType ?? [])
-        entity.dishType.append(objectsIn: self.dishType ?? [])
-        return entity
-    }
-    
     /// Get the time of preparation, format 00h00
     /// - Returns: String time
     func getTime() -> String {

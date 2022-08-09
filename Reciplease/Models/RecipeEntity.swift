@@ -26,7 +26,23 @@ class RecipeEntity: Object, Identifiable {
         "id"
     }
     
-    public func toRecipe() -> Recipe {
+    public func toModel() -> Recipe {
         return Recipe(uri: uri, totalTime: totalTime, calories: calories, label: label, ingredientLines: Array(ingredientLines), image: image, url: url, cuisineType: Array(cuisineType), mealType: Array(mealType), dishType: Array(dishType))
+    }
+    
+    static func from(_ recipe: Recipe) -> RecipeEntity {
+        let entity = RecipeEntity()
+        entity.uri = recipe.uri
+        entity.totalTime = recipe.totalTime
+        entity.calories = recipe.calories
+        entity.label = recipe.label
+        entity.ingredientLines.append(objectsIn: recipe.ingredientLines)
+        entity.image = recipe.image
+        entity.url = recipe.url
+        entity.cuisineType.append(objectsIn: recipe.cuisineType ?? [])
+        entity.mealType.append(objectsIn: recipe.mealType ?? [])
+        entity.dishType.append(objectsIn: recipe.dishType ?? [])
+        
+        return entity
     }
 }

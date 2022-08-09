@@ -5,11 +5,13 @@
 //  Created by Paul Oggero on 01/08/2022.
 //
 
+import RealmSwift
 import SwiftUI
 
 struct SearchRecipesButtonView: View {
     @State var selection: String? = nil
     @EnvironmentObject var viewModel: RecipeViewModel
+    @ObservedResults(IngredientEntity.self) var ingredients
     
     var body: some View {
         NavigationLink(
@@ -23,9 +25,9 @@ struct SearchRecipesButtonView: View {
             .accessibilityHidden(true)
         
         Button(action: {
-            if viewModel.canSearch {
+            if canSearch() {
                 self.selection = "result"
-                viewModel.fetchData()
+                viewModel.fetchData(getIngredients())
             }
         }, label: {
             Text("Search for recipes")
@@ -37,12 +39,29 @@ struct SearchRecipesButtonView: View {
         .shadow(color: Color("Primary"), radius: 25, x: 3, y: 5)
         .lineLimit(1)
     }
+    
+    func canSearch() -> Bool {
+        if ingredients.isEmpty {
+            viewModel.error = AppError(error: CRUDError.emptyIngredient)
+            return false
+        }
+        return true
+    }
+    
+    func getIngredients() -> [Ingredient] {
+        var ingredients = [Ingredient]()
+        
+        for ingredient in self.ingredients {
+            ingredients.append(ingredient.toModel())
+        }
+        
+        return ingredients
+    }
 }
 
 struct SearchRecipesButtonView_Previews: PreviewProvider {
     static var previews: some View {
         SearchRecipesButtonView()
-            .preferredColorScheme(.dark)
             .environmentObject(RecipeViewModel(service: SearchMockService()))
     }
 }

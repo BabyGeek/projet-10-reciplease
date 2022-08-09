@@ -38,19 +38,28 @@ struct RecipeView: View {
         .toolbar {
             ToolbarItem {
                 Button {
-                    if viewModel.isFavorite(recipe), let favorite = favorites.first(where: { $0.label == recipe.label }) {
+                    if let favorite = favorites.first(where: { $0.uri == recipe.uri }) {
                         $favorites.remove(favorite)
                     } else {
-                        $favorites.append(recipe.getEntity())
+                        $favorites.append(RecipeEntity.from(recipe))
                     }
                 } label: {
-                    Image(systemName: viewModel.isFavorite(recipe) ? "heart.fill" : "heart")
-                        .accessibilityLabel("Save this recipe as a favorite.")
+                    if favorites.first(where: { $0.uri == recipe.uri }) != nil {
+                        Image(systemName: "heart.fill")
+                            .accessibilityLabel("Save this recipe as a favorite.")
+                    } else {
+                        Image(systemName: "heart")
+                            .accessibilityLabel("Save this recipe as a favorite.")
+                    }
                 }
-                
             }
         }
     }
+}
+
+extension RecipeView {
+    
+    
 }
 
 struct RecipeView_Previews: PreviewProvider {

@@ -14,7 +14,7 @@ struct FavoriteListView: View {
     
     var body: some View {
         ForEach(favorites.indices, id: \.self) { index in
-            let recipe = favorites[index].toRecipe()
+            let recipe = favorites[index].toModel()
             NavigationLink(destination: RecipeView(recipe: recipe), tag: index, selection: $selection) {
                 RecipeRowView(recipe: recipe)
             }
