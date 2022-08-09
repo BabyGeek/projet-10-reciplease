@@ -18,6 +18,8 @@ struct FavoriteListView: View {
             NavigationLink(destination: RecipeView(recipe: recipe), tag: index, selection: $selection) {
                 RecipeRowView(recipe: recipe)
             }
+            .accessibilityLabel("\(recipe.label), takes \(recipe.getTime()) to prepare, has \(recipe.getCalories()) calories, \(recipe.getCuisineType()) cuisine, best for \(recipe.getMealType()), \(recipe.getDishType()) dish. Click to show ingredients and instructions.")
+            .accessibilityElement(children: .ignore)
         }
         .onDelete(perform: $favorites.remove)
     }

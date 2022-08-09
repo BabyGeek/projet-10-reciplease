@@ -20,16 +20,15 @@ struct RecipeInstructionButtonView: View {
         }, label: {
             Text("Show instructions")
                 .font(.body)
-                .lineLimit(0)
 
         })
-        .clipShape(Capsule())
         .buttonStyle(.borderedProminent)
         .tint(Color("Primary"))
         .shadow(color: Color("Primary"), radius: 25, x: 3, y: 5)
         .sheet(isPresented: $showSafari) {
             if let url = URL(string: recipe.url) {
                 SafariView(url: url)
+                    .accessibility(addTraits: [.isModal, .isLink])
             }
         }
     }

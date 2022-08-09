@@ -9,14 +9,16 @@ import SwiftUI
 
 struct RecipeRowView: View {
     var recipe: Recipe = Recipe.mock
+    var isAccessibilityElement: Bool = false
+    
     var body: some View {
-        Capsule()
-            .fill(Color("CardBackground"))
+        RoundedRectangle(cornerRadius: 25)
+            .fill(Color("CardBackground").opacity(0.5))
             .frame(height: 100)
             .overlay(
                 main
-                .padding()
-                .foregroundColor(Color("Text"))
+                    .padding()
+                    .foregroundColor(Color("Text"))
             )
     }
 }
@@ -25,8 +27,9 @@ extension RecipeRowView {
     var main: some View {
         HStack {
             image
-
+            
             informations
+                .padding(.horizontal)
         }
     }
 }
@@ -39,14 +42,16 @@ extension RecipeRowView {
             image
                 .resizable()
                 .scaledToFit()
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color("Primary"), lineWidth: 1.2))
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                .shadow(color: .white, radius: 5, x: 3, y: 5)
+                .frame(width: 80, height: 80)
             
         }, placeholder: {
             placeholderImage()
                 .scaledToFit()
-                .clipShape(Circle())
+                .clipShape(RoundedRectangle(cornerRadius: 25))
                 .overlay(ProgressView())
+                .frame(width: 80, height: 80)
         })
     }
 }
@@ -59,7 +64,7 @@ extension RecipeRowView {
                 .lineLimit(1)
             
             Spacer()
-
+            
             HStack {
                 Text("\(Image(systemName: "flame")) \(recipe.getCalories())")
                     .font(.body)
@@ -70,8 +75,10 @@ extension RecipeRowView {
                 Image(systemName: "chevron.right")
                     .padding(.horizontal)
             }
-            Spacer()
+            
             RecipeBadgeView(recipe: recipe)
+            
+            Spacer()
         }
     }
 }

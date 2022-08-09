@@ -26,9 +26,7 @@ struct ResultView: View {
             } else {
                 ScrollView {
                     ResultListView(recipes: viewModel.results)
-                        .accessibilityHidden(true)
                 }
-                .listRowSeparatorTint(.black, edges: .all)
                 .accessibilityLabel("List of recipes results.")
             }
         }

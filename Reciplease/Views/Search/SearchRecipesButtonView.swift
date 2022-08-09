@@ -23,18 +23,19 @@ struct SearchRecipesButtonView: View {
             .accessibilityHidden(true)
         
         Button(action: {
-            self.selection = "result"
-            viewModel.fetchData()
+            if viewModel.canSearch {
+                self.selection = "result"
+                viewModel.fetchData()
+            }
         }, label: {
             Text("Search for recipes")
                 .font(.body)
+                .accessibilityHint("Click to search recipes with your ingredients")
         })
-        .clipShape(Capsule())
         .buttonStyle(.borderedProminent)
         .tint(Color("Primary"))
         .shadow(color: Color("Primary"), radius: 25, x: 3, y: 5)
         .lineLimit(1)
-        .accessibilityLabel("Search for a recipe")
     }
 }
 

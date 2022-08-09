@@ -19,17 +19,17 @@ struct CardListIngredientsView: View {
                     .font(.title3)
                     .foregroundColor(Color("Text"))
                     .lineLimit(1)
-                    .accessibilityLabel("Ingredients")
+                    .accessibilityHint("Ingredients added in your list.")
                 Spacer()
                 Button {
                     viewModel.cleanIngredients()
                 } label: {
                     Text("Clear")
                         .font(.body)
+                        .accessibilityHint("Clear the list of ingredients.")
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(Color("Red"))
-                .clipShape(Capsule())
                 .shadow(color: Color("Red"), radius: 25, x: 3, y: 5)
             }
             
@@ -37,6 +37,7 @@ struct CardListIngredientsView: View {
                 Text("- \(ingredient.name)")
                     .foregroundColor(Color("Text"))
                     .font(.body)
+                    .accessibilityLabel("Ingredient \(ingredient.name)")
             }
         }
     }

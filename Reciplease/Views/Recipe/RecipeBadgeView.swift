@@ -9,26 +9,36 @@ import SwiftUI
 
 struct RecipeBadgeView: View {
     var recipe: Recipe = Recipe.mock
+    var isAccessibilityElement: Bool = false
+    
     var body: some View {
         HStack {
-            Text(recipe.getCuisineType())
-                .lineLimit(1)
-                .font(.caption)
+            RoundedRectangle(cornerRadius: 25)
+                .stroke(.orange, lineWidth: 1)
+                .frame(maxWidth: UIScreen.main.bounds.size.width / 3, maxHeight: 15)
+                .overlay(
+                    Text(recipe.getCuisineType())
+                        .lineLimit(1)
+                        .font(.caption))
                 .padding(3)
-                .overlay(Capsule().stroke(.green, lineWidth: 1))
-                .frame(minWidth: 25)
-            Text(recipe.getMealType())
-                .lineLimit(1)
-                .font(.caption)
+            
+            RoundedRectangle(cornerRadius: 25)
+                .stroke(.green, lineWidth: 1)
+                .frame(maxWidth: UIScreen.main.bounds.size.width / 3, maxHeight: 15)
+                .overlay(
+                    Text(recipe.getMealType())
+                        .lineLimit(1)
+                        .font(.caption))
                 .padding(3)
-                .overlay(Capsule().stroke(.orange, lineWidth: 1))
-                .frame(minWidth: 25)
-            Text(recipe.getDishType())
-                .lineLimit(1)
-                .font(.caption)
+            
+            RoundedRectangle(cornerRadius: 25)
+                .stroke(.blue, lineWidth: 1)
+                .frame(maxWidth: UIScreen.main.bounds.size.width / 3, maxHeight: 15)
+                .overlay(
+                    Text(recipe.getDishType())
+                        .lineLimit(1)
+                        .font(.caption))
                 .padding(3)
-                .overlay(Capsule().stroke(.blue, lineWidth: 1))
-                .frame(minWidth: 25)
             
             Spacer()
         }

@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import RealmSwift
 
 struct Recipe: Codable, Equatable {
     let totalTime: Int
@@ -15,9 +14,9 @@ struct Recipe: Codable, Equatable {
     let ingredientLines: [String]
     let image: String
     let url: String
-    let cuisineType: [String]
-    let mealType: [String]
-    let dishType: [String]
+    let cuisineType: [String]?
+    let mealType: [String]?
+    let dishType: [String]?
     
     static var mock = Recipe(totalTime: 3, calories: 2871.0704237333985, label: "Chorizo, Avocado, and Egg Cemitas with Chipotle Mayonnaise Recipe", ingredientLines: [
         "1/4 cup mayonnaise",
@@ -52,7 +51,7 @@ struct Recipe: Codable, Equatable {
         case dishType
     }
     
-    init(totalTime: Int, calories: Double, label: String, ingredientLines: [String], image: String, url: String, cuisineType: [String], mealType: [String], dishType: [String]) {
+    init(totalTime: Int, calories: Double, label: String, ingredientLines: [String], image: String, url: String, cuisineType: [String]?, mealType: [String]?, dishType: [String]?) {
         self.totalTime = totalTime
         self.calories = calories
         self.label = label
@@ -64,19 +63,6 @@ struct Recipe: Codable, Equatable {
         self.dishType = dishType
     }
     
-    init(from decoder: Decoder) throws {
-        let values = try decoder.container(keyedBy: CodingKeys.self)
-        totalTime = try values.decode(Int.self, forKey: .totalTime)
-        calories = try values.decode(Double.self, forKey: .calories)
-        label = try values.decode(String.self, forKey: .label)
-        ingredientLines = try values.decode([String].self, forKey: .ingredientLines)
-        image = try values.decode(String.self, forKey: .image)
-        url = try values.decode(String.self, forKey: .url)
-        cuisineType = try values.decode([String].self, forKey: .cuisineType)
-        mealType = try values.decode([String].self, forKey: .mealType)
-        dishType = try values.decode([String].self, forKey: .dishType)
-    }
-    
     func getEntity() -> RecipeEntity {
         let entity = RecipeEntity()
         entity.totalTime = self.totalTime
@@ -85,9 +71,9 @@ struct Recipe: Codable, Equatable {
         entity.ingredientLines.append(objectsIn: self.ingredientLines)
         entity.image = self.image
         entity.url = self.url
-        entity.cuisineType.append(objectsIn: self.cuisineType)
-        entity.mealType.append(objectsIn: self.mealType)
-        entity.dishType.append(objectsIn: self.dishType)
+        entity.cuisineType.append(objectsIn: self.cuisineType ?? [])
+        entity.mealType.append(objectsIn: self.mealType ?? [])
+        entity.dishType.append(objectsIn: self.dishType ?? [])
         return entity
     }
     
@@ -112,35 +98,25 @@ struct Recipe: Codable, Equatable {
     }
     
     func getCuisineType() -> String {
-        return cuisineType.joined(separator: ", ")
+        return cuisineType?.joined(separator: ", ") ?? "N/A"
     }
     
     func getMealType() -> String {
-        return mealType.joined(separator: ", ")
+        return mealType?.joined(separator: ", ") ?? "N/A"
     }
     
     func getDishType() -> String {
-        return dishType.joined(separator: ", ")
+        return dishType?.joined(separator: ", ") ?? "N/A"
     }
-}
+    
+    func getIngredients() -> [Ingredient] {
+        var ingredients = [Ingredient]()
+        ingredientLines.forEach { line in
+            if let line = line.removingPercentEncoding {
+                ingredients.append(Ingredient(name: line))
+            }
+        }
 
-class RecipeEntity: Object, Identifiable {
-    @Persisted(primaryKey: true) var id = UUID()
-    @Persisted var totalTime: Int
-    @Persisted var calories: Double
-    @Persisted var label: String
-    @Persisted var ingredientLines = List<String>()
-    @Persisted var image: String
-    @Persisted var url: String
-    @Persisted var cuisineType = List<String>()
-    @Persisted var mealType = List<String>()
-    @Persisted var dishType = List<String>()
-    
-    override class func primaryKey() -> String? {
-        "id"
-    }
-    
-    public func toRecipe() -> Recipe {
-        return Recipe(totalTime: totalTime, calories: calories, label: label, ingredientLines: Array(ingredientLines), image: image, url: url, cuisineType: Array(cuisineType), mealType: Array(mealType), dishType: Array(dishType))
+        return ingredients
     }
 }

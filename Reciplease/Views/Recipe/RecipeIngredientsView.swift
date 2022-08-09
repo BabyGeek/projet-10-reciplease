@@ -11,13 +11,11 @@ struct RecipeIngredientsView: View {
     var recipe: Recipe = Recipe.mock
 
     var body: some View {
-        List(recipe.ingredientLines, id: \.self) { line in
-            Text(line)
+        ForEach(recipe.getIngredients(), id: \.id) { ingredient in
+            Text("- \(ingredient.name)")
                 .font(.body)
-                .lineLimit(0)
         }
         .foregroundColor(Color("Text"))
-        .listRowSeparatorTint(.black, edges: .all)
     }
 }
 

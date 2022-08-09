@@ -22,8 +22,14 @@ struct RecipeView: View {
                 )
             
             RecipeBadgeView(recipe: recipe)
-            RecipeIngredientsView(recipe: recipe)
             
+            ScrollView {
+                VStack(alignment: .leading) {
+                    RecipeIngredientsView(recipe: recipe)
+                }
+                .frame(width: .infinity)
+            }
+
             RecipeInstructionButtonView(recipe: recipe)
         }
         .navigationTitle(recipe.label)
