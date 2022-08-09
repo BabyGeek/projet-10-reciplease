@@ -77,6 +77,8 @@ struct Recipe: Codable, Equatable {
         return entity
     }
     
+    /// Get the time of preparation, format 00h00
+    /// - Returns: String time
     func getTime() -> String {
         let hours = "\(totalTime / 60 < 10 ? "0\(totalTime / 60)" : "\(totalTime / 60)")"
         let minutes = "\(totalTime % 60 < 10 ? "0\(totalTime % 60)" : "\(totalTime % 60)")"
@@ -86,29 +88,23 @@ struct Recipe: Codable, Equatable {
     }
     
     func getCalories() -> String {
-        let numberFormatter = NumberFormatter()
-        numberFormatter.locale = Locale.current
-        numberFormatter.usesGroupingSeparator = true
-        
-        if let calories = numberFormatter.string(from: calories as NSNumber) {
-            return calories
-        }
-        
-        return ""
+        NumberFormatter().string(from: calories as NSNumber) ?? ""
     }
     
     func getCuisineType() -> String {
-        return cuisineType?.joined(separator: ", ") ?? "N/A"
+        cuisineType?.joined(separator: ", ") ?? "N/A"
     }
     
     func getMealType() -> String {
-        return mealType?.joined(separator: ", ") ?? "N/A"
+        mealType?.joined(separator: ", ") ?? "N/A"
     }
     
     func getDishType() -> String {
-        return dishType?.joined(separator: ", ") ?? "N/A"
+        dishType?.joined(separator: ", ") ?? "N/A"
     }
     
+    /// Get the list of ingredients as identifiable objects
+    /// - Returns: Array of Ingredients
     func getIngredients() -> [Ingredient] {
         var ingredients = [Ingredient]()
         ingredientLines.forEach { line in
