@@ -15,32 +15,30 @@ struct RecipeBadgeView: View {
         HStack {
             RoundedRectangle(cornerRadius: 25)
                 .stroke(.orange, lineWidth: 1)
-                .frame(maxWidth: UIScreen.main.bounds.size.width / 3, maxHeight: 15)
+                .frame(maxWidth: UIScreen.main.bounds.size.width / 3, maxHeight: 20)
                 .overlay(
                     Text(recipe.getCuisineType())
                         .lineLimit(1)
-                        .font(.caption))
-                .padding(3)
+                        .font(.body))
+                .padding(4)
             
             RoundedRectangle(cornerRadius: 25)
                 .stroke(.green, lineWidth: 1)
-                .frame(maxWidth: UIScreen.main.bounds.size.width / 3, maxHeight: 15)
+                .frame(maxWidth: UIScreen.main.bounds.size.width / 3, maxHeight: 20)
                 .overlay(
                     Text(recipe.getMealType())
                         .lineLimit(1)
-                        .font(.caption))
-                .padding(3)
+                        .font(.body))
+                .padding(4)
             
             RoundedRectangle(cornerRadius: 25)
                 .stroke(.blue, lineWidth: 1)
-                .frame(maxWidth: UIScreen.main.bounds.size.width / 3, maxHeight: 15)
+                .frame(maxWidth: UIScreen.main.bounds.size.width / 3, maxHeight: 20)
                 .overlay(
                     Text(recipe.getDishType())
                         .lineLimit(1)
-                        .font(.caption))
-                .padding(3)
-            
-            Spacer()
+                        .font(.body))
+                .padding(4)
         }
     }
 }
