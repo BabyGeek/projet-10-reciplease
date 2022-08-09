@@ -14,4 +14,10 @@ struct Ingredient: Identifiable {
     init(name: String) {
         self.name = name
     }
+    
+    func getEntity() -> IngredientEntity {
+        let entity = IngredientEntity()
+        entity.name = self.name
+        return entity
+    }
 }

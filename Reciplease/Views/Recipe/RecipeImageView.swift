@@ -13,11 +13,19 @@ struct RecipeImageView: View {
     var body: some View {
         VStack {
             HStack {
-                Text("\(Image(systemName: "flame")) \(recipe.calories)")
+                Text("\(Image(systemName: "flame")) \(recipe.getCalories())")
+                    .accessibilityLabel("\(recipe.getCalories()) calories.")
+                    .font(.body)
+                    .lineLimit(1)
+
                 Spacer()
-                Text("\(recipe.totalTime) \(Image(systemName: "timer"))")
+                Text("\(recipe.getTime()) \(Image(systemName: "timer"))")
+                    .accessibilityLabel("\(recipe.getTime()) minutes to prepare it.")
+                    .font(.body)
+                    .lineLimit(1)
+
             }
-            .padding(.top)
+
             Spacer()
             
             HStack {
@@ -30,7 +38,8 @@ struct RecipeImageView: View {
         .background(
             AsyncImage(url: URL(string: recipe.image), content: { image in
                     image
-                    .scaledToFit()
+                    .resizable()
+                    .scaledToFill()
                     .mask(
                         LinearGradient(gradient: Gradient(
                             colors: [
@@ -54,9 +63,8 @@ struct RecipeImageView: View {
                                        endPoint: .bottom)
                     )
             }, placeholder: {
-                Image("NotFoundImage")
-                    .resizable()
-                    .scaledToFit()
+                placeholderImage()
+                    .overlay(ProgressView())
             }))
     }
 }

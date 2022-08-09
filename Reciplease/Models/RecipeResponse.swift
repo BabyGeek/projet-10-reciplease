@@ -13,7 +13,6 @@ struct RecipeResponse: Codable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         recipe = try values.decode(Recipe.self, forKey: .recipe)
-        
     }
 }
     

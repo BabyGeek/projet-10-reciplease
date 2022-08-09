@@ -8,12 +8,7 @@
 import SwiftUI
 
 struct ResultListView: View {
-    var recipes = [
-        Recipe.mock,
-        Recipe.mock,
-        Recipe.mock,
-        Recipe.mock
-    ]
+    var recipes: [Recipe] = []
     
     @State var selection: Int? = -1
     
@@ -23,10 +18,8 @@ struct ResultListView: View {
             NavigationLink(destination: RecipeView(recipe: recipe), tag: index, selection: $selection) {
                 RecipeRowView(recipe: recipe)
             }
+            .accessibilityLabel("\(recipe.label), takes \(recipe.getTime()) to prepare, has \(recipe.getCalories()) calories, \(recipe.getCuisineType()) cuisine, best for \(recipe.getMealType()), \(recipe.getDishType()) dish. Click to show ingredients and instructions.")
         }
-        
-        Divider()
-            .padding()
     }
 }
 

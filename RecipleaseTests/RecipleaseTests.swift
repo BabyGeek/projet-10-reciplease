@@ -6,31 +6,34 @@
 //
 
 import XCTest
-@testable import Reciplease
 
 class RecipleaseTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    var viewModel: RecipeViewModel!
+    
+    @MainActor
+    override func setUp() {
+        super.setUp()
+        viewModel = RecipeViewModel(service: SearchMockService())
     }
+    
+    func testGivenNewWhenCheckingShouldBeNilOrEmpty() throws {
+        XCTAssertTrue(viewModel.results.isEmpty)
+        XCTAssertTrue(viewModel.ingredients.isEmpty)
+        XCTAssertTrue(viewModel.favorites.isEmpty)
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+        XCTAssertFalse(viewModel.isLoading)
+        XCTAssertFalse(viewModel.canSearch)
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+        XCTAssertNil(viewModel.error)
+        XCTAssertNil(viewModel.totalResults)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testGivenNewWhenGetSearchThenResultsShouldCountThree() throws {
+        viewModel.fetchData()
+        
+        XCTAssertEqual(viewModel.results.count, 3)
     }
+    
+    //func testGivenIngredient
 
 }

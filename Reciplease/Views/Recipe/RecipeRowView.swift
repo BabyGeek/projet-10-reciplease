@@ -9,31 +9,77 @@ import SwiftUI
 
 struct RecipeRowView: View {
     var recipe: Recipe = Recipe.mock
+    var isAccessibilityElement: Bool = false
+    
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack {
-                Text("\(recipe.calories) \(Image(systemName: "flame"))")
-                Spacer()
-                Text("\(recipe.totalTime) \(Image(systemName: "timer"))")
-            }
-            Spacer()
-            VStack(alignment: .leading) {
-                Text(recipe.label)
-                    .font(.subheadline)
-                    .lineLimit(1)
-            }
+        RoundedRectangle(cornerRadius: 25)
+            .fill(Color("CardBackground").opacity(0.5))
+            .frame(height: 100)
+            .overlay(
+                main
+                    .padding()
+                    .foregroundColor(Color("Text"))
+            )
+    }
+}
+
+extension RecipeRowView {
+    var main: some View {
+        HStack {
+            image
+            
+            informations
+                .padding(.horizontal)
         }
-        .foregroundColor(Color("Text"))
-        .frame(height: 200)
-        .background(
-            AsyncImage(url: URL(string: recipe.image), content: {
-                image in
-                image
-                    .resizable()
-                    .frame(height: 120)
-            }, placeholder: {
-                ProgressView()
-            }))
+    }
+}
+
+
+extension RecipeRowView {
+    var image: some View {
+        AsyncImage(url: URL(string: recipe.image), content: {
+            image in
+            image
+                .resizable()
+                .scaledToFit()
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                .shadow(color: .white, radius: 5, x: 3, y: 5)
+                .frame(width: 80, height: 80)
+            
+        }, placeholder: {
+            placeholderImage()
+                .scaledToFit()
+                .clipShape(RoundedRectangle(cornerRadius: 25))
+                .overlay(ProgressView())
+                .frame(width: 80, height: 80)
+        })
+    }
+}
+
+extension RecipeRowView {
+    var informations: some View {
+        VStack(alignment: .leading) {
+            Text("\(recipe.label)")
+                .font(.title2)
+                .lineLimit(1)
+            
+            Spacer()
+            
+            HStack {
+                Text("\(Image(systemName: "flame")) \(recipe.getCalories())")
+                    .font(.body)
+                Spacer()
+                Text("\(recipe.getTime()) \(Image(systemName: "timer"))")
+                    .font(.body)
+                
+                Image(systemName: "chevron.right")
+                    .padding(.horizontal)
+            }
+            
+            RecipeBadgeView(recipe: recipe)
+            
+            Spacer()
+        }
     }
 }
 
