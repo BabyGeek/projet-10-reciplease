@@ -10,7 +10,6 @@ import SwiftUI
 
 struct RecipeView: View {
     @ObservedResults(RecipeEntity.self) var favorites
-    @EnvironmentObject var viewModel: RecipeViewModel
     var recipe: Recipe = Recipe.mock
     
     var body: some View {

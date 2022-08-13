@@ -15,7 +15,9 @@ class SearchService: SearchServicing {
     var parameters: Parameters?
     
     func get(_ handler: @escaping (Result<SearchResponse, AFError>) -> Void) {
-        let url = ConstantsAPI.url.replacingOccurrences(of: "{id}", with: ConstantsAPI.appID).replacingOccurrences(of: "{key}", with: ConstantsAPI.apiKEY)
+        let url = ConstantsAPI.url
+            .replacingOccurrences(of: "{id}", with: ConstantsAPI.appID)
+            .replacingOccurrences(of: "{key}", with: ConstantsAPI.apiKEY)
         
         self.task?.cancel()
         self.task = AF.request(url, method: .get, parameters: parameters)

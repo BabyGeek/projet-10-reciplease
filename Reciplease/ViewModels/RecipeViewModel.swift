@@ -47,7 +47,7 @@ class RecipeViewModel: ObservableObject {
     /// Handle ingredient adding
     /// - Parameter ingredient: the ingredient name to add
     /// - Returns: True if the user can add the ingredient, else false
-    public func isValidIngredient(_ ingredient: String) -> Bool {
+    func isValidIngredient(_ ingredient: String) -> Bool {
         if ingredient.isEmpty {
             error = AppError(error: CRUDError.emptyIngredient)
             return false

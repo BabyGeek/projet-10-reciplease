@@ -30,12 +30,7 @@ class SearchMockService: SearchServicing {
     func get() async throws -> SearchResponse {
         return try await withCheckedThrowingContinuation { continuation in
             get { result in
-                switch result {
-                case .success(let response):
-                    continuation.resume(returning: response)
-                case .failure(let error):
-                    continuation.resume(throwing: error)
-                }
+                continuation.resume(with: result)
             }
         }
     }
