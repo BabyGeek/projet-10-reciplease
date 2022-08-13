@@ -21,7 +21,7 @@ struct CardAddIngredientView: View {
             .overlay(
                 VStack {
                     Text("What's in your fridge?")
-                        .font(.largeTitle)
+                        .font(.title)
                         .frame(alignment: .center)
                         .accessibilityLabel("What's in your fridge?")
                         .accessibilityHint("Tell us what is in your fridge.")

@@ -27,7 +27,9 @@ struct SearchRecipesButtonView: View {
         Button(action: {
             if canSearch() {
                 self.selection = "result"
-                viewModel.fetchData(getIngredients())
+                Task {
+                    await viewModel.fetchData(getIngredients())
+                }
             }
         }, label: {
             Text("Search for recipes")

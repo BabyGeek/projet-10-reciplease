@@ -43,6 +43,7 @@ struct RecipeImageView: View {
                     .mask(
                         LinearGradient(gradient: Gradient(
                             colors: [
+                                .clear,
                                 .black,
                                 .black,
                                 .black,
@@ -50,17 +51,6 @@ struct RecipeImageView: View {
                         ),
                                        startPoint: .bottom,
                                        endPoint: .top)
-                    )
-                    .mask(
-                        LinearGradient(gradient: Gradient(
-                            colors: [
-                                .black,
-                                .black,
-                                .black,
-                                .clear]
-                        ),
-                                       startPoint: .top,
-                                       endPoint: .bottom)
                     )
             }, placeholder: {
                 placeholderImage()
