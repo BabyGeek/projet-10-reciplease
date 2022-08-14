@@ -37,7 +37,7 @@ class SearchService: SearchServicing {
             })
     }
     
-    func get() async throws -> SearchResponse{
+    func get() async throws -> SearchResponse {
         return try await withCheckedThrowingContinuation { continuation in
             get { result in
                 switch result {

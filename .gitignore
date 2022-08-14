@@ -90,3 +90,7 @@ fastlane/test_output
 iOSInjectionProject/
 Reciplease.xcodeproj/project.xcworkspace/xcuserdata/mrsniikyz.xcuserdatad/UserInterfaceState.xcuserstate
 Reciplease/Utilities/ConstantsAPI.swift
+
+.DS_Store
+mockups/.DS_Store
+images/.DS_Store
