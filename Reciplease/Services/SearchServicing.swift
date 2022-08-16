@@ -12,5 +12,8 @@ import Combine
 protocol SearchServicing {
     var parameters: Parameters? { get set }
     var task: Cancellable? { get set }
-    func get(_ completion: @escaping (Result<SearchResponse, AFError>) -> Void)
+    @available(*, renamed: "get()")
+    func get(_ handler: @escaping (Result<SearchResponse, AFError>) -> Void)
+
+    func get() async throws -> SearchResponse
 }

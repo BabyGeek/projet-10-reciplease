@@ -9,7 +9,6 @@ import RealmSwift
 import SwiftUI
 
 struct SearchView: View {
-    @EnvironmentObject var viewModel: RecipeViewModel
     @ObservedResults(IngredientEntity.self) var ingredients
     
     var body: some View {

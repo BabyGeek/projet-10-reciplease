@@ -11,7 +11,7 @@ struct ResultView: View {
     @EnvironmentObject var viewModel: RecipeViewModel
     
     var body: some View {
-        if viewModel.isLoading || (viewModel.results.isEmpty && viewModel.totalResults == nil) {
+        if viewModel.isLoading {
             VStack {
                 ProgressView()
                 Text("Loading")

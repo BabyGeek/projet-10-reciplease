@@ -14,24 +14,39 @@ class SearchService: SearchServicing {
     
     var parameters: Parameters?
     
-    func get(_ completion: @escaping (Result<SearchResponse, AFError>) -> Void) {
-        let url = ConstantsAPI.url.replacingOccurrences(of: "{id}", with: ConstantsAPI.appID).replacingOccurrences(of: "{key}", with: ConstantsAPI.apiKEY)
+    func get(_ handler: @escaping (Result<SearchResponse, AFError>) -> Void) {
+        let url = ConstantsAPI.url
+            .replacingOccurrences(of: "{id}", with: ConstantsAPI.appID)
+            .replacingOccurrences(of: "{key}", with: ConstantsAPI.apiKEY)
         
+        self.task?.cancel()
         self.task = AF.request(url, method: .get, parameters: parameters)
             .publishDecodable(type: SearchResponse.self)
-            .sink(receiveCompletion: { (failure) in
-                switch failure {
+            .sink(receiveCompletion: { (completion) in
+                switch completion {
                 case .finished:
                     ()
                 case .failure(let error):
                     if let error = error.asAFError {
                         let result: Result<SearchResponse, AFError> = .failure(error)
-                        completion(result)
+                        handler(result)
                     }
                 }
             }, receiveValue: { (response) in
-                completion(response.result)
+                handler(response.result)
             })
     }
+    
+    func get() async throws -> SearchResponse {
+        return try await withCheckedThrowingContinuation { continuation in
+            get { result in
+                switch result {
+                case .success(let response):
+                    continuation.resume(returning: response)
+                case .failure(let error):
+                    continuation.resume(throwing: error)
+                }
+            }
+        }
+    }
 }
-

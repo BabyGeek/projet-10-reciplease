@@ -29,7 +29,14 @@ extension RecipeRowView {
             image
             
             informations
-                .padding(.horizontal)
+                .padding()
+            
+            VStack {
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .padding()
+                Spacer()
+            }
         }
     }
 }
@@ -60,25 +67,16 @@ extension RecipeRowView {
     var informations: some View {
         VStack(alignment: .leading) {
             Text("\(recipe.label)")
-                .font(.title2)
+                .font(.headline)
                 .lineLimit(1)
-            
             Spacer()
-            
             HStack {
                 Text("\(Image(systemName: "flame")) \(recipe.getCalories())")
                     .font(.body)
                 Spacer()
                 Text("\(recipe.getTime()) \(Image(systemName: "timer"))")
                     .font(.body)
-                
-                Image(systemName: "chevron.right")
-                    .padding(.horizontal)
             }
-            
-            RecipeBadgeView(recipe: recipe)
-            
-            Spacer()
         }
     }
 }

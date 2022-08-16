@@ -9,7 +9,6 @@ import RealmSwift
 import SwiftUI
 
 struct CardListIngredientsView: View {
-    @EnvironmentObject var viewModel: RecipeViewModel
     @ObservedResults(IngredientEntity.self) var ingredients
     
     var body: some View {

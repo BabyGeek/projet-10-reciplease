@@ -25,17 +25,17 @@ class RecipleaseTests: XCTestCase {
         XCTAssertNil(viewModel.totalResults)
     }
     
-    func testGivenNewViewModelWhenGetSearchThenResultsShouldCountThree() throws {
-        viewModel.fetchData()
+    func testGivenNewViewModelWhenGetSearchThenResultsShouldCountThree() async throws {
+        await viewModel.fetchData()
         
         XCTAssertEqual(viewModel.results.count, 3)
     }
     
-    func testGivenIngredientsWhenGetSearchThenResultsShouldCountThree() throws {
+    func testGivenIngredientsWhenGetSearchThenResultsShouldCountThree() async throws {
         let ingredients = [
         Ingredient(name: "Eggs")
         ]
-        viewModel.fetchData(ingredients)
+        await viewModel.fetchData(ingredients)
         
         XCTAssertEqual(viewModel.results.count, 3)
     }
