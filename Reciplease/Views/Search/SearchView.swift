@@ -31,6 +31,7 @@ struct SearchView: View {
                     SearchRecipesButtonView()
                 }
                 .animation(.easeInOut, value: ingredients.isEmpty)
+                .padding(.horizontal, 8)
             }
         }
     }
