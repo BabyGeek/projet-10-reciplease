@@ -34,7 +34,10 @@ Each element of this application are being accessible with VoiceOver.
 ![](images/launchScreen.png)
 
 #### Search
-![](images/search.png)
+
+Empty            |  Added ingredient
+:-------------------------:|:-------------------------:
+![](images/search_empty.png) | ![](images/search.png)
 
 
 #### Result
