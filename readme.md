@@ -1,4 +1,4 @@
-# Le Baluchon - Travel dude
+# Reciplease - Recipe buddy
 
 [![platform](https://img.shields.io/badge/-iOS%2015%20%7C%20iOS%2016-green?style=plastic&logo=apple)](https://img.shields.io/badge/platform-iOS%2015%20%7C%20iOS%2016-green?style=plastic&logo=apple) [![Framework](https://img.shields.io/badge/framework-SwiftUI-orange?style=plastic)](https://img.shields.io/badge/framework-SwiftUI-orange?style=plastic)
 
